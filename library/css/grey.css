@@ -1,0 +1,54 @@
+/* Header */
+
+.sitename {
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.sitename a{
+	color: #333;
+}
+
+.sitename a:hover{
+	color: #444;
+}
+
+.description {
+	color: #444;
+	font-size: 16px;
+	font-weight: normal;
+	margin-left: 25px;
+}
+
+/* Menu background */
+
+#navbackground {
+		background: #383b3d;
+		border-left: 1px solid #757575;
+		border-right: 1px solid #757575;
+		border-top: 1px solid #777;
+}
+
+/* Posts Styling */
+
+.posts_title a{
+		color: #333;
+		font-size: 26px;
+		font-weight: bold;
+}
+
+.posts_title a:hover{
+		color: #444;
+		font-size: 26px;
+		font-weight: bold;
+}
+
+h2 a{ color: #333; }
+
+
+/* Sidebar Links */
+
+.sidebar-widget-style a{
+	color: #333;
+	font-weight: 700;
+}
