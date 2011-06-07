@@ -39,6 +39,8 @@ a img {border: none; }
 
 ul, ol { margin: 0 0 10px 0; }
 
+strong, b {font-weight:bold}
+
 /* Page Layout  */
 
 #page-wrap { width: 982px; 
