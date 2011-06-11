@@ -1,10 +1,10 @@
 /*   
 Theme Name: Neuro
 Theme URI: http://cyberchimps.com/neuro/
-Description: Neuro: A Free WordPress Theme designed by CyberChimps.com in Long Beach, California. Neuro is a clean easily customizable HTML5 design, theme options, the Neuro slider, dynamic header for custom logo, social icons, social sharing, contact section, widgetized sidebar and footer, typography including Google Fonts, and multiple template choices. Twitter @cyberchimps. (<a href="http://cyberchimps.com/neuropro" alt="Upgrade to Neuro Pro">Upgrade to Neuro Pro</a>)
+Description: Neuro: A Free WordPress Theme designed by CyberChimps.com in Long Beach, California. Neuro is a clean easily customizable HTML5 design, featuring customizable theme options, the Neuro slider, dynamic header for custom logo, social icons, social sharing, contact section, widgetized sidebar and footer, typography including Google Fonts, and multiple template choices. Twitter @cyberchimps. (<a href="http://cyberchimps.com/neuropro" alt="Upgrade to Neuro Pro">Upgrade to Neuro Pro</a>)
 Author: CyberChimps
 Author URI: http://cyberchimps.com
-Version: 1.0.7
+Version: 1.0.8
 Tags: white, light, silver, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post, custom-background, theme-options
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -37,10 +37,6 @@ a:hover { color: #444; }
 
 a img {border: none; }
 
-ul, ol { margin: 0 0 10px 0; }
-
-strong, b {font-weight:bold}
-
 .featured-image {
 	margin-top: 2px; 
 	margin-right: 12px; 
@@ -48,6 +44,11 @@ strong, b {font-weight:bold}
 	float: left;
 
 }
+
+ul, ol { margin: 0 0 10px 0; }
+
+strong, b {font-weight:bold}
+
 
 /* Page Layout  */
 
@@ -805,4 +806,4 @@ li.sfHover > a > .sf-sub-indicator {
 .cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; }
 
 
-#coin-slider-coin-slider { width: 640px; margin-left: 14px;}                        
+#coin-slider-coin-slider { width: 640px; margin-left: 14px;}
