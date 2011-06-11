@@ -10,8 +10,9 @@ Neuro Changelog\
 \
 ****************************\
 \
-Version 1.0.8 (6-06-11)\
+Version 1.0.8 (6-11-11)\
 -Fixed font-weight property in posts.\
+-Featured images now link to corresponding post, fixed featured image alignment.\
 \
 Version 1.0.7 (5-30-11)\
 -Added "Design" tab, moved color scheme/background selector and custom CSS under "Design".\

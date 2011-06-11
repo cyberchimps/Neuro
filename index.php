@@ -33,11 +33,15 @@ $options = get_option('neuro') ;
 						
 						<?php get_template_part('meta', 'index' ); ?>
 						
-						<?php 
-							if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-  						the_post_thumbnail();
-						} 
-						?>
+						<?php
+	if ( has_post_thumbnail()) {
+ 		 echo '<div class="featured-image">';
+ 		 echo '<a href="' . get_permalink($post->ID) . '" >';
+ 		 the_post_thumbnail();
+  		echo '</a>';
+  		echo '</div>';
+	}
+	?>						
 							<div class="entry">
 								<?php the_content(); ?>
 							</div><!--end entry-->

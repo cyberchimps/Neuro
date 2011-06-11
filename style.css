@@ -41,6 +41,14 @@ ul, ol { margin: 0 0 10px 0; }
 
 strong, b {font-weight:bold}
 
+.featured-image {
+	margin-top: 2px; 
+	margin-right: 12px; 
+	margin-bottom: 10px; 
+	float: left;
+
+}
+
 /* Page Layout  */
 
 #page-wrap { width: 982px; 
