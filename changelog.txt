@@ -10,6 +10,9 @@ Neuro Changelog\
 \
 ****************************\
 \
+Version 1.0.9 (6-13-11)\
+-jQuery noconflict patch to fix third-party plugin compatibility issues.\
+\
 Version 1.0.8 (6-11-11)\
 -Fixed font-weight property in posts.\
 -Featured images now link to corresponding post, fixed featured image alignment.\

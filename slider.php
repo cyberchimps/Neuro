@@ -79,7 +79,7 @@
 	    wp_reset_query();
     $out .= <<<OUT
 <script type="text/javascript">
-
+var $ = jQuery.noConflict();
 	$("#coin-slider").coinslider({
 		width  		: 640,
 		height 		: 330,
