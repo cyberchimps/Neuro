@@ -811,15 +811,6 @@ if ( ! isset( $input['ne_disable_background'] ) )
   
    $input['ne_email'] = wp_filter_nohtml_kses( $input['ne_email'] );   
   
-    $options = get_option('neuro');
-  if ($_FILES['ne_filename']['name'] != '') {
-       $overrides = array('test_form' => false); 
-       $file = wp_handle_upload($_FILES['ne_filename'], $overrides);
-       $input['file'] = $file;
-   }     else {
-        $input['file'] = $options['file'];
-    }
-
 	return $input;    
 
 }
