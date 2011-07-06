@@ -834,32 +834,6 @@ function truncate ($str, $length=10, $trailing='..')
   }
  return $res;
 } 
-
-
-/* Get first image */
-
-function get_first_image() {
- global $post, $posts;
- $first_img = '';
- $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
- if(isset($matches[1][0])){
- $first_img = $matches [1][0];
- return $first_img;
- }  
-}  
-
-function ne_section_text() {
-    $options = get_option('neuro');
-    if ($file = $options['file']) {
-        echo "Logo preview<br /><br /><img src='{$file['url']}' /><br /><br />";
-        
-        
-
-    }
-}
-
-function ne_setting_filename() {
-  }
   
 /* Custom Menu */   
   
