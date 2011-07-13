@@ -8,6 +8,7 @@
 	$options = get_option('neuro') ;  
 	$facebook		= $options['ne_facebook'];
 	$twitter		= $options['ne_twitter'] ;
+	$gplus			= $options['ne_gplus'] ;
 	$linkedin		= $options['ne_linkedin'] ;
 	$youtube		= $options['ne_youtube'];
 	$email			= $options['ne_email'];
@@ -28,6 +29,12 @@
 	<?php endif;?>
 	<?php if ($twitter != 'hide' AND $twitter == '' ):?>
 		<a href="http://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/images/social/twitter.png" alt="Twitter" /></a>
+	<?php endif;?>
+	<?php if ($gplus != 'hide' AND $gplus != '' ):?>
+		<a href="<?php echo $gplus ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social/gplus.png" alt="Google Plusr" /></a>
+	<?php endif;?>
+	<?php if ($gplus != 'hide' AND $gplus == '' ):?>
+		<a href="http://plus.google.com"><img src="<?php echo get_template_directory_uri(); ?>/images/social/gplus.png" alt="Twitter" /></a>
 	<?php endif;?>
 	<?php if ($linkedin != 'hide' AND $linkedin != '' ):?>
 		<a href="<?php echo $linkedin ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social/linkedin.png" alt="LinkedIn" /></a>

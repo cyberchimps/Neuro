@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 1.1.2 (7-13-11)
+-Added Google + social icon.
+
 Version 1.1.1 (7-6-11)
 -Adjusted theme option CSS to eliminate WordPress 3.2 footer styling conflict.
 -Security fix in comments.php removing $_SERVER variable statement.
