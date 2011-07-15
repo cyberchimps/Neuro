@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 1.1.3 (7-15-11)
+-Fixed logo blowout issue related to adding Google + icon.
+
 Version 1.1.2 (7-13-11)
 -Added Google + social icon.
 
