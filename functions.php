@@ -106,9 +106,9 @@ add_action( 'wp_head', 'neuro_add_scripts',0);
 	</ul><?php
 }
 
-	//Register Widgetized Sidebar and Footer
+//Register Widgetized Sidebar and Footer
     
-    
+function neuro_sidebars(){    
     register_sidebar(array(
     	'name' => 'Sidebar Widgets',
     	'id'   => 'sidebar-widgets',
@@ -126,9 +126,21 @@ add_action( 'wp_head', 'neuro_add_scripts',0);
 		'before_title' => '<h3 class="footer-widget-title">',
 		'after_title' => '</h3>',
 	));
+}
+add_action( 'widgets_init', 'neuro_sidebars');
   
-	//Neuro theme options file
+function neuro_admin_link() {
+
+	global $wp_admin_bar;
+
+	$wp_admin_bar->add_menu( array( 'id' => 'Neuro', 'title' => 'Neuro Settings', 'href' => admin_url('themes.php?page=theme_options')  ) ); 
+  
+}
+add_action( 'admin_bar_menu', 'neuro_admin_link', 113 );
+
+//Neuro theme options file
 	
 require_once ( get_template_directory() . '/library/options/options.php' );
 require_once ( get_template_directory() . '/library/options/meta-box.php' );
+require_once ( get_template_directory() . '/library/options/options-themes.php' );
 ?>

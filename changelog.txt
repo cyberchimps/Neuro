@@ -2,6 +2,14 @@ Neuro Changelog
 
 ****************************
 
+Version 1.1.4 (9-8-11)
+-Updated theme options page.
+-Register sidebar now within a function that hooks into widgets_init. 
+-Stripping HTML from Google + URL input. 
+-Adjusted footer widget style. 
+-Fixed featured-thumb margins.
+-Added link to Neuro theme options settings in the Admin bar. 
+
 Version 1.1.3 (7-15-11)
 -Fixed logo blowout issue related to adding Google + icon.
 
@@ -15,7 +23,7 @@ Version 1.1.1 (7-6-11)
 -Now enqueueing WordPress jQuery library instead of Google's for offline functionality. 
 
 Version 1.1 (6-27-11)
--No changes, new version number required to push uncorupted build on WordPress.org
+-No changes, new version number required to push uncorrupted build on WordPress.org
 
 Version 1.0.9 (6-22-11)
 -jQuery noconflict patch to fix third-party plugin compatibility issues.

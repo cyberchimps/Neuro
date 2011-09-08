@@ -424,18 +424,12 @@ function theme_options_do_page() {
 
 	<div class="wrap">
   
+<br />
+<div class="titletext">Neuro</div>
+<br />
+<div class="upgrade"><a href="http://cyberchimps.com/neuropro/" target="_blank">Upgrade to Neuro Pro</a> which includes support for multiple color options, a business ready homepage layout, Google Fonts, Custom Neuro Slider, and much more.</div>
+<br /><br />
 
-<?php if ( function_exists('screen_icon') ) screen_icon(); ?>
-
-      
-<h2><?php echo $themename; ?> Settings</h2><br />
-
-
- 
-<p>Click below to upgrade to Neuro Pro, which includes support for multiple color options, a business ready homepage layout, Google Fonts, Custom Neuro Slider, and much more.</p>
-<a href="http://cyberchimps.com/neuropro"><img src="<?php echo get_template_directory_uri(); ?>/images/getneuropro.png?>" alt="Get neuro Pro"></a> 
-<p>Want to stick with Neuro, but want to support the developers? Please consider making a donation.</p>
-<a href="http://cyberchimps.com/donate"><img src="<?php echo get_template_directory_uri(); ?>/images/paypal.gif?>" alt="Donate"></a> 
 
 
 		<?php if ( false !== $_REQUEST['updated'] ) { ?>
@@ -447,9 +441,22 @@ function theme_options_do_page() {
 
   <form method="post" action="options.php" enctype="multipart/form-data">
   
-    <p class="submit" style="clear:left;">
+    <p class="submit" style="clear:left;float: right;">
 				<input type="submit" class="button-primary" value="Save Settings" />   
 			</p>  
+			
+	<div class="menu">
+	<ul>
+		<li><a href="http://cyberchimps.com/support" target="_blank">Support</a></li>
+		<li><a href="http://cyberchimps.com/ifeature-free/docs/">Documentation</a></li>
+		<li><a href="http://cyberchimps.com/forum/" target="_blank">Forum</a></li>
+		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
+		<li><a href="http://www.facebook.com/CyberChimps" target="_blank">Facebook</a></li>
+		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
+		<li><a href="http://cyberchimpspro.com/" target="_blank">CyberChimps Pro</a></li>
+		
+	</ul>
+	</div>
       
     <div id="tabs" style="clear:both;">   
     <ul class="tabNavigation">
@@ -741,30 +748,26 @@ case "checkbox":
 }
 }
 ?>
-      </div>  
-    </div>    
 
-			<p class="submit">
-				<input type="submit" class="button-primary" value="Save Settings" />   
-			</p>
-		</form>
-
+ </div>  
+      <div id="top"><a href='#TOP'><img src="<?php echo get_template_directory_uri() ;?>/images/options/top.png" /></a>
+      </div>
+      <div style="text-align: left;padding: 5px;"><a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri() ;?>/images/options/cyberchimpsmini.png" /></a></div>
     
-    <form method="post">
+    </div>    
+</form>
+    
+<form method="post">
 <p class="submit">
 <input name="reset" type="submit" value="Reset" />
 <input type="hidden" name="action" value="reset" />
-&nbsp;&nbsp;&nbsp;<small>WARNING, THIS RESTORES TO DEFAULT</small>
+&nbsp;&nbsp;&nbsp;<small>WARNING THIS RESTORES ALL DEFAULTS</small>
 </p>
-</form> 
-
-<p>Need help? Follow the links below to visit our support forum and documentation pages:</p>
-<a href="http://cyberchimps.com/forum"><img src="<?php echo get_template_directory_uri(); ?>/images/forum.png?>" alt="Forum"></a> <a href="http://cyberchimps.com/neuropro/docs"><img src="<?php echo get_template_directory_uri();?>/images/docs.png?>" alt="Docs"></a>
-
+</form>
 	</div>
+
 	<?php
 }
-
 
 
 function theme_options_validate( $input ) {
@@ -808,6 +811,8 @@ if ( ! isset( $input['ne_disable_background'] ) )
    $input['ne_facebook'] = wp_filter_nohtml_kses( $input['ne_facebook'] ); 
     
    $input['ne_twitter'] = wp_filter_nohtml_kses( $input['ne_twitter'] ); 
+   
+   $input['ne_gplus'] = wp_filter_nohtml_kses( $input['ne_gplus'] ); 
   
    $input['ne_linkedin'] = wp_filter_nohtml_kses( $input['ne_linkedin'] );   
   
