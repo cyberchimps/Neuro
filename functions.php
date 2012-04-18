@@ -399,7 +399,7 @@ add_action('wp_head', 'neuro_custom_scripts');
 */ 
 function neuro_register_menus() {
 	register_nav_menus(
-	array( 'header-menu' => __( 'Header Menu' ), 'footer-menu' => __( 'Footer Menu' ), 'sub-menu' => __( 'Sub Menu' ))
+	array( 'header-menu' => __( 'Header Menu' ))
   );
 }
 add_action( 'init', 'neuro_register_menus' );
