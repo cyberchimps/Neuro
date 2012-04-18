@@ -4,6 +4,7 @@ Neuro Changelog
 
 Version 2.0 (04-18-12)
 -Moved to CyberChimps Response Core Framework. 
+-Added post formats support.
 
 Version 1.1.4 (9-8-11)
 -Updated theme options page.
