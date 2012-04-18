@@ -422,14 +422,22 @@ function response_after_search() {
 }
 
 /**
-* Generates the lite version of the Feature slider. 
+* Generates the lite version of the page Feature slider. 
 *
 * @since 1.0
 */
-function response_blog_slider_lite() {
-	do_action('response_blog_slider_lite');
+function response_blog_slider() {
+	do_action('response_blog_slider');
 }
 
+/**
+* Generates the lite version of the blog Feature slider. 
+*
+* @since 1.0
+*/
+function response_page_slider() {
+	do_action('response_page_slider');
+}
 /**
 * Generates the Twitter Bar page element. 
 *
