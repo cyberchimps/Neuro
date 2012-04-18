@@ -1,41 +1,67 @@
-Neuro Pro Changelog
+Neuro Changelog
 
 ****************************
 
-Version 2.0 (04-17-11)
+Version 2.0 (04-18-11)
 -Moved to CyberChimps Response Core Framework. 
 
-Version 1.0.8 (7-18-11)
+Version 1.1.4 (9-8-11)
+-Updated theme options page.
+-Register sidebar now within a function that hooks into widgets_init. 
+-Stripping HTML from Google + URL input. 
+-Adjusted footer widget style. 
+-Fixed featured-thumb margins.
+-Added link to Neuro theme options settings in the Admin bar. 
+
+Version 1.1.3 (7-15-11)
 -Fixed logo blowout issue related to adding Google + icon.
 
-Version 1.0.7 (7-13-11)
+Version 1.1.2 (7-13-11)
 -Added Google + social icon.
--Fixed a WordPress 3.2 bug in update.php.
 
-Version 1.0.6 (7-6-11)
+Version 1.1.1 (7-6-11)
 -Adjusted theme option CSS to eliminate WordPress 3.2 footer styling conflict.
 -Security fix in comments.php removing $_SERVER variable statement.
 -Cleaned up options.php, removed unnecessary functions.
 -Now enqueueing WordPress jQuery library instead of Google's for offline functionality. 
 
-Version 1.0.5 (6-13-11)
--API added for push updates.
+Version 1.1 (6-27-11)
+-No changes, new version number required to push uncorrupted build on WordPress.org
+
+Version 1.0.9 (6-22-11)
 -jQuery noconflict patch to fix third-party plugin compatibility issues.
+-Removed unnecessary function from options.php with unidentified variable.
 
-Version 1.0.4 (6-07-11)
--Fixed additional custom slide bug created by previous fix.
--Fixed bold font-weight in post container not fully displaying.
+Version 1.0.8 (6-11-11)
+-Fixed font-weight property in posts.
+-Featured images now link to corresponding post, fixed featured image alignment.
 
-Version 1.0.3 (6-06-11)
--Fixed Custom Slide bug with "blog pages show at most" setting.
-
-Version 1.0.2 (6-01-11)
--Minor bug fixes
-
-Version 1.0.1 (5-31-11)
+Version 1.0.7 (5-30-11)
+-Added "Design" tab, moved color scheme/background selector and custom CSS under "Design".
 -Default background/color scheme changed to wood/black.
 -Changed social icons, removed broken IE alpha transparency fix.
--General bug fixes.
+-Added color chooser for footer color.
 
-Version 1.0 (5-20-11)
--Initial Release.
+Version 1.0.6 (5-20-11)
+-SEO options are now hidden by default.
+-Floats for images cleared with 5px margin.
+-Moved comment forum below threaded comments.
+
+Version 1.0.5 (5-19-11)
+-Removed unsupported header contact area option.
+-Removed legacy custom field options for feature slider.
+
+Version 1.0.4 (5-19-11)
+-Fixed unidentified index errors related to background image choice in theme options.
+
+Version 1.0.3 (5-19-11)
+-Updated CSS function to remove hard-linked CSS file.
+
+Version 1.0.2 (5-19-11)
+-Removed alt and title to follow WordPress credit guidelines.
+
+Version 1.0.1 (5-19-11)
+-Bug fix
+
+Version 1.0 (5-18-11)
+-Initial release.
