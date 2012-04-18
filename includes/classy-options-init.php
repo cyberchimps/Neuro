@@ -24,26 +24,6 @@ function chimps_init_options() {
 global $options, $themeslug, $themename, $themenamefull;
 $options = new ClassyOptions($themename, $themenamefull." Options");
 
-$carouselterms2 = get_terms('carousel_categories', 'hide_empty=0');
-
-	$customcarousel = array();
-                                    
-    	foreach($carouselterms2 as $carouselterm) {
-
-        	$customcarousel[$carouselterm->slug] = $carouselterm->name;
-
-        }
-
-$customterms2 = get_terms('slide_categories', 'hide_empty=0');
-
-	$customslider = array();
-                                    
-    	foreach($customterms2 as $customterm) {
-
-        	$customslider[$customterm->slug] = $customterm->name;
-
-        }
-
 $terms2 = get_terms('category', 'hide_empty=0');
 
 	$blogoptions = array();
@@ -109,7 +89,7 @@ $options
 			->checkbox($themeslug."_header_wrap", "Header Wrap")
 			->checkbox($themeslug."_full_menu", "Full Width Menu" , array('default' => true))
 			->checkbox($themeslug."_custom_logo", "Custom Logo" , array('default' => true))
-			->upload($themeslug."_logo", "Logo", array('default' => array('url' => TEMPLATE_URL . '/images/neuropro.png')))
+			->upload($themeslug."_logo", "Logo", array('default' => array('url' => TEMPLATE_URL . '/images/neuro.png')))
 			->upload($themeslug."_favicon", "Custom Favicon")
 		->subsection_end()
 		->subsection("Social")
