@@ -54,3 +54,20 @@ jQuery(document).ready(function($) {
 	}, function () {
 	});
 });
+
+jQuery(document).ready(function($) {
+	$('#fullnav_menu .children').hide();
+	$('#fullnav_menu > li > .children').append('<span class="nav_arrow"/>');
+	$("#fullnav_menu ul").find(".children").prev().addClass("parent-menu");
+	
+	$("#fullnav_menu > li").hover( function() {
+		$(this).children(".children").fadeIn("slow");
+	}, function () {
+		$(this).find(".children").hide();
+	});
+	
+	$("#fullnav_menu > li > .children li").hover( function() {
+		$(this).children(".children").slideDown("slow");
+	}, function () {
+	});
+});

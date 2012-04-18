@@ -100,7 +100,7 @@ $options
 		->subsection_end()
 		->section("Header")
 		->open_outersection()
-			->section_order("header_section_order", "Drag & Drop Header Elements", array('options' => array("response_logo_icons" => "Logo + Icons", "response_banner" => "Banner", "response_custom_header_element" => "Custom", "response_navigation" => "Menu"), 'default' => 'response_logo_icons,response_navigation'))
+			->section_order("header_section_order", "Drag & Drop Header Elements", array('options' => array("response_logo_icons" => "Logo + Icons", "response_banner" => "Banner", "response_custom_header_element" => "Custom"), 'default' => 'response_logo_icons'))
 			->upload($themeslug."_banner", "Banner Image")
 			->textarea($themeslug."_custom_header_element", "Custom HTML")
 		->close_outersection()

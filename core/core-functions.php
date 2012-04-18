@@ -16,6 +16,17 @@
 */
 
 /**
+* Menu fallback if custom menu not used.
+*/ 
+function response_menu_fallback() {
+	global $post; ?>
+	
+	<ul id="fullnav_menu">
+		<?php wp_list_pages( 'title_li=&sort_column=menu_order&depth=3'); ?>
+	</ul><?php
+}
+
+/**
 * Establishes 'response' as the textdomain, sets $locale and file path
 *
 * @since 1.0
