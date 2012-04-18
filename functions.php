@@ -69,7 +69,7 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow =="themes.php" ) {
 function neuro_admin_link() {
 	global $wp_admin_bar;
 
-	$wp_admin_bar->add_menu( array( 'id' => 'neuro', 'title' => 'Neuro Pro Options', 'href' => admin_url('themes.php?page=neuro')  ) ); 
+	$wp_admin_bar->add_menu( array( 'id' => 'neuro', 'title' => 'Neuro Options', 'href' => admin_url('themes.php?page=neuro')  ) ); 
 }
 add_action( 'admin_bar_menu', 'neuro_admin_link', 113 );
 
