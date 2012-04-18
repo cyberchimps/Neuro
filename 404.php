@@ -1,29 +1,59 @@
 <?php 
-
-/*
-	404
-	
-	Creates the Neuro 404 page.
-	
-	Copyright (C) 2011 CyberChimps
+/**
+* 404 template used by Neuro.
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Neuro.
+* @since 2.0
 */
 
-get_header(); 
+	global $options, $themeslug, $post, $sidebar, $content_grid; // call globals
+	response_sidebar_init(); // sidebar init
+	get_header(); // call header
+
 ?>
 
-<div id="content_wrap">
-	<div id="content_left">
-		<div class="content_padding">
-
-	<div class="error">Error 404<br />
-	These aren't the droids you're looking for.</div>
-				
-		</div><!--end content_padding-->
+<div class="container">
+	<div class="row">
+		<div class="wrap">
+			<div class="row">
+			<!--Begin @response before content sidebar hook-->
+			<?php response_before_content_sidebar(); ?>
+			<!--End @response before content sidebar hook-->
+			<div id="content" class="<?php echo $content_grid; ?>">
+				<div class="content_padding">
 		
-	</div><!--end content_left-->
+				<!-- Begin @response before_404 hook content-->
+      			<?php response_before_404(); ?>
+      			<!-- Begin @response before_404 hook content-->
+		
+      			<!-- Begin @response 404 hook content-->
+      			<?php response_404(); ?>
+      			<!-- Begin @response 404 hook content-->
+      		
+      			<!-- Begin @response after_404 hook content-->
+      			<?php response_after_404(); ?>
+      			<!-- Begin @response after_404 hook content-->
+      		
+				</div><!--end content_padding-->
+			</div><!--end content_left-->
+	
+			<!--Begin @response after content sidebar hook-->
+			<?php response_after_content_sidebar(); ?>
+			<!--End @response after content sidebar hook-->
+	
+			</div><!--end content_wrap-->
+			</div><!--end row-->
+		</div><!--end wrap-->
+	</div><!--end row-->
+</div><!--end container-->
 
-	<div id="sidebar_right"><?php get_sidebar(); ?></div>
-</div><!--end content_wrap-->
-
-<div style=clear:both;></div>
 <?php get_footer(); ?>

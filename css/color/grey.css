@@ -1,0 +1,19 @@
+/* Grey */
+
+a {color: #0085CF;}
+
+a:hover {color: #5ca9d6;}
+
+#fullnav #fullnav_menu > li:hover > a {
+	color: #ccc;
+}
+
+#fullmenu {
+	background: #5e5e5e; /* Old browsers */
+	background: -moz-linear-gradient(top, #8a8a8a 0%, #707070 49%, #5e5e5e 51%, #777777 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8a8a8a), color-stop(49%,#707070), color-stop(51%,#5e5e5e), color-stop(100%,#777777)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #8a8a8a 0%,#707070 49%,#5e5e5e 51%,#777777 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #8a8a8a 0%,#707070 49%,#5e5e5e 51%,#777777 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #8a8a8a 0%,#707070 49%,#5e5e5e 51%,#777777 100%); /* IE10+ */
+	background: linear-gradient(top, #8a8a8a 0%,#707070 49%,#5e5e5e 51%,#777777 100%); /* W3C */
+	}

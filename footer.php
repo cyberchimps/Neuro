@@ -1,93 +1,62 @@
-<?php
-
-/*
-	
-	Footer
-	
-	Establishes the widgetized footer and static post-footer section of Neuro. 
-	
-	Copyright (C) 2011 CyberChimps
-	
+<?php 
+/**
+* Footer template used by Neuro.
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Neuro.
+* @since 2.0
 */
-$options = get_option('neuro') ;  
+
+	global $options, $themeslug // call globals
+
 ?>
 	
-	
-	</div><!--end main-->
-	
-		
-<div id="footer">
-    <div id="footer_wrap">
-    	
-    	<?php if (dynamic_sidebar("Footer")) : else : ?>
-		
-		<div class="footer-widgets">
-			<div class="footer-widget-title">Recent Posts</div>
-			<ul>
-				<?php wp_get_archives('type=postbypost&limit=4'); ?>
-			</ul>
-		</div>
-		
-		<div class="footer-widgets">
-			<div class="footer-widget-title">Archives</div>
-			<ul>
-				<?php wp_get_archives('type=monthly&limit=16'); ?>
-			</ul>
-		</div>
+<?php if ($options->get($themeslug.'_disable_footer') != "0"):?>	
 
-		<div class="footer-widgets">
-			<div class="footer-widget-title">Links</div>
-			<ul>
-				<?php wp_list_bookmarks('categorize=0&title_li='); ?>
-			</ul>
-		</div>
+</div><!--end container wrap-->
 
-		<div class="footer-widgets">
-			<div class="footer-widget-title">WordPress</div>
-			<ul>
-    		<?php wp_register(); ?>
-    		<li><?php wp_loginout(); ?></li>
-    		<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
-    		<?php wp_meta(); ?>
-    		</ul>
-		</div>
-			<?php endif; ?>
-		<div class="clear"></div>
+    <div id="footer" class="container">
+     		<div class="row" id="footer_container">
+    			<div id="footer_wrap">	
+	<!-- Begin @response footer hook content-->
+		<?php response_footer(); ?>
+	<!-- End @response footer hook content-->
+				</div>
+			<div class="row" >
+				<div id="credit" class="twelve columns">
+				<?php if ($options->get($themeslug.'_hide_link') == "1"): ?>
+					<a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/achimps.png" alt="credit" /></a>
+				<?php endif; ?>
+				</div>
+			</div>
+	<?php endif;?>
+	
 
-		<!--Inserts Google Analytics Code-->
-		<?php  $analytics = $options['ne_ga_code']; ?>
-		<?php echo stripslashes($analytics); ?>
-			   
-		
-	</div><!--end footer_wrap-->
-	<div id="afterfooter">
-		<div id="afterfooterwrap">
-			<!--Inserts Copyright Text-->
-			<?php  $copyright = $options['ne_footer_text']; ?>
-				<?php if ($copyright == ''): ?> 
-					<div id="afterfootercopyright">
-						&copy; <?php echo bloginfo ( 'name' );  ?>
-					</div>
-				<?php endif;?>
-				<?php if ($copyright != ''):?> 
-					<div id="afterfootercopyright">
-						&copy; <?php echo $copyright; ?>
-					</div>
-				<?php endif;?>
-			<!--Inserts Afterfooter Menu-->
-			
-					<div id="credit" style="margin: auto;">
-						<a href="http://cyberchimps.com"><img src="<?php echo get_template_directory_uri(); ?>/images/cyberchimps.png" /></a>
-						<!--It is completely optional, but if you like the theme we would appreciate it if you keep the credit link at the bottom.-->
-					</div>
-			
-		</div>  <!--end afterfooterwrap-->	
-	</div> <!--end afterfooter-->	
-</div><!--end footer-->
-</div><!--end page_wrap-->	
+			</div><!--end footer_wrap-->
+	</div><!--end footer-->
+</div> 
+
+<?php if ($options->get($themeslug.'_disable_afterfooter') != "0"):?>
+
+	<div id="afterfooter" class="container">
+		<div class="row" id="afterfooterwrap">	
+		<!-- Begin @response afterfooter hook content-->
+			<?php response_secondary_footer(); ?>
+		<!-- End @response afterfooter hook content-->
+				
+		</div> <!--end afterfooter-->	
+	</div> 	
+	<?php endif;?>
 	
-	
-<?php wp_footer(); ?>	
+	<?php wp_footer(); ?>	
 </body>
 
 </html>

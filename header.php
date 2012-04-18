@@ -1,130 +1,61 @@
 <?php 
-
-/*
-	Header
-	
-	Creates the Neuro header. 
-	
-	Copyright (C) 2011 CyberChimps
+/**
+* Header template used by Neuro
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Neuro.
+* @since 2.0
 */
-$options = get_option('neuro') ; 
+
+	global $options, $themeslug, $themename; // call globals
+
 ?>
-<!DOCTYPE html>
-<html <?php language_attributes('xhtml'); ?>>
+	<?php response_head_tag(); ?>
+<!-- End @response head_tag hook content-->
 
-<head>
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?> <!-- wp_enqueue_script( 'comment-reply' );-->
+<?php wp_head(); ?> <!-- wp_head();-->
 	
-	<?php if ($options['ne_home_description'] != ''): ?>
-	<!-- Inserts META Home Description -->
-	<?php  $homedescription = $options['ne_home_description']; ?>
-		<meta name="description" content="<?php echo $homedescription ?>" />
-		<?php endif;?> 
-		<?php if ($options['ne_home_keywords'] != ''): ?>
-	<!-- Inserts META Keywords -->	
-	<?php  $homekeywords = $options['ne_home_keywords'] ; ?>
-		<meta name="keywords" content="<?php echo $homekeywords ?>" />
-	<?php endif;?> 
-	<meta name="distribution" content="global" />
-	<meta name="language" content="en" />
-<!-- Page title -->
-	<title>
-			<?php  $hometitle = $options['ne_home_title']; ?>
-		   <?php
-		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
-		      elseif (is_search()) {
-		         echo 'Search for &quot;'.esc_html($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title('');  }
-		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_front_page() AND $hometitle == '') {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      elseif (is_front_page() AND $hometitle != '') {
-		         bloginfo('name'); echo ' - '; echo $hometitle ; }
-		      else {
-		         echo ' - '; bloginfo('name'); }
-		      if ($paged>1) {
-		         echo ' - page '. $paged; }
-		   ?>
-	</title>	
-	<?php  
-	$tdurl = get_template_directory_uri();
-	$favicon = $options['ne_favicon']; ?>
+</head><!-- closing head tag-->
+
+<!-- Begin @response after_head_tag hook content-->
+	<?php response_after_head_tag(); ?>
+<!-- End @response after_head_tag hook content-->
 	
-	<?php if ($options['ne_favicon'] == ""): ?>
+<!-- Begin @response before_header hook  content-->
+	<?php response_before_header(); ?> 
+<!-- End @response before_header hook content -->
 			
-		<link rel="shortcut icon" href="<?php echo "$tdurl/images/favicon.ico" ; ?>" type="image/x-icon" />
-		<?php endif;?>
-		<?php if ($options['ne_favicon'] != ""): ?>
-			<link rel="shortcut icon" href="<?php echo stripslashes($favicon); ?>" type="image/x-icon" />
-	<?php endif;?>
-		
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
-	
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	
-		<?php  
-		if ($options['ne_font'] == "")
-			$font = 'Helvetica+Neue';
-			
-		else
-			$font = $options['ne_font']; 
-			?>
-	
-	<?php $fontstrip =  ereg_replace("[^A-Za-z0-9]", " ", $font ); ?>		
-	
-	<link href='http://fonts.googleapis.com/css?family=<?php echo $font ?>' rel='stylesheet' type='text/css' />
+<header>
 
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-	
+<?php if ($options->get($themeslug.'_subheader') == '1') { response_subheader();} ?>
+<div class="container">
+	<div class="row">
+		<div id="header_wrap">
+	<?php
+		foreach(explode(",", $options->get('header_section_order')) as $fn) {
+			if(function_exists($fn)) {
+				call_user_func_array($fn, array());
+			}
+		}
+	?>
+		</div>
+	</div>	
+</div>
+<!-- Begin @response_navigation hook-->	
+	<?php if ($options->get($themeslug.'_full_menu') == '1') { response_navigation();} ?>
+<!-- End @response_navigation hook-->	
 
-	
-	<?php wp_head(); ?>
-	
-	
-</head>
+</header>
 
-<body style="font-family:'<?php echo $fontstrip ?>'" <?php body_class(); ?> >
-	
-	<div id="page-wrap">
-		
-		<div id="main">
-
-			<div id="header">
-				<div id="headerwrap">
-					<div id="header_right">
-							<div id="social">
-								<?php get_template_part('icons', 'header'); ?>
-							</div><!-- end social -->
-						<br />
-							<div id="searchbar">
-								<?php get_search_form(); ?>
-							</div>	
-					</div><!-- end header_right -->
-					<!-- Inserts Site Logo -->
-					<?php  $logo = $options['ne_logo'] ; ?>
-					<?php 	 if ( $logo != ''): ?>
-							<div id="logo_img">
-								<a href="<?php echo home_url(); ?>/"><img src="<?php echo stripslashes($logo); ?>" alt="logo"></a>
-							</div>
-						<?php endif;?>
-						<?php if ($logo == '' ):?>
-							<div id="logo">
-								<h1 class="sitename"><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> </a></h1>
-							</div>
-						<?php endif;?> 
-					<div id="description">
-						<h1 class="description"><?php bloginfo('description'); ?></h1>
-					</div>
-				</div><!-- end headerwrap -->
-				
-				
-				<?php get_template_part('nav', 'header' ); ?>
-				
-			</div><!-- end header -->
+<!-- Begin @response after_header hook -->
+	<?php response_after_header(); ?> 
+<!-- End @response after_header hook -->

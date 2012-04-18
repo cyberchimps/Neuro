@@ -1,0 +1,21 @@
+/* White */
+
+a {color: #888;}
+
+a:hover {color: #ccc;}
+
+#fullnav #fullnav_menu > li > a {
+	color: #222;
+}
+
+#fullnav #fullnav_menu > li:hover > a {
+	color: #666;
+}
+
+#fullmenu {
+	background: #fff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(51%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	border: 1px #ccc solid;
+}

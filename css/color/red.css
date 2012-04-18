@@ -1,0 +1,16 @@
+/* Red */
+
+a {color: #9c0000;}
+
+a:hover {color: #c40000;}
+
+#fullnav #fullnav_menu > li:hover > a {
+	color: #ccc;
+}
+
+#fullmenu {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#84001e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#84001e 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #84001e 100%); /* FF3.6+ */
+	background: linear-gradient(top,  #a90329 0%,#8f0222 44%,#84001e 100%); /* W3C */
+}

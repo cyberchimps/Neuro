@@ -1,55 +1,52 @@
 <?php 
-
-/*
-	Search
-	
-	Establishes the Neuro search functionality. 
-	
-	Copyright (C) 2011 CyberChimps
+/**
+* Search template used by Neuro.
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Neuro
+* @since 2.0
 */
 
-get_header(); ?>
+	global $options, $themeslug, $post, $sidebar, $content_grid; // call globals
+	response_sidebar_init(); // sidebar init
+	get_header(); // call header
 
-<div id="content_wrap">
+?>
 
-	<div id="content_left">
-		
-		<div class="content_padding">
-
-	<?php if (have_posts()) : ?>
-
-		<h2>Search Results</h2>
-
-		
-
-		<?php while (have_posts()) : the_post(); ?>
-
-			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-
-				<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-				<?php get_template_part('meta', 'search' ); ?>
-
-				<div class="entry">
-
-					<?php the_excerpt(); ?>
-					<hr />
-
-				</div>
+<div class="container">
+	<div class="row">
+		<div class="wrap">
+			<div class="row">
+			<!--Begin @response before content sidebar hook-->
+			<?php response_before_content_sidebar(); ?>
+			<!--End @response before content sidebar hook-->
+			<div id="content" class="<?php echo $content_grid; ?>">
+				<!-- Begin @response before_search hook -->
+				<?php response_before_search(); ?>
+				<!-- End @response before_search hook -->
+	
+				<!-- Begin @response search hook -->
+				<?php response_search(); ?>
+				<!-- End @response search hook -->
+	
+				<!-- Begin @response after_search hook -->
+				<?php response_after_search(); ?>
+				<!-- End @response after_search hook -->		
+			</div>	
+			<!--Begin @response after content sidebar hook-->
+			<?php response_after_content_sidebar(); ?>
+			<!--End @response after content sidebar hook-->
 			</div>
+		</div>
+	</div><!--end row-->
+</div><!--end container-->
 
-		<?php endwhile; ?>
-
-		<?php get_template_part('pagination', 'search'); ?>
-
-	<?php else : ?>
-
-		<h2>No posts found.</h2>
-
-	<?php endif; ?>
-		</div><!--end content_padding-->
-	</div><!--end content_left-->
-
-	<div id="sidebar_right"><?php get_sidebar(); ?></div>
-</div><!--end content_wrap-->
-<div class="clear"></div>
 <?php get_footer(); ?>

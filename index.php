@@ -1,91 +1,37 @@
 <?php
-/*
-Template Name: Default Index
-Copyright (C) 2011 CyberChimps
-
+/**
+* Index template used by Neuro.
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Neuro
+* @since 2.0
 */
-$options = get_option('neuro') ;  
+
+	global $options, $themeslug, $post; // call globals
+	$reorder = $options->get($themeslug.'_blog_section_order');		
 ?>
 
 <?php get_header(); ?>
 
-<div id="content_wrap">
-		
-	<div id="content_left">
-	
-		<!--Insert Feature Slider-->
-	
-<?php $hideslider = $options['ne_hide_slider'] ?>
-		<?php if ($hideslider != '1' ):?>
-			<?php get_template_part('slider', 'index' ); ?>
-		<?php endif;?>
-	
-		<div class="content_padding">
-	
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
-			
-				<div class="post_container">
-			
-					<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-
-						<h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-						
-						<?php get_template_part('meta', 'index' ); ?>
-						
-						<?php
-	if ( has_post_thumbnail()) {
- 		 echo '<div class="featured-image">';
- 		 echo '<a href="' . get_permalink($post->ID) . '" >';
- 		 the_post_thumbnail();
-  		echo '</a>';
-  		echo '</div>';
-	}
-	?>						
-							<div class="entry">
-								<?php the_content(); ?>
-							</div><!--end entry-->
-							<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-						<?php 
-								$showfblike		= $options['ne_show_fb_like'];
-							?>
-							<?php if ($showfblike == "1" ):?>
-							<div class="fb" >
-								<iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&layout=standard&show_faces=true&width=450&action=like&colorscheme=light" scrolling="no" frameborder="0"  allowTransparency="true" style="border:none; overflow:hidden; width:530px; height:28px"></iframe>
-							</div>
-							<?php endif;?>
-							<!--end fb-->
-							<?php get_template_part('share', 'index' ); ?>
-							<div class="comments">
-									<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-							</div><!--end comments-->
-							<hr />
-							<div class="postmetadata">
-							<div class="cat">Posted in <?php the_category(', ') ?></div>
-							<div class="tags">
-								<?php the_tags('Tags: ', ', ', '<br />'); ?>
-							</div><!--end tags-->
-							</div><!--end postmetadata-->
-							
-				</div><!--end post_class-->
-				
-		</div><!--end post_container-->
-
-		<?php endwhile; ?>
-
-		<?php get_template_part('pagination', 'index'); ?>
-
-		<?php else : ?>
-
-			<h2>Not Found</h2>
-
-		<?php endif; ?>
-		</div> <!--end content_padding-->
-	</div> <!--end content_left-->
-
-	<?php get_sidebar(); ?>
-	
-</div><!--end content_wrap-->
-<div class="clear"></div>
-
+<div class="container">
+	<div class="row">
+		<div class="wrap">
+		<?php
+			foreach(explode(",", $options->get($themeslug.'_blog_section_order')) as $fn) {
+				if(function_exists($fn)) {
+					call_user_func_array($fn, array());
+				}
+			}
+		?>
+		</div>
+	</div>
+</div><!--end container-->
 <?php get_footer(); ?>

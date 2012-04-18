@@ -1,0 +1,20 @@
+/* Pink */
+
+a {color: #ff6699;}
+
+a:hover {color: #ff99cc;}
+
+#fullnav #fullnav_menu > li:hover > a {
+	color: #ccc;
+}
+
+#fullmenu {
+	border: 1px solid #ff6699;
+	background: #ff6699; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff99cc 0%, #ff6699 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff99cc), color-stop(100%,#ff6699)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff99cc 0%,#ff6699 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff99cc 0%,#ff6699 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff99cc 0%,#ff6699 100%); /* IE10+ */
+	background: linear-gradient(top,  #ff99cc 0%,#ff6699 100%); /* W3C */
+}

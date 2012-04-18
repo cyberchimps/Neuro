@@ -1,90 +1,92 @@
 <?php 
-
-/*
-	Archive
-	
-	Creates the Neuro archive pages.
-	
-	Copyright (C) 2011 CyberChimps
+/**
+* Archive template used by Neuro.
+*
+* Authors: Tyler Cunningham, Trent Lapinski
+* Copyright: © 2012
+* {@link http://cyberchimps.com/ CyberChimps LLC}
+*
+* Released under the terms of the GNU General Public License.
+* You should have received a copy of the GNU General Public License,
+* along with this software. In the main directory, see: /licensing/
+* If not, see: {@link http://www.gnu.org/licenses/}.
+*
+* @package Neuro.
+* @since 2.0
 */
 
-get_header(); ?>
+	global $options, $themeslug, $post, $sidebar, $content_grid; // call globals
+	response_sidebar_init(); // sidebar init
+	get_header(); // call header
 
-<div id="content_wrap">
+?>
 
-	<div id="content_left">
-		
-		<div class="content_padding">
-		
+<div class="container">
+	
+	<div class="row">
+		<div class="wrap">
+			<div class="row">
+				<?php if ($options->get($themeslug.'_archive_breadcrumbs') == "1") { response_breadcrumbs();}?>
+			</div>
+			<div class="row">
+	
+	<!--Begin @response before content sidebar hook-->
+		<?php response_before_content_sidebar(); ?>
+	<!--End @response before content sidebar hook-->
+	
 		<?php if (have_posts()) : ?>
-
- 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-
-			<?php /* If this is a category archive */ if (is_category()) { ?>
-				<h2>Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h2>
-
-			<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-				<h2>Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
-
-			<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-				<h2>Archive for <?php the_time('F jS, Y'); ?></h2>
-
-			<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-				<h2>Archive for <?php the_time('F, Y'); ?></h2>
-
-			<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-				<h2 class="pagetitle">Archive for <?php the_time('Y'); ?></h2>
-
-			<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-				<h2 class="pagetitle">Author Archive</h2>
-
-			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-				<h2 class="pagetitle">Blog Archives</h2>
-			
-			<?php } ?>
-
+	
+			<div id="content" class="<?php echo $content_grid; ?>">
+		
+			<!--Begin @response before_archive hook-->
+			<?php response_before_archive(); ?>
+			<!--End @response before_archive hook-->
+		
 			<?php while (have_posts()) : the_post(); ?>
-			
+		
 			<div class="post_container">
-
-				<div <?php post_class() ?>>
-				
-						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-					
-						<?php get_template_part('meta', 'archive'); ?>
-
-						<div class="entry">
-							<?php the_content(); ?>
-						</div>
-						<?php get_template_part('share', 'index' ); ?>
-							<div class="comments">
-									<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-							</div><!--end comments-->
-							<hr />
-							<div class="postmetadata">
-							<div class="cat">Posted in <?php the_category(', ') ?></div>
-							<div class="tags">
-								<?php the_tags('Tags: ', ', ', '<br />'); ?>
-							</div><!--end tags-->
-							</div><!--end postmetadata-->
-							
-				</div><!--end post-->
-			</div><!--end post_container-->
-
-			<?php endwhile; ?>
-
-			<?php get_template_part('pagination', 'archive' ); ?>
 			
-	<?php else : ?>
+				<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		
+				<!--Begin @response archive hook-->
+				<?php response_loop(); ?>
+				<!--End @response archive hook-->
+			
+				</div><!--end post_class-->
+			
+				<!--Begin @response post bar hook-->
+				<?php response_post_bar(); ?>
+				<!--End @response post bar hook-->
+			
+			</div><!--end post container--> 
+	
+		 <?php endwhile; ?>
+	 
+		 <?php else : ?>
 
 		<h2>Nothing found</h2>
 
-	<?php endif; ?>
+		<?php endif; ?>
+
+		<!--Begin @response pagination hook-->
+			<?php response_pagination(); ?>
+		<!--End @response pagination hook-->
+		
+		<!--Begin @response after_archive hook-->
+			<?php response_after_archive(); ?>
+		<!--End @response after_archive hook-->
+	
 		</div><!--end content_padding-->
-	</div><!--end content_left-->
 
-	<div id="sidebar_right"><?php get_sidebar(); ?></div>
-</div><!--end content_wrap-->
+		<!--Begin @response after content sidebar hook-->
+		<?php response_after_content_sidebar(); ?>
+		<!--End @response after content sidebar hook-->
+	
+				</div><!--end content-->
+			</div><!--end row-->
+		</div><!--end wrap-->
+	</div><!--end row-->
+</div><!--end container-->
 
-<div style=clear:both;></div>
+
 <?php get_footer(); ?>
