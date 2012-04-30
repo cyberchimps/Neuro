@@ -4,6 +4,7 @@ Neuro Changelog
 
 Version 2.0.1 (04-30-12)
 -Added opt-in PressTrends code. 
+-Added Pinterest social icon. 
 
 Version 2.0 (04-18-12)
 -Moved to CyberChimps Response Core Framework. 
