@@ -80,7 +80,7 @@ jQuery(document).ready(function($) {
   }).change();
   
   
-  $.each(['twitter', 'facebook', 'gplus', 'flickr', 'linkedin', 'youtube', 'googlemaps', 'email', 'rsslink'], function(i, val) {
+  $.each(['twitter', 'facebook', 'gplus', 'flickr', 'linkedin', 'pinterest', 'youtube', 'googlemaps', 'email', 'rsslink'], function(i, val) {
 	  $("#section-ne_" + val).each(function(){
 		  var $this = $(this), $next = $(this).next();
 		  $this.find(".controls").css({float: 'left', clear: 'both'});

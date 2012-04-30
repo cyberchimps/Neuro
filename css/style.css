@@ -28,6 +28,8 @@ body {background: #fff;}
 #sidebar_left.four.columns {margin-right: 1.6%; width: 30.6%;}
 #content.eight.columns {width: 65.9%; margin-left: 0%;}
 
+#register.five.columns {width: 41%; margin-left: 2.6%;}
+
 
 @-moz-document url-prefix() {
 
