@@ -6,6 +6,7 @@ Version 2.0.2 (05-08-12)
 -Updated German, Hebrew, Dush and Portuguese language files. 
 -Added Spanish, Persian, French, Croatian, Italian,  Romanian, Rushian, Swedish and Turkish language files. 
 -Updated response.pot
+-Fixed/added missing translation wrappers to post pagination function.
 
 Version 2.0.1 (04-30-12)
 -Added opt-in PressTrends code.
