@@ -1,4 +1,3 @@
-#Copyright (C) 2011 
 msgid ""
 msgstr ""
 "Project-Id-Version: Core 1.0\n"
@@ -12,24 +11,24 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Marcelo Kannami Gimenez <mkgimenez@gmail.com>\n"
+"Last-Translator: مرتضی نظری <namo352@gmail.com>\n"
 "Language-Team: \n"
 "X-Poedit-SearchPath-0: .\n"
 
 #@ response
 #: core/actions/archive-actions.php:36
 msgid "Archive for the &#8216;"
-msgstr "Arquivar para &#8216;"
+msgstr "ارشیو برای &#8216;"
 
 #@ response
 #: core/actions/archive-actions.php:36
 msgid "&#8217; Category:"
-msgstr "&#8217; Categoria:"
+msgstr "&#8217; دسته بندی:"
 
 #@ response
 #: core/actions/archive-actions.php:39
 msgid "Posts Tagged &#8216;"
-msgstr "Posts Marcados &#8216;"
+msgstr "مطالب برچسب خورده &#8216;"
 
 #@ response
 #: core/actions/archive-actions.php:39
@@ -40,144 +39,160 @@ msgstr "&#8217;:"
 #: core/actions/archive-actions.php:42
 #: core/actions/archive-actions.php:45
 msgid "Archive for"
-msgstr "Arquivar para"
+msgstr "بایگانی برای "
 
 #@ response
 #: core/actions/archive-actions.php:48
 msgid "Archive for:"
-msgstr "Arquivar para:"
+msgstr "بایگانی برای :"
 
 #@ response
 #: core/actions/archive-actions.php:51
 msgid "Author Archive:"
-msgstr "Arquivo de Autor:"
+msgstr "بایگانی نویسنده"
 
 #@ response
 #: core/actions/archive-actions.php:54
 msgid "Blog Archives:"
-msgstr "Arquivo de Blog:"
+msgstr "بایگانب وبلاگ"
 
 #@ response
 #: core/actions/comments-actions.php:49
 msgid "No Responses"
-msgstr "Nenhuma resposta"
+msgstr "بدون دیدگاه"
 
 #@ response
 #: core/actions/comments-actions.php:49
 msgid "One Response"
-msgstr "Uma resposta"
+msgstr "یک دیدگاه"
 
 #@ response
 #: core/actions/comments-actions.php:49
 msgid "% Responses"
-msgstr "% Respostas"
+msgstr "% دیدگاه"
 
 #@ response
 #: core/actions/comments-actions.php:88
 msgid "You must be"
-msgstr "Você deve estar"
+msgstr "شما میبایست"
 
 #@ response
 #: core/actions/comments-actions.php:88
 msgid "logged in"
-msgstr "logado"
+msgstr "وارد شده در"
 
 #@ ifeture
 #: core/actions/comments-actions.php:88
 msgid "to post a comment."
-msgstr "para postar um comentário."
+msgstr "برای ارسال یک دیگاه."
 
 #@ response
 #: core/actions/footer-actions.php:39
 msgid "Recent Posts"
-msgstr "Posts Recentes"
+msgstr "اخرین مطالب"
 
 #@ response
-#@ response
+#@ ifeature
 #: core/actions/footer-actions.php:46
 #: sidebar.php:26
 msgid "Archives"
-msgstr "Arquivados"
+msgstr "بایگانی"
 
 #@ response
 #: core/actions/footer-actions.php:53
 msgid "Links"
-msgstr "Links"
+msgstr "پیوند ها"
 
 #@ response
-#@ response
+#@ ifeature
 #: core/actions/footer-actions.php:60
 #: core/actions/footer-actions.php:64
 #: sidebar.php:40
 #: sidebar.php:44
 msgid "WordPress"
-msgstr "WordPress"
+msgstr "وردپرس"
 
 #@ response
-#@ response
+#@ ifeature
 #: core/actions/footer-actions.php:64
 #: sidebar.php:44
 msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
+msgstr "http://wp.persian.com"
 
 #@ response
-#@ response
+#@ ifeature
 #: core/actions/footer-actions.php:64
 #: sidebar.php:44
 msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "Produzido com WordPress, o estado-da-arte de plataformas pessoais de publicação."
+msgstr "با افتخار قدر گرفته از وردپرس فارسی، وردپرس سیستم مدیریت محتوای بسیار قوی."
 
 #@ response
-#: core/actions/global-actions.php:43
-msgid "Published on"
-msgstr "Publicado em"
+#: core/actions/footer-actions.php:38
+msgid "Footer Widgets"
+msgstr "ابزارک های پا برگ"
 
 #@ response
-#: core/actions/global-actions.php:44
-msgid "by"
-msgstr "por"
+#: core/actions/global-actions.php:86
+msgid "Read more…"
+msgstr "{ادامه مطلب}"
 
 #@ response
-#: core/actions/global-actions.php:45
-msgid "in"
-msgstr "em"
+#: core/actions/global-actions.php:128
+msgid "No Comments"
+msgstr "بدون دیدگاه"
 
 #@ response
-#: core/actions/global-actions.php:70
-msgid "No Comments &#187;"
-msgstr "Nenhum comentário &#187;"
+#: core/actions/global-actions.php:128
+msgid "1 Comment"
+msgstr "1 دیدگاه"
 
 #@ response
-#: core/actions/global-actions.php:70
-msgid "1 Comment &#187;"
-msgstr "1 Comentário &#187;"
+#: core/actions/global-actions.php:128
+msgid "% Comments"
+msgstr "% دیدگاه"
 
 #@ response
-#: core/actions/global-actions.php:70
-msgid "% Comments &#187;"
-msgstr "% Comentários &#187;"
+#: core/actions/global-actions.php:187
+msgid "Tags: "
+msgstr "برچسب ها : "
 
 #@ response
 #: sidebar.php:19
 msgid "Pages"
-msgstr "Páginas"
+msgstr "برگه ها"
 
 #@ response
 #: sidebar.php:33
 msgid "Categories"
-msgstr "Categorias"
+msgstr "دسته بندی"
 
 #@ response
 #: sidebar.php:50
 msgid "Subscribe"
-msgstr "Assinar"
+msgstr "مشترک شدن"
 
 #@ response
 #: sidebar.php:52
 msgid "Entries (RSS)"
-msgstr "Entradas (RSS)"
+msgstr "ار اس اس مطالب"
 
 #@ response
 #: sidebar.php:53
 msgid "Comments (RSS)"
-msgstr "Comentários (RSS)"
+msgstr "ار اس اس دیدگاه ها"
+
+#@ response
+#: core/actions/pagination-actions.php:62
+msgid "Last &raquo;"
+msgstr ""
+
+#@ response
+#: core/actions/pagination-actions.php:61
+msgid "Next &rsaquo;"
+msgstr ""
+
+#@ response
+#: core/actions/pagination-actions.php:51
+msgid "&lsaquo; Previous"
+msgstr ""
+

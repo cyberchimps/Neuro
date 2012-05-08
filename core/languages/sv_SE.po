@@ -22,17 +22,17 @@ msgstr ""
 #: core/actions/archive-actions.php:36
 #@ response
 msgid "Archive for the &#8216;"
-msgstr "Arhiva za &#8216;"
+msgstr "Arkiv för &#8216;"
 
 #: core/actions/archive-actions.php:36
 #@ response
 msgid "&#8217; Category:"
-msgstr "&#8217; Kategorija:"
+msgstr "Arkiv för &#8216;"
 
 #: core/actions/archive-actions.php:39
 #@ response
 msgid "Posts Tagged &#8216;"
-msgstr "Članaka označeno &#8216;"
+msgstr "Inlägg taggade med &#8216;"
 
 #: core/actions/archive-actions.php:39
 #@ response
@@ -43,69 +43,68 @@ msgstr "&#8217;:"
 #: core/actions/archive-actions.php:45
 #@ response
 msgid "Archive for"
-msgstr "Arhiva za"
+msgstr "Arkiv för"
 
 #: core/actions/archive-actions.php:48
 #@ response
 msgid "Archive for:"
-msgstr "Arhiva za:"
+msgstr "Arkiv för"
 
 #: core/actions/archive-actions.php:51
 #@ response
 msgid "Author Archive:"
-msgstr "Autor arhive:"
+msgstr "Författararkiv:"
 
 #: core/actions/archive-actions.php:54
 #@ response
 msgid "Blog Archives:"
-msgstr "Blog arhive:"
+msgstr "Författararkiv:"
 
 #: core/actions/comments-actions.php:49
 #@ response
 msgid "No Responses"
-msgstr "Nema odgovora"
+msgstr "Inga kommentarer"
 
 #: core/actions/comments-actions.php:49
 #@ response
 msgid "One Response"
-msgstr "Jedan odgovor"
+msgstr "En kommentar"
 
 #: core/actions/comments-actions.php:49
 #@ response
 msgid "% Responses"
-msgstr "% odgovora"
+msgstr ""
 
 #: core/actions/comments-actions.php:88
 #@ response
 msgid "You must be"
-msgstr "Moraš biti"
+msgstr "Du måste vara"
 
 #: core/actions/comments-actions.php:88
 #@ response
 msgid "logged in"
-msgstr "prijavljen"
+msgstr "inloggad"
 
 #: core/actions/comments-actions.php:88
 #@ ifeture
 msgid "to post a comment."
-msgstr "da bi dodao komentar"
+msgstr "för att kommentera."
 
 #: core/actions/footer-actions.php:39
 #@ response
 msgid "Recent Posts"
-msgstr "Posljednji članci"
+msgstr "Nya inlägg"
 
 #: core/actions/footer-actions.php:46
 #: sidebar.php:26
 #@ response
-#@ ifeature
 msgid "Archives"
-msgstr "Arhive"
+msgstr "Arkiv"
 
 #: core/actions/footer-actions.php:53
 #@ response
 msgid "Links"
-msgstr "Poveznice"
+msgstr "Länkar"
 
 #: core/actions/footer-actions.php:60
 #: core/actions/footer-actions.php:64
@@ -130,54 +129,106 @@ msgstr "Powered by WordPress, state-of-the-art semantic personal publishing plat
 #: core/actions/global-actions.php:43
 #@ response
 msgid "Published on"
-msgstr "Publicirano"
+msgstr "Publicerad den"
 
 #: core/actions/global-actions.php:44
 #@ response
 msgid "by"
-msgstr "od"
+msgstr "av"
 
 #: core/actions/global-actions.php:45
 #@ response
 msgid "in"
-msgstr "u"
+msgstr "i"
 
 #: core/actions/global-actions.php:70
 #@ response
 msgid "No Comments &#187;"
-msgstr "Nema komentara &#187;"
+msgstr "Inga kommentarer &#187;"
 
 #: core/actions/global-actions.php:70
 #@ response
 msgid "1 Comment &#187;"
-msgstr "1 komentar &#187;"
+msgstr "En kommentar &#187;"
 
 #: core/actions/global-actions.php:70
 #@ response
 msgid "% Comments &#187;"
-msgstr "% komentara &#187;"
+msgstr "% kommentarer &#187;"
+
+#: core/actions/global-actions.php:86
+#@ response
+msgid "Read more…"
+msgstr "Läs mer…"
+
+#: core/actions/global-actions.php:187
+#@ response
+msgid "Tags: "
+msgstr "Taggar: "
+
+#: core/actions/pagination-actions.php:49
+#@ response
+msgid "of" 
+msgstr "av"
+
+#: core/actions/pagination-actions.php:49
+#: core/core-functions.php:241
+#@ response
+#@ default
+msgid "Page"
+msgstr "Sida"
+
+#: core/actions/pagination-actions.php:50
+#@ response
+msgid "&laquo; First"
+msgstr "&laquo; Första"
+
+#: core/actions/pagination-actions.php:51
+#@ response
+msgid "&lsaquo; Previous"
+msgstr "&lsaquo; Föregående"
+
+#: core/actions/pagination-actions.php:61
+#@ response
+msgid "Next &rsaquo;"
+msgstr "Nästa &rsaquo;"
+
+#: core/actions/pagination-actions.php:62
+#@ response
+msgid "Last &raquo;"
+msgstr "Sista &raquo;"
+
+#: core/actions/pagination-actions.php:99
+#@ response
+msgid "Pages:"
+msgstr "Sidor:"
+
+#: searchform.php:15
+#@ response
+msgid "Search"
+msgstr "Sök"
 
 #: sidebar.php:19
 #@ response
 msgid "Pages"
-msgstr "Stranice"
+msgstr "Sidor:"
 
 #: sidebar.php:33
 #@ response
 msgid "Categories"
-msgstr "Kategorije"
+msgstr "Kategorier"
 
 #: sidebar.php:50
 #@ response
 msgid "Subscribe"
-msgstr "Pretplati se"
+msgstr "Prenumerera"
 
 #: sidebar.php:52
 #@ response
 msgid "Entries (RSS)"
-msgstr "Članaka (RSS)"
+msgstr "RSS-flöde"
 
 #: sidebar.php:53
 #@ response
 msgid "Comments (RSS)"
-msgstr "Komentara (RSS)"
+msgstr "Kommentarer (RSS)"

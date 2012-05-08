@@ -2,6 +2,11 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.2 (05-08-12)
+-Updated German, Hebrew, Dush and Portuguese language files. 
+-Added Spanish, Persian, French, Croatian, Italian,  Romanian, Rushian, Swedish and Turkish language files. 
+-Updated response.pot
+
 Version 2.0.1 (04-30-12)
 -Added opt-in PressTrends code.
 -Fixed filename of default slider image.  

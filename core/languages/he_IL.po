@@ -1,7 +1,7 @@
 #Copyright (C) 2012
 msgid ""
 msgstr ""
-"Project-Id-Version: Response 1.0\n"
+"Project-Id-Version: Core 1.0\n"
 "Report-Msgid-Bugs-To: http://cyberchimps.com/forum\n"
 "POT-Creation-Date: 10-17-11\n"
 "MIME-Version: 1.0\n"
@@ -12,175 +12,185 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
 "PO-Revision-Date: \n"
-"Last-Translator: CoMPa Technology - T Scholten <info@NOSPAM@compa.nl>\n"
-"Language-Team: CoMPa Technology <info@compa.nl>\n"
-"X-Poedit-Language: Dutch\n"
-"X-Poedit-Country: NETHERLANDS\n"
+"Last-Translator: Jonathan Wax <jonathan.wax@owapps.com>\n"
+"Language-Team: \n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: .\n"
 
 # @ response
 #: core/actions/archive-actions.php:36
 msgid "Archive for the &#8216;"
-msgstr "Archief voor de &#8216;"
+msgstr "&#8216; ארכיב עבור "
 
 # @ response
 #: core/actions/archive-actions.php:36
 msgid "&#8217; Category:"
-msgstr "&#8217; Categorie:"
+msgstr "&#8217; קטגוריה:"
 
 # @ response
 #: core/actions/archive-actions.php:39
 msgid "Posts Tagged &#8216;"
-msgstr "Getagde posts &#8216;"
+msgstr "&#8216; פוסט תויג"
 
 # @ response
 #: core/actions/archive-actions.php:39
 msgid "&#8217;:"
-msgstr ""
+msgstr "&#8217;:"
 
 # @ response
 #: core/actions/archive-actions.php:42
 #: core/actions/archive-actions.php:45
 msgid "Archive for"
-msgstr "Archief voor "
+msgstr "ארכיב עבור"
 
 # @ response
 #: core/actions/archive-actions.php:48
 msgid "Archive for:"
-msgstr "Archief voor:"
+msgstr "ארכיב עבור:"
 
 # @ response
 #: core/actions/archive-actions.php:51
 msgid "Author Archive:"
-msgstr "Archief van auteur:"
+msgstr "ארכיב כותבים:"
 
 # @ response
 #: core/actions/archive-actions.php:54
 msgid "Blog Archives:"
-msgstr "Blog archief:"
+msgstr "ארכיב בלוגים:"
 
 # @ response
 #: core/actions/comments-actions.php:49
-msgid "No cores"
-msgstr "Geen reacties"
+msgid "No Responses"
+msgstr "אין תגובות"
 
 # @ response
 #: core/actions/comments-actions.php:49
-msgid "One core"
-msgstr "Een reactie"
+msgid "One Response"
+msgstr "תגובה אחת"
 
 # @ response
 #: core/actions/comments-actions.php:49
-msgid "% cores"
-msgstr "% reacties"
+msgid "% Responses"
+msgstr "% התגובות"
 
 # @ response
 #: core/actions/comments-actions.php:88
 msgid "You must be"
-msgstr "U moet"
+msgstr "עליך להיות"
 
 # @ response
 #: core/actions/comments-actions.php:88
 msgid "logged in"
-msgstr "ingelogd zijn"
+msgstr "מחובר"
 
 # @ ifeture
 #: core/actions/comments-actions.php:88
 msgid "to post a comment."
-msgstr "om een reactie te plaatsen."
+msgstr "לכתיבת תגובה."
 
 # @ response
 #: core/actions/footer-actions.php:39
 msgid "Recent Posts"
-msgstr "Recente berichten"
+msgstr "פוסטים אחרונים"
 
-# @ response
 # @ response
 #: core/actions/footer-actions.php:46
 #: sidebar.php:26
 msgid "Archives"
-msgstr "Archieven"
+msgstr "ארכיבים"
 
 # @ response
 #: core/actions/footer-actions.php:53
 msgid "Links"
-msgstr "Links"
+msgstr "לינקים"
 
-# @ response
 # @ response
 #: core/actions/footer-actions.php:60
 #: core/actions/footer-actions.php:64
 #: sidebar.php:40
 #: sidebar.php:44
 msgid "WordPress"
-msgstr ""
+msgstr "וורדפרס"
 
-# @ response
 # @ response
 #: core/actions/footer-actions.php:64
 #: sidebar.php:44
 msgid "http://wordpress.org/"
-msgstr ""
+msgstr "http://wordpress.org/"
 
-# @ response
 # @ response
 #: core/actions/footer-actions.php:64
 #: sidebar.php:44
 msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "Draait op WordPress, een modern semantisch en persoonlijk publicatie-platform."
+msgstr "אתר זה רץ על גבי וורדפרס, מערכת נוחה, יעילה, נפוצה, תקנית, ובעיקר – פתוחה, לניהול של בלוגים ואתרי אינטרנט"
 
 # @ response
 #: core/actions/global-actions.php:43
 msgid "Published on"
-msgstr "Gepubliceerd op"
+msgstr "פורסם ב:"
 
 # @ response
 #: core/actions/global-actions.php:44
 msgid "by"
-msgstr "door"
+msgstr "על ידי"
 
 # @ response
 #: core/actions/global-actions.php:45
 msgid "in"
-msgstr "in"
+msgstr "ב"
 
 # @ response
 #: core/actions/global-actions.php:70
 msgid "No Comments &#187;"
-msgstr "Geen reacties &#187;"
+msgstr "אין תגובות &#187;"
 
 # @ response
 #: core/actions/global-actions.php:70
 msgid "1 Comment &#187;"
-msgstr "1 reactie &#187;"
+msgstr "תגובה אחת &#187;"
 
 # @ response
 #: core/actions/global-actions.php:70
 msgid "% Comments &#187;"
-msgstr "% reacties &#187;"
+msgstr "% תגובות &#187;"
+
+# @ response
+#: core/actions/global-actions.php:86
+msgid "Read more…"
+msgstr "מידע נוסף..."
+
+# @ response
+#: core/actions/global-actions.php:187
+msgid "Tags: "
+msgstr "תגים:"
+
+# @ response
+#: searchform.php:15
+msgid "Search"
+msgstr "חיפוש"
 
 # @ response
 #: sidebar.php:19
 msgid "Pages"
-msgstr "Pagina's"
+msgstr "דפים"
 
 # @ response
 #: sidebar.php:33
 msgid "Categories"
-msgstr "Categorieën "
+msgstr "קטגוריות"
 
 # @ response
 #: sidebar.php:50
 msgid "Subscribe"
-msgstr "Abonneer"
+msgstr "הרשמה"
 
 # @ response
 #: sidebar.php:52
 msgid "Entries (RSS)"
-msgstr "Aantal (RSS)"
+msgstr "פוסטים (RSS)"
 
 # @ response
 #: sidebar.php:53
 msgid "Comments (RSS)"
-msgstr "Reacties (RSS)"
+msgstr "תגובות (RSS)"
+

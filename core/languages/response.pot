@@ -1,4 +1,4 @@
-#Copyright (C) 2011 
+#Copyright (C) 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Core 1.0 \n"
@@ -193,6 +193,43 @@ msgstr ""
 #: functions.php:89
 #@ default
 msgid "(Edit)"
+msgstr ""
+
+#: core/actions/pagination-actions.php:49
+#@ response
+msgid "of"
+msgstr ""
+
+#: core/actions/pagination-actions.php:49
+#: core/core-functions.php:230
+#@ response
+#@ default
+msgid "Page"
+msgstr ""
+
+#: core/actions/pagination-actions.php:50
+#@ response
+msgid "&laquo; First"
+msgstr ""
+
+#: core/actions/pagination-actions.php:51
+#@ response
+msgid "&lsaquo; Previous"
+msgstr ""
+
+#: core/actions/pagination-actions.php:61
+#@ response
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: core/actions/pagination-actions.php:62
+#@ response
+msgid "Last &raquo;"
+msgstr ""
+
+#: core/actions/pagination-actions.php:99
+#@ response
+msgid "Pages:"
 msgstr ""
 
 #: sidebar.php:19
