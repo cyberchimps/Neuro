@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.3 (05-14-12)
+-Added option for responsive embeded videos (Youtube/Vimeo).
+-Added Polish language files. 
+
 Version 2.0.2 (05-08-12)
 -Updated German, Hebrew, Dush and Portuguese language files. 
 -Added Spanish, Persian, French, Croatian, Italian,  Romanian, Rushian, Swedish and Turkish language files. 
