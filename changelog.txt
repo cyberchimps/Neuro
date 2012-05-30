@@ -2,8 +2,11 @@ Neuro Changelog
 
 ****************************
 
-Version 2.0.5 (05-30-12)
+Version 2.0.5 (05-31-12)
 -Added Hindi language files.
+-Fix for broken Custom Header Element.
+-Fixed some code in comments-actions.php.
+-Fixed social icon positioning in Firefox. 
 
 Version 2.0.4 (05-24-12)
 -Added Danish language files.

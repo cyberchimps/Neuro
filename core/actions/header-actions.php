@@ -484,6 +484,8 @@ $default = "$root/images/pro/banner.jpg";
 <?php
 }
 
+
+
 /**
 * End
 */

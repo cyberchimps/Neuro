@@ -518,6 +518,15 @@ function response_banner() {
 function response_callout_section() {
 	do_action('response_callout_section');
 }
+
+/**
+* Custom header element
+*
+* @since 1.0
+*/
+function response_custom_header_element() {
+	do_action('response_custom_header_element');
+}
 /**
 * End
 */
