@@ -58,6 +58,7 @@ add_action('wp_head', 'neuro_feed_links');
 * Basic theme setup.
 */ 
 function neuro_theme_setup() {
+	global $content_width;
 	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
 	
 	add_theme_support(

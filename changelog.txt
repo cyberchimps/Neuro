@@ -5,6 +5,7 @@ Neuro Changelog
 Version 2.0.6 (06-08-12)
 -Added Czech language files. 
 -Responsive fix for searchbar. 
+-Added missing $content_width global to theme setup function.
 
 Version 2.0.5 (06-01-12)
 -Added Hindi language files.
