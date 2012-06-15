@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.7 (06-15-12)
+-Replaced wp_theme_data() (deprecated) with wp_get_theme() in opt-in PressTrends function, backwards compatible with 3.3 and below.
+
 Version 2.0.6 (06-08-12)
 -Added Czech language files. 
 -Responsive fix for searchbar. 
