@@ -160,7 +160,7 @@ function neuro_excerpt_link($more) {
     		$linktext = $options->get($themeslug.'_excerpt_link_text');
    		}
 
-	return '<a href="'. get_permalink($post->ID) . '"> <br /><br /> '.$linktext.'</a>';
+	return '</p><a href="'. get_permalink($post->ID) . '">'.$linktext.'</a>';
 }
 add_filter('excerpt_more', 'neuro_excerpt_link');
 
