@@ -976,3 +976,25 @@ figure {
 .ui-tabs-hide {
 	display: none;
 }
+
+/* ==========================	For sticky footer =======================================	*/
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	margin:0px !important;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0px auto -216px auto; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push{
+	height: 216px;
+	clear:both;
+}
