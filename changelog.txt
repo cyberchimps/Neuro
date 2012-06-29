@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.9 (06-28-12)
+- Sidebar blowout issue fixed.
+
 Version 2.0.8 (06-22-12)
 - Fixed the validation issue with read more link.
 
