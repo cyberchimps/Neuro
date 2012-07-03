@@ -17,4 +17,5 @@ a:hover {color: #ff99cc;}
 	background: -o-linear-gradient(top,  #ff99cc 0%,#ff6699 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #ff99cc 0%,#ff6699 100%); /* IE10+ */
 	background: linear-gradient(top,  #ff99cc 0%,#ff6699 100%); /* W3C */
+	-pie-background: linear-gradient(top,  #ff99cc 0%,#ff6699 100%); /*PIE*/
 }
