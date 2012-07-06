@@ -2,6 +2,11 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.10 (07-06-12)
+- Twitter embed fix.
+- Fixed nav gradient in IE8.
+- Sticky footer + push div.
+
 Version 2.0.9 (06-28-12)
 - Sidebar blowout issue fixed.
 
