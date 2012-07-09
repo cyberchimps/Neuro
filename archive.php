@@ -88,8 +88,4 @@
 	</div><!--end row-->
 </div><!--end container-->
 
-<!-- For sticky footer -->
-<div class="push"></div>  
-</div>	<!-- End of wrapper -->
-
 <?php get_footer(); ?>
