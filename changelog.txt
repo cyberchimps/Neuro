@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.11 (07-09-12)
+- Footer.php fix.
+
 Version 2.0.10 (07-06-12)
 - Twitter embed fix.
 - Fixed nav gradient in IE8.
