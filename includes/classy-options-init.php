@@ -92,6 +92,7 @@ $options
 			->checkbox($themeslug."_custom_logo", "Custom Logo" , array('default' => true))
 			->upload($themeslug."_logo", "Logo", array('default' => array('url' => TEMPLATE_URL . '/images/neuro.png')))
 			->upload($themeslug."_favicon", "Custom Favicon")
+			->upload($themeslug."_apple_touch", "Apple Touch Icon", array('default' => array('url' => TEMPLATE_URL . '/images/apple-icon.png')))
 		->subsection_end()
 		->subsection("Social")
 			->images($themeslug."_icon_style", "Icon set", array( 'options' => array('legacy' => TEMPLATE_URL . '/images/social/thumbs/icons-classic.png', 'default' =>
