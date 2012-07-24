@@ -115,7 +115,7 @@ class ClassyOptions {
 						<li><a href="http://cyberchimps.com/" target="_blank">CyberChimps</a></li>
 						<li><a href="http://cyberchimps.com/store/" target="_blank">Store</a></li>
 						<li><a href="http://cyberchimps.com/support" target="_blank">Support</a></li>
-						<li><a href="http://cyberchimps.com/neuropro/docs/" target="_blank">Documentation</a></li>
+						<li><a href="http://cyberchimps.com/neuro/docs/" target="_blank">Documentation</a></li>
 						<li><a href="http://cyberchimps.com/forum/" target="_blank">Forum</a></li>
 						<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
 						<li><a href="http://facebook.com/cyberchimps/" target="_blank">Facebook</a></li>
