@@ -2,6 +2,12 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.14 (07-31-12)
+-Changed global variables to have theme prefix
+-Changed any use of TEMPLATE_PATH
+-Added option to hide apple icon, hidden by default
+-Made favicon display only if it has been set
+
 Version 2.0.13 (07-25-12)
 - Apple-touch icon.
 - Upgrade bar adjustments.
