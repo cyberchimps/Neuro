@@ -15,7 +15,7 @@
 * @since 2.0
 */
 
-	global $options, $themeslug, $themename; // call globals
+	global $options, $ne_themeslug, $ne_themename; // call globals
 
 ?>
 	<?php response_head_tag(); ?>
@@ -39,7 +39,7 @@
 	
 <header>
 
-<?php if ($options->get($themeslug.'_subheader') == '1') { response_subheader();} ?>
+<?php if ($options->get($ne_themeslug.'_subheader') == '1') { response_subheader();} ?>
 <div class="container">
 	<div class="row">
 		<div id="header_wrap">
@@ -54,7 +54,7 @@
 	</div>	
 </div>
 <!-- Begin @response_navigation hook-->	
-	<?php if ($options->get($themeslug.'_full_menu') == '1') { response_navigation();} ?>
+	<?php if ($options->get($ne_themeslug.'_full_menu') == '1') { response_navigation();} ?>
 <!-- End @response_navigation hook-->	
 
 </header>

@@ -15,8 +15,8 @@
 * @since 2.0
 */
 
-	global $options, $themeslug, $post; // call globals
-	$reorder = $options->get($themeslug.'_blog_section_order');		
+	global $options, $ne_themeslug, $post; // call globals
+	$reorder = $options->get($ne_themeslug.'_blog_section_order');		
 ?>
 
 <?php get_header(); ?>
@@ -25,7 +25,7 @@
 	<div class="row">
 		<div class="wrap">
 		<?php
-			foreach(explode(",", $options->get($themeslug.'_blog_section_order')) as $fn) {
+			foreach(explode(",", $options->get($ne_themeslug.'_blog_section_order')) as $fn) {
 				if(function_exists($fn)) {
 					call_user_func_array($fn, array());
 				}

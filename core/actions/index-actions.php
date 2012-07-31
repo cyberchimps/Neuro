@@ -28,7 +28,7 @@ add_action( 'response_index', 'response_index_content');
 */
 function response_index_content() { 
 
-	global $options, $themeslug, $post, $sidebar, $content_grid; // call globals ?>
+	global $options, $ne_themeslug, $post, $sidebar, $content_grid; // call globals ?>
 	
 	<!--Begin @response sidebar init-->
 		<?php response_sidebar_init(); ?>
@@ -79,7 +79,7 @@ function response_index_content() {
 			</div>
 			<?php endif; ?>
 			
-			<?php if (is_single() && $options->get($themeslug.'_post_pagination') == "1") : ?>
+			<?php if (is_single() && $options->get($ne_themeslug.'_post_pagination') == "1") : ?>
 			<div id="post_pagination"><div class="pagination_text">
 				<!--Begin @response post pagination hook-->
 					<?php response_post_pagination(); ?>

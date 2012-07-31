@@ -32,10 +32,10 @@ function response_menu_fallback() {
 * @since 1.0
 */
 function response_text_domain() {
-	load_theme_textdomain( 'response', TEMPLATEPATH . '/core/languages' );
+	load_theme_textdomain( 'response', get_template_directory() . '/core/languages' );
 
 	    $locale = get_locale();
-	    $locale_file = TEMPLATEPATH . "/core/languages/$locale.php";
+	    $locale_file = get_template_directory() . "/core/languages/$locale.php";
 	    if ( is_readable( $locale_file ) )
 		    require_once( $locale_file );
 		
@@ -47,7 +47,7 @@ add_action('after_setup_theme', 'response_text_domain');
 * Load jQuery and register additional scripts.
 */ 
 function response_scripts() {
-	global $options, $themeslug;
+	global $options, $ne_themeslug;
 	if ( !is_admin() ) {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-ui-tabs');
@@ -75,7 +75,7 @@ function response_scripts() {
 	wp_enqueue_script ('mobilemenu');
 	wp_enqueue_script ('oembed');
 	
-	if ($options->get($themeslug.'_responsive_video') == '1' ) {
+	if ($options->get($ne_themeslug.'_responsive_video') == '1' ) {
 	
 		wp_register_script( 'video' ,$path.'/js/video.js');
 		wp_enqueue_script ('video');	
@@ -161,9 +161,9 @@ function response_comment($comment, $args, $depth) {
 * @since 1.0
 */
 function response_breadcrumbs() {
-  global $root;
+  global $ne_root;
   
-  $delimiter = "<img src='$root/images/breadcrumb-arrow.png'>";
+  $delimiter = "<img src='$ne_root/images/breadcrumb-arrow.png'>";
   $home = 'Home'; // text for the 'Home' link
   $before = '<span class="current">'; // tag before the current crumb
   $after = '</span>'; // tag after the current crumb
@@ -173,7 +173,7 @@ function response_breadcrumbs() {
     echo '<div class="row"><div id="crumbs" class="twelve columns"><div class="crumbs_text">';
  
     global $post;
-    $homeLink = get_bloginfo('url');
+    $homeLink = home_url();
     echo '<a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
  
     if ( is_category() ) {

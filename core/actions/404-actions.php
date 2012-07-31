@@ -26,10 +26,10 @@ add_action( 'response_404', 'response_404_content' );
 * @since 1.0 
 */
 function response_404_content() {
-	global $options, $themeslug; // call globals
+	global $options, $ne_themeslug; // call globals
 	
-	if ($options->get($themeslug.'_custom_404') != '') {
-		$message_text = $options->get($themeslug.'_custom_404');
+	if ($options->get($ne_themeslug.'_custom_404') != '') {
+		$message_text = $options->get($ne_themeslug.'_custom_404');
 	}
 	else {
 		$message_text = apply_filters( 'response_404_message', 'Error 404' );

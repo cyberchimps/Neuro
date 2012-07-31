@@ -15,7 +15,7 @@
 * @since 2.0
 */
 
-	global $options, $themeslug, $post, $sidebar, $content_grid; // call globals
+	global $options, $ne_themeslug, $post, $sidebar, $content_grid; // call globals
 	response_sidebar_init(); // sidebar init
 	get_header(); // call header
 
@@ -26,7 +26,7 @@
 	<div class="row">
 		<div class="wrap">
 			<div class="row">
-				<?php if ($options->get($themeslug.'_archive_breadcrumbs') == "1") { response_breadcrumbs();}?>
+				<?php if ($options->get($ne_themeslug.'_archive_breadcrumbs') == "1") { response_breadcrumbs();}?>
 			</div>
 			<div class="row">
 	

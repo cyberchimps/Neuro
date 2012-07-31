@@ -42,14 +42,14 @@ add_action( 'response_banner', 'response_banner_content');
 * @since 1.0
 */
 function response_font() {
-	global $themeslug, $options; //Call global variables
+	global $ne_themeslug, $options; //Call global variables
 	$family = apply_filters( 'response_default_font_family', 'Helvetica, sans-serif' );
 	
-	if ($options->get($themeslug.'_font') == "" ) {
+	if ($options->get($ne_themeslug.'_font') == "" ) {
 		$font = apply_filters( 'response_default_font', 'Arial' );
 	}		
 	else {
-		$font = $options->get($themeslug.'_font'); 
+		$font = $options->get($ne_themeslug.'_font'); 
 	} ?>
 	
 	<body style="font-family:'<?php echo ereg_replace("[^A-Za-z0-9]", " ", $font ); ?>', <?php echo $family; ?>" <?php body_class(); ?> > <?php
@@ -78,7 +78,7 @@ function response_html_attributes() { ?>
 */
 function response_meta_tags() { ?>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><?php
-	global $themeslug, $options, $post; //Call global variables
+	global $ne_themeslug, $options, $post; //Call global variables
 	if(!$post) return; // in case of 404 page or something?>
 
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
@@ -93,8 +93,8 @@ function response_meta_tags() { ?>
 * @since 1.0
 */
 function response_title_tag() {
-	global $options, $themeslug, $query, $post; 
-	$blogtitle = ($options->get($themeslug.'_home_title'));
+	global $options, $ne_themeslug, $query, $post; 
+	$blogtitle = ($options->get($ne_themeslug.'_home_title'));
 	if (!is_404()) {
 		$title = get_post_meta($post->ID, 'seo_title' , true);
 	}
@@ -152,41 +152,45 @@ function response_title_tag() {
 * @since 1.0
 */
 function response_link_rel() {
-global $themeslug, $options; //Call global variables
-	$favicon = $options->get($themeslug.'_favicon'); //Calls the favicon URL from the theme options 
+global $ne_themeslug, $options; //Call global variables
+	$favicon = $options->get($ne_themeslug.'_favicon'); //Calls the favicon URL from the theme options 
 	
-	if ($options->get($themeslug.'_font') == "" AND $options->get($themeslug.'_custom_font') == "") {
+	if ($options->get($ne_themeslug.'_font') == "" AND $options->get($ne_themeslug.'_custom_font') == "") {
 		$font = apply_filters( 'response_default_font', 'Arial' );
 	}		
-	elseif ($options->get($themeslug.'_custom_font') != "" && $options->get($themeslug.'_font') == 'custom') {
-		$font = $options->get($themeslug.'_custom_font');	
+	elseif ($options->get($ne_themeslug.'_custom_font') != "" && $options->get($ne_themeslug.'_font') == 'custom') {
+		$font = $options->get($ne_themeslug.'_custom_font');	
 	}	
 	else {
-		$font = $options->get($themeslug.'_font'); 
+		$font = $options->get($ne_themeslug.'_font'); 
 	} 
-	if ($options->get($themeslug.'_color_scheme') == '') {
+	if ($options->get($ne_themeslug.'_color_scheme') == '') {
 		$color = 'black';
 	}
 	else {
-		$color = $options->get($themeslug.'_color_scheme');
+		$color = $options->get($ne_themeslug.'_color_scheme');
 	}?>
-	
+
+<?php if( isset( $favicon ) ): ?>	
 <link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
+<?php endif; ?>
 
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/foundation.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/app.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/ie.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/shortcode.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/elements.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/style.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/color/<?php echo $color; ?>.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/foundation.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/app.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/ie.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/shortcode.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/elements.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/color/<?php echo $color; ?>.css" type="text/css" />
 
+<?php if( $options->get($ne_themeslug.'_apple_touch_toggle') == true && is_array( $options->get($ne_themeslug.'_apple_touch') ) ): ?>
 <!--  For apple touch icon -->
-<?php $apple_icon = $options->get($themeslug.'_apple_touch'); ?>
+<?php $apple_icon = $options->get($ne_themeslug.'_apple_touch'); ?>
 <link rel="apple-touch-icon" href="<?php echo $apple_icon['url']; ?>"/>
+<?php endif; ?>
 
 <?php if (is_child_theme()) :  //add support for child themes?>
-	<link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory') ; ?>/style.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css" />
 <?php endif; ?>
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -201,10 +205,10 @@ global $themeslug, $options; //Call global variables
 * @since 1.0
 */
 function response_header_sitename_content() {
-	global $themeslug, $options; //Call global variables
-	$logo = $options->get($themeslug.'_logo'); //Calls the logo URL from the theme options
+	global $ne_themeslug, $options; //Call global variables
+	$logo = $options->get($ne_themeslug.'_logo'); //Calls the logo URL from the theme options
 	
-	if ($options->get($themeslug.'_custom_logo') == '1') { ?>
+	if ($options->get($ne_themeslug.'_custom_logo') == '1') { ?>
 	<div id="logo">
 		<a href="<?php echo home_url(); ?>/"><img src="<?php echo stripslashes($logo['url']); ?>" alt="logo"></a>
 	</div> <?php
@@ -217,7 +221,7 @@ function response_header_sitename_content() {
 }
 
 function response_header_site_description_content() {
-	global $themeslug, $options; ?>
+	global $ne_themeslug, $options; ?>
 	
 	<div id="description">
 		<h1 class="description"><?php bloginfo('description'); ?>&nbsp;</h1>
@@ -231,35 +235,35 @@ function response_header_site_description_content() {
 * @since 1.0
 */
 function response_header_social_icons_content() { 
-	global $options, $themeslug; //call globals
+	global $options, $ne_themeslug; //call globals
 	
-	$facebook		= $options->get($themeslug.'_facebook');
-	$hidefacebook   = $options->get($themeslug.'_hide_facebook_icon');
-	$twitter		= $options->get($themeslug.'_twitter');;
-	$hidetwitter    = $options->get($themeslug.'_hide_twitter_icon');;
-	$gplus		    = $options->get($themeslug.'_gplus');
-	$hidegplus      = $options->get($themeslug.'_hide_gplus_icon');
-	$flickr		    = $options->get($themeslug.'_flickr');
-	$hideflickr     = $options->get($themeslug.'_hide_flickr');
-	$pinterest		= $options->get($themeslug.'_pinterest');
-	$hidepinterest	= $options->get($themeslug.'_hide_pinterest');
-	$linkedin		= $options->get($themeslug.'_linkedin');
-	$hidelinkedin   = $options->get($themeslug.'_hide_linkedin');
-	$youtube		= $options->get($themeslug.'_youtube');
-	$hideyoutube    = $options->get($themeslug.'_hide_youtube');
-	$googlemaps		= $options->get($themeslug.'_googlemaps');
-	$hidegooglemaps = $options->get($themeslug.'_hide_googlemaps');
-	$email			= $options->get($themeslug.'_email');
-	$hideemail      = $options->get($themeslug.'_hide_email');
-	$rss			= $options->get($themeslug.'_rsslink');
-	$hiderss   		= $options->get($themeslug.'_hide_rss_icon');
+	$facebook		= $options->get($ne_themeslug.'_facebook');
+	$hidefacebook   = $options->get($ne_themeslug.'_hide_facebook_icon');
+	$twitter		= $options->get($ne_themeslug.'_twitter');;
+	$hidetwitter    = $options->get($ne_themeslug.'_hide_twitter_icon');;
+	$gplus		    = $options->get($ne_themeslug.'_gplus');
+	$hidegplus      = $options->get($ne_themeslug.'_hide_gplus_icon');
+	$flickr		    = $options->get($ne_themeslug.'_flickr');
+	$hideflickr     = $options->get($ne_themeslug.'_hide_flickr');
+	$pinterest		= $options->get($ne_themeslug.'_pinterest');
+	$hidepinterest	= $options->get($ne_themeslug.'_hide_pinterest');
+	$linkedin		= $options->get($ne_themeslug.'_linkedin');
+	$hidelinkedin   = $options->get($ne_themeslug.'_hide_linkedin');
+	$youtube		= $options->get($ne_themeslug.'_youtube');
+	$hideyoutube    = $options->get($ne_themeslug.'_hide_youtube');
+	$googlemaps		= $options->get($ne_themeslug.'_googlemaps');
+	$hidegooglemaps = $options->get($ne_themeslug.'_hide_googlemaps');
+	$email			= $options->get($ne_themeslug.'_email');
+	$hideemail      = $options->get($ne_themeslug.'_hide_email');
+	$rss			= $options->get($ne_themeslug.'_rsslink');
+	$hiderss   		= $options->get($ne_themeslug.'_hide_rss_icon');
 	
-	if ($options->get($themeslug.'_icon_style') == '') {
+	if ($options->get($ne_themeslug.'_icon_style') == '') {
 		$folder = 'default';
 	}
 	
 	else {
-		$folder = $options->get($themeslug.'_icon_style');
+		$folder = $options->get($ne_themeslug.'_icon_style');
 	} ?>
 
 	<div id="social">
@@ -338,7 +342,7 @@ function response_header_social_icons_content() {
 * @since 1.0
 */
 function response_nav() {
-	global $options, $themeslug; //call globals 
+	global $options, $ne_themeslug; //call globals 
 		
 	?>
 		
@@ -368,14 +372,14 @@ function response_nav() {
 * @since 1.0
 */
 function response_custom_header_element_content() { 
-	global $themeslug, $options; ?>
+	global $ne_themeslug, $options; ?>
 	
 	<div class="container">
 		<div class="row">
 		
 			<div class="twelve columns">
 				
-				<?php echo stripslashes ($options->get($themeslug.'_custom_header_element')); 	?>
+				<?php echo stripslashes ($options->get($ne_themeslug.'_custom_header_element')); 	?>
 						
 			</div>	
 		</div><!--end row-->
@@ -461,9 +465,9 @@ function response_logo_icons_content() {
 * @since 3.0
 */
 function response_banner_content() {
-global $themeslug, $options, $root; //Call global variables
-$banner = $options->get($themeslug.'_banner'); //Calls the logo URL from the theme options
-$default = "$root/images/pro/banner.jpg";
+global $ne_themeslug, $options, $ne_root; //Call global variables
+$banner = $options->get($ne_themeslug.'_banner'); //Calls the logo URL from the theme options
+$default = "$ne_root/images/pro/banner.jpg";
 
 ?>
 	<div class="container">

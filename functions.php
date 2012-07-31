@@ -18,12 +18,12 @@
 /**
 * Define global theme functions.
 */ 
-	$themename = 'neuro';
-	$themenamefull = 'Neuro';
-	$themeslug = 'ne';
-	$pagedocs = 'http://cyberchimps.com/question/using-the-neuro-page-options/';
-	$sliderdocs = 'http://cyberchimps.com/question/how-to-use-the-feature-slider-in-neuro/';
-	$root = get_template_directory_uri(); 	
+	$ne_themename = 'neuro';
+	$ne_themenamefull = 'Neuro';
+	$ne_themeslug = 'ne';
+	$ne_pagedocs = 'http://cyberchimps.com/question/using-the-neuro-page-options/';
+	$ne_sliderdocs = 'http://cyberchimps.com/question/how-to-use-the-feature-slider-in-neuro/';
+	$ne_root = get_template_directory_uri(); 	
 	
 /**
 * Assign new default font.
@@ -41,8 +41,8 @@ add_action( 'init', 'neuro_remove_credit' );
 
 /** Replaces RSS link from HTML 'head' with custom feed also used with the 'social icon' */
 function neuro_feed_links() {
-	global $themename, $themeslug, $options;
-	$my_feed=$options->get($themeslug.'_rsslink');
+	global $ne_themename, $ne_themeslug, $options;
+	$my_feed=$options->get($ne_themeslug.'_rsslink');
 	if ($my_feed) {
 		echo '<link rel="alternate" type="application/rss+xml" title="RSS feed" href="'.$my_feed.'"/>';
 	}
@@ -93,12 +93,12 @@ add_action( 'admin_bar_menu', 'neuro_admin_link', 113 );
 * Custom markup for gallery posts in main blog index.
 */ 
 function neuro_custom_gallery_post_format( $content ) {
-	global $options, $themeslug, $post;
-	$root = get_template_directory_uri(); 
+	global $options, $ne_themeslug, $post;
+	$ne_root = get_template_directory_uri(); 
 	
 	ob_start();?>
 	
-		<?php if ($options->get($themeslug.'_post_formats') == '1') : ?>
+		<?php if ($options->get($ne_themeslug.'_post_formats') == '1') : ?>
 			<div class="postformats"><!--begin format icon-->
 				<img src="<?php echo get_template_directory_uri(); ?>/images/formats/gallery.png" />
 			</div><!--end format-icon-->
@@ -107,7 +107,7 @@ function neuro_custom_gallery_post_format( $content ) {
 					<!--Call @Core Meta hook-->
 			<?php response_post_byline(); ?>
 				<?php
-				if ( has_post_thumbnail() && $options->get($themeslug.'_show_featured_images') == '1' && !is_single() ) {
+				if ( has_post_thumbnail() && $options->get($ne_themeslug.'_show_featured_images') == '1' && !is_single() ) {
  		 			echo '<div class="featured-image">';
  		 			echo '<a href="' . get_permalink($post->ID) . '" >';
  		 				the_post_thumbnail();
@@ -115,7 +115,7 @@ function neuro_custom_gallery_post_format( $content ) {
   					echo '</div>';
 				}
 			?>	
-				<div class="entry" <?php if ( has_post_thumbnail() && $options->get($themeslug.'_show_featured_images') == '1' ) { echo 'style="min-height: 115px;" '; }?>>
+				<div class="entry" <?php if ( has_post_thumbnail() && $options->get($ne_themeslug.'_show_featured_images') == '1' ) { echo 'style="min-height: 115px;" '; }?>>
 				
 				<?php if (!is_single()): ?>
 				<?php $images = get_children( array( 'post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'numberposts' => 999 ) );
@@ -151,13 +151,13 @@ add_filter('response_post_formats_gallery_content', 'neuro_custom_gallery_post_f
 */ 
 function neuro_excerpt_link($more) {
 
-	global $themename, $themeslug, $options, $post;
+	global $ne_themename, $ne_themeslug, $options, $post;
     
-    	if ($options->get($themeslug.'_excerpt_link_text') == '') {
+    	if ($options->get($ne_themeslug.'_excerpt_link_text') == '') {
     		$linktext = '(Read More...)';
    		}
     	else {
-    		$linktext = $options->get($themeslug.'_excerpt_link_text');
+    		$linktext = $options->get($ne_themeslug.'_excerpt_link_text');
    		}
 
 	return '</p><a href="'. get_permalink($post->ID) . '">'.$linktext.'</a>';
@@ -169,13 +169,13 @@ add_filter('excerpt_more', 'neuro_excerpt_link');
 */ 
 function neuro_excerpt_length($length) {
 
-	global $themename, $themeslug, $options;
+	global $ne_themename, $ne_themeslug, $options;
 	
-		if ($options->get($themeslug.'_excerpt_length') == '') {
+		if ($options->get($ne_themeslug.'_excerpt_length') == '') {
     		$length = '55';
     	}
     	else {
-    		$length = $options->get($themeslug.'_excerpt_length');
+    		$length = $options->get($ne_themeslug.'_excerpt_length');
     	}
     	
 	return $length;
@@ -188,19 +188,19 @@ add_filter('excerpt_length', 'neuro_excerpt_length');
 function neuro_featured_image() {	
 	if ( function_exists( 'add_theme_support' ) ) {
 	
-	global $themename, $themeslug, $options;
+	global $ne_themename, $ne_themeslug, $options;
 	
-	if ($options->get($themeslug.'_featured_image_height') == '') {
+	if ($options->get($ne_themeslug.'_featured_image_height') == '') {
 		$featureheight = '100';
 	}		
 	else {
-		$featureheight = $options->get($themeslug.'_featured_image_height'); 
+		$featureheight = $options->get($ne_themeslug.'_featured_image_height'); 
 	}
-	if ($options->get($themeslug.'_featured_image_width') == "") {
+	if ($options->get($ne_themeslug.'_featured_image_width') == "") {
 			$featurewidth = '100';
 	}		
 	else {
-		$featurewidth = $options->get($themeslug.'_featured_image_width'); 
+		$featurewidth = $options->get($ne_themeslug.'_featured_image_width'); 
 	} 
 	set_post_thumbnail_size( $featurewidth, $featureheight, true );
 	}	
@@ -228,9 +228,9 @@ add_action('wp_head', 'neuro_pie', 8);
 * Add Google Analytics support based on theme option.
 */ 
 function neuro_google_analytics() {
-	global $themename, $themeslug, $options;
+	global $ne_themename, $ne_themeslug, $options;
 	
-	echo stripslashes ($options->get($themeslug.'_ga_code'));
+	echo stripslashes ($options->get($ne_themeslug.'_ga_code'));
 
 }
 add_action('wp_head', 'neuro_google_analytics');
@@ -239,9 +239,9 @@ add_action('wp_head', 'neuro_google_analytics');
 * Add custom header scripts support based on theme option.
 */ 
 function neuro_custom_scripts() {
-	global $themename, $themeslug, $options;
+	global $ne_themename, $ne_themeslug, $options;
 	
-	echo stripslashes ($options->get($themeslug.'_custom_header_scripts'));
+	echo stripslashes ($options->get($ne_themeslug.'_custom_header_scripts'));
 
 }
 add_action('wp_head', 'neuro_custom_scripts');

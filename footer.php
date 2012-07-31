@@ -15,7 +15,7 @@
 * @since 2.0
 */
 
-	global $options, $themeslug // call globals
+	global $options, $ne_themeslug // call globals
 
 ?>
 
@@ -23,7 +23,7 @@
 <div class="push"></div>  
 </div>	<!-- End of wrapper -->
 
-<?php if ($options->get($themeslug.'_disable_footer') != "0"):?>	
+<?php if ($options->get($ne_themeslug.'_disable_footer') != "0"):?>	
 
 </div><!--end container wrap-->
 
@@ -47,7 +47,7 @@
 			</div><!--end footer_wrap-->
 	</div><!--end footer-->
 
-<?php if ($options->get($themeslug.'_disable_afterfooter') != "0"):?>
+<?php if ($options->get($ne_themeslug.'_disable_afterfooter') != "0"):?>
 
 	<div id="afterfooter" class="container">
 		<div class="row" id="afterfooterwrap">	

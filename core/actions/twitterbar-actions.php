@@ -24,7 +24,7 @@ add_action( 'response_twitterbar_section', 'response_twitterbar_section_content'
 * Retrieves the Twitterbar options
 */
 function response_twitterbar_section_content() {
-	global $options, $themeslug, $post; //call globals
+	global $options, $ne_themeslug, $post; //call globals
 
 	if ( is_page() ) {
 		$handle = get_post_meta($post->ID, 'twitter_handle' , true); 
@@ -38,8 +38,8 @@ function response_twitterbar_section_content() {
 		}	
 	} 
 	else {
-		$handle = $options->get($themeslug.'_blog_twitter');
-		$show_replies = $options->get($themeslug.'_blog_twitter_reply');
+		$handle = $options->get($ne_themeslug.'_blog_twitter');
+		$show_replies = $options->get($ne_themeslug.'_blog_twitter_reply');
 	}
 
 	if ( $handle ) {

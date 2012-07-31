@@ -27,8 +27,8 @@ add_action ( 'response_callout_section', 'response_callout_section_content' );
 */
 function response_callout_section_content() {
 
-	global $options, $themeslug, $post; //call globals
-	$root = get_template_directory_uri();  
+	global $options, $ne_themeslug, $post; //call globals
+	$ne_root = get_template_directory_uri();  
 
 /* Define variables. */	
 
@@ -38,8 +38,8 @@ function response_callout_section_content() {
 		}
 	
 	else {
-		$tcolor = $options->get($themeslug.'_blog_callout_text_color');
-		$text = $options->get($themeslug.'_blog_callout_text');
+		$tcolor = $options->get($ne_themeslug.'_blog_callout_text_color');
+		$text = $options->get($ne_themeslug.'_blog_callout_text');
 		}
 	
 /* End variable definition. */	
