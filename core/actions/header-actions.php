@@ -171,8 +171,8 @@ global $ne_themeslug, $options; //Call global variables
 		$color = $options->get($ne_themeslug.'_color_scheme');
 	}?>
 
-<?php if( isset( $favicon ) ): ?>	
-<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
+<?php if( $options->get( $ne_themeslug.'_favicon_toggle' ) == true ): ?>
+	<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
 <?php endif; ?>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/foundation.css" type="text/css" />

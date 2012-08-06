@@ -13,6 +13,14 @@ jQuery(document).ready(function($) {
       $('#section-ne_custom_font').hide();
     }
   }).change();
+	$("#ne_favicon_toggle").change(function() {
+    var toShow = $("#section-ne_favicon");
+    if($(this).is(':checked')) {
+      toShow.show();
+    } else {
+      toShow.hide();
+    }
+		}).change();
 	$("#ne_apple_touch_toggle").change(function() {
     var toShow = $("#section-ne_apple_touch");
     if($(this).is(':checked')) {
