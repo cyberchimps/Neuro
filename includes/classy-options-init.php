@@ -91,7 +91,7 @@ $options
 			->checkbox($ne_themeslug."_full_menu", "Full Width Menu" , array('default' => true))
 			->checkbox($ne_themeslug."_custom_logo", "Custom Logo" , array('default' => true))
 			->upload($ne_themeslug."_logo", "Logo", array('default' => array('url' => TEMPLATE_URL . '/images/neuro.png')))
-			->checkbox($ne_themeslug."_favicon_toggle", "Favicon Toggle" , array('default' => true))
+			->checkbox($ne_themeslug."_favicon_toggle", "Favicon Toggle" , array('default' => false))
 			->upload($ne_themeslug."_favicon", "Custom Favicon", array('default' => array('url' => TEMPLATE_URL . '/images/favicon.ico')))
 			->checkbox($ne_themeslug."_apple_touch_toggle", "Apple Touch Toggle" , array('default' => false))
 			->upload($ne_themeslug."_apple_touch", "Apple Touch Icon", array('default' => array('url' => TEMPLATE_URL . '/images/apple-icon.png')))
