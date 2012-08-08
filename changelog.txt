@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.15 (08-08-12)
+-Favicon added (off by default).
+
 Version 2.0.14 (07-31-12)
 -Changed global variables to have theme prefix
 -Changed any use of TEMPLATE_PATH
