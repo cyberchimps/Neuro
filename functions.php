@@ -25,6 +25,8 @@
 	$ne_sliderdocs = 'http://cyberchimps.com/question/how-to-use-the-feature-slider-in-neuro/';
 	$ne_root = get_template_directory_uri(); 	
 	
+	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
+	
 /**
 * Assign new default font.
 */ 
@@ -58,8 +60,19 @@ add_action('wp_head', 'neuro_feed_links');
 * Basic theme setup.
 */ 
 function neuro_theme_setup() {
-	global $content_width;
-	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
+	
+/**
+* Initialize neuro Core Framework and Pro Extension.
+*/ 
+	require_once ( get_template_directory() . '/core/core-init.php' );
+
+/**
+* Call additional files required by theme.
+*/ 
+	require_once ( get_template_directory() . '/includes/classy-options-init.php' ); // Theme options markup.
+	require_once ( get_template_directory() . '/includes/options-functions.php' ); // Custom functions based on theme options.
+	require_once ( get_template_directory() . '/includes/meta-box.php' ); // Meta options markup.
+	require_once ( get_template_directory() . '/includes/presstrends.php' ); // Opt-in PressTrends code.
 	
 	add_theme_support(
 		'post-formats',
@@ -252,7 +265,7 @@ add_action('wp_head', 'neuro_custom_scripts');
 */ 
 function neuro_register_menus() {
 	register_nav_menus(
-	array( 'header-menu' => __( 'Header Menu' ))
+	array( 'header-menu' => __( 'Header Menu', 'response' ))
   );
 }
 add_action( 'init', 'neuro_register_menus' );
@@ -300,19 +313,6 @@ function neuro_widgets_init() {
 	));
 }
 add_action ('widgets_init', 'neuro_widgets_init');
-
-/**
-* Initialize neuro Core Framework and Pro Extension.
-*/ 
-require_once ( get_template_directory() . '/core/core-init.php' );
-
-/**
-* Call additional files required by theme.
-*/ 
-require_once ( get_template_directory() . '/includes/classy-options-init.php' ); // Theme options markup.
-require_once ( get_template_directory() . '/includes/options-functions.php' ); // Custom functions based on theme options.
-require_once ( get_template_directory() . '/includes/meta-box.php' ); // Meta options markup.
-require_once ( get_template_directory() . '/includes/presstrends.php' ); // Opt-in PressTrends code.
 
 /**
 * End

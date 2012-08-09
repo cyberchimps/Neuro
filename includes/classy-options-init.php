@@ -3,7 +3,7 @@
 * Initializes the Neuro Theme Options
 *
 * Author: Tyler Cunningham
-* Copyright: © 2012
+* Copyright: &#169; 2012
 * {@link http://cyberchimps.com/ CyberChimps LLC}
 *
 * Released under the terms of the GNU General Public License.
@@ -132,7 +132,7 @@ TEMPLATE_URL . '/images/social/thumbs/icons-default.png' ), 'default' => 'defaul
 			->images($ne_themeslug."_blog_sidebar", "Sidebar Options", array( 'options' => array("none" => TEMPLATE_URL . '/images/options/none.png',"two-right" => TEMPLATE_URL . '/images/options/tworight.png', "right-left" => TEMPLATE_URL . '/images/options/rightleft.png', "left" => TEMPLATE_URL . '/images/options/left.png',  "right" => TEMPLATE_URL . '/images/options/right.png'), 'default' => 'right'))
 			->checkbox($ne_themeslug."_post_formats", "Post Format Icons",  array('default' => true))
 			->checkbox($ne_themeslug."_show_excerpts", "Post Excerpts")
-			->text($ne_themeslug."_excerpt_link_text", "Excerpt Link Text", array('default' => '(More)…'))
+			->text($ne_themeslug."_excerpt_link_text", "Excerpt Link Text", array('default' => '(More)&#8230;'))
 			->text($ne_themeslug."_excerpt_length", "Excerpt Character Length", array('default' => '55'))
 			->checkbox($ne_themeslug."_show_featured_images", "Featured Images")
 			->select($ne_themeslug."_featured_image_align", "Featured Image Alignment", array( 'options' => array("key1" => "Left", "key2" => "Center", "key3" => "Right")))

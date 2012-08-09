@@ -44,6 +44,69 @@ function response_text_domain() {
 add_action('after_setup_theme', 'response_text_domain');
 
 /**
+* Load styles.
+*/ 
+
+function response_styles() {
+	global $options, $ne_themeslug, $wp_styles;
+	
+	// get color scheme
+	if ($options->get($ne_themeslug.'_color_scheme') == '') {
+		$color = 'black';
+	}
+	else {
+		$color = $options->get($ne_themeslug.'_color_scheme');
+	}
+	
+	// set paths to stylesheet dir
+	$core_path =  get_template_directory_uri() ."/core/css";
+	$path = get_template_directory_uri() ."/css";
+	
+	// register stylesheets
+	wp_register_style( 'foundation', $core_path.'/foundation.css' );
+	wp_register_style( 'foundation_apps', $core_path.'/app.css', array( 'foundation' ) );
+	wp_register_style( 'shortcode', $path.'/shortcode.css' );
+	wp_register_style( 'business_style', $path.'/style.css', array( 'foundation' ) );
+	wp_register_style( 'elements', $path.'/elements.css', array( 'foundation', 'business_style' ) );
+	wp_register_style( 'color', $path.'/color/'.$color.'.css', array( 'elements' ) );
+	
+	// ie conditional stylesheet
+	wp_register_style( 'ne_ie', $core_path.'/ie.css' );
+	$wp_styles->add_data( 'ne_ie', 'conditional', 'IE' );
+	
+	// child theme support
+	wp_register_style( 'child_theme', get_stylesheet_directory_uri().'/style.css', array( 'business_style' ) );
+	if( is_child_theme() ) {
+		wp_enqueue_style( 'child_theme' );
+	}
+	
+	// get fonts
+	if ($options->get($ne_themeslug.'_font') == "" AND $options->get($ne_themeslug.'_custom_font') == "") {
+		$font = apply_filters( 'response_default_font', 'Arial' );
+	}		
+	elseif ($options->get($ne_themeslug.'_custom_font') != "" && $options->get($ne_themeslug.'_font') == 'custom') {
+		$font = $options->get($ne_themeslug.'_custom_font');	
+	}	
+	else {
+		$font = $options->get($ne_themeslug.'_font'); 
+	} 
+	// register font stylesheet
+	wp_register_style( 'fonts', 'http://fonts.googleapis.com/css?family='.$font, array( 'business_style' ) ); 		
+	
+	// enqueue stylesheets
+	wp_enqueue_style( 'foundation' );
+	wp_enqueue_style( 'foundation_apps' );
+	wp_enqueue_style( 'shortcode' );
+	wp_enqueue_style( 'business_style' );
+	wp_enqueue_style( 'elements' );
+	wp_enqueue_style( 'color' );
+	wp_enqueue_style( 'fonts' );
+	wp_enqueue_style( 'business_ie' );
+}
+
+add_action( 'wp_enqueue_scripts', 'response_styles' );	
+
+/**
 * Load jQuery and register additional scripts.
 */ 
 function response_scripts() {
@@ -74,6 +137,8 @@ function response_scripts() {
 	wp_enqueue_script ('menu');
 	wp_enqueue_script ('mobilemenu');
 	wp_enqueue_script ('oembed');
+	
+	if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 	
 	if ($options->get($ne_themeslug.'_responsive_video') == '1' ) {
 	
@@ -252,7 +317,7 @@ function response_breadcrumbs() {
  
     if ( get_query_var('paged') ) {
       if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-      echo __('Page') . ' ' . get_query_var('paged');
+      echo __('Page', 'response') . ' ' . get_query_var('paged');
       if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
     }
  

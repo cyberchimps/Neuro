@@ -155,33 +155,11 @@ function response_link_rel() {
 global $ne_themeslug, $options; //Call global variables
 	$favicon = $options->get($ne_themeslug.'_favicon'); //Calls the favicon URL from the theme options 
 	
-	if ($options->get($ne_themeslug.'_font') == "" AND $options->get($ne_themeslug.'_custom_font') == "") {
-		$font = apply_filters( 'response_default_font', 'Arial' );
-	}		
-	elseif ($options->get($ne_themeslug.'_custom_font') != "" && $options->get($ne_themeslug.'_font') == 'custom') {
-		$font = $options->get($ne_themeslug.'_custom_font');	
-	}	
-	else {
-		$font = $options->get($ne_themeslug.'_font'); 
-	} 
-	if ($options->get($ne_themeslug.'_color_scheme') == '') {
-		$color = 'black';
-	}
-	else {
-		$color = $options->get($ne_themeslug.'_color_scheme');
-	}?>
+	?>
 
 <?php if( $options->get( $ne_themeslug.'_favicon_toggle' ) == true ): ?>
 	<link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
 <?php endif; ?>
-
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/foundation.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/app.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/ie.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/shortcode.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/elements.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/color/<?php echo $color; ?>.css" type="text/css" />
 
 <?php if( $options->get($ne_themeslug.'_apple_touch_toggle') == true && is_array( $options->get($ne_themeslug.'_apple_touch') ) ): ?>
 <!--  For apple touch icon -->
@@ -189,13 +167,9 @@ global $ne_themeslug, $options; //Call global variables
 <link rel="apple-touch-icon" href="<?php echo $apple_icon['url']; ?>"/>
 <?php endif; ?>
 
-<?php if (is_child_theme()) :  //add support for child themes?>
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css" />
-<?php endif; ?>
-
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<link href='//fonts.googleapis.com/css?family=<?php echo $font ; ?>' rel='stylesheet' type='text/css' /> <?php
+<?php
 }
 
 
