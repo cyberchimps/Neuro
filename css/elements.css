@@ -179,7 +179,6 @@
 
 @-moz-document url-prefix() {
 #box2.four.columns, #box3.four.columns {margin-left: 4.1%;}
-#box3 {right: -2px;}
 }
 
 
