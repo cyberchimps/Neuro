@@ -35,7 +35,7 @@ function response_search_content() {
 
 		<?php if (have_posts()) : ?>
 
-		<h3><?php printf( __( $results, 'response' ), '<span>' . get_search_query() . '</span>' ); ?></h3><br />
+		<h3><?php printf( $results, '<span>' . get_search_query() . '</span>' ); ?></h3><br />
 
 		<?php while (have_posts()) : the_post(); ?>
 		
