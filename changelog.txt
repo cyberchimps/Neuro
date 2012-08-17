@@ -2,6 +2,13 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.16 (08-16-12)
+-wp title fix.
+-Made meta tag language dynamic.
+-Chrome decimal sidebar fix.
+-Fix variable in language call.
+-Code theme check cleanup.
+
 Version 2.0.15 (08-08-12)
 -Favicon added (off by default).
 
