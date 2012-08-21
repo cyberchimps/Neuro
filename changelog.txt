@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.17 (08-21-12)
+-Custom logo url.
+
 Version 2.0.16 (08-16-12)
 -wp title fix.
 -Made meta tag language dynamic.
