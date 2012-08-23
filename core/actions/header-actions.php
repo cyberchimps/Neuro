@@ -133,7 +133,13 @@ global $ne_themeslug, $options; //Call global variables
 function response_header_sitename_content() {
 	global $ne_themeslug, $options; //Call global variables
 	$logo = $options->get($ne_themeslug.'_logo'); //Calls the logo URL from the theme options
-	$url = $options->get($ne_themeslug.'_logo_url') != '' ? $options->get($ne_themeslug.'_logo_url') : get_home_url();
+	if( $url = $options->get($ne_themeslug.'_logo_url_toggle' ) == 1 )
+	{
+		$url = $options->get($ne_themeslug.'_logo_url') != '' ? $options->get($ne_themeslug.'_logo_url') : get_home_url();
+	}
+	else {
+		$url = get_home_url();
+	}
 	
 	if ($options->get($ne_themeslug.'_custom_logo') == '1') { ?>
 	<div id="logo">

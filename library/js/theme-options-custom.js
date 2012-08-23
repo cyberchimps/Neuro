@@ -6,6 +6,14 @@
 jQuery(document).ready(function($) {
 
 	
+	$("#ne_logo_url_toggle").change(function() {
+    var toShow = $("#section-ne_logo_url");
+    if($(this).is(':checked')) {
+      toShow.show();
+    } else {
+      toShow.hide();
+    }
+  }).change();
   $("#section-ne_font").change(function() {
     if($(this).find(":selected").val() == 'custom') {
       $('#section-ne_custom_font').fadeIn();
