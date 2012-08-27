@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.18 (08-27-12)
+-Logo url on / off option added.
+
 Version 2.0.17 (08-21-12)
 -Custom logo url.
 
