@@ -10,6 +10,10 @@
 
 #orbitDemo {border: 1px solid #f1f2f3;}
 
+#orbitDemo.orbit > a {
+  width: 100%;
+}
+
 /*============================*/
 /*===== Carousel Styles ======*/
 /*============================*/
