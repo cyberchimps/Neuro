@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.20 (09-10-12)
+-Fixed language files.
+
 Version 2.0.19 (09-04-12)
 -Fixed responsive slider in ie and firefox.
 
