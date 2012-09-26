@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.22 (09-25-12)
+-Setup pie.php file.
+
 Version 2.0.21 (09-18-12)
 -Changed how translations are laid out.
 
