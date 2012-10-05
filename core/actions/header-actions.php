@@ -36,6 +36,37 @@ add_action( 'response_custom_header_element', 'response_custom_header_element_co
 add_action( 'response_logo_register', 'response_logo_register_content');
 add_action( 'response_banner', 'response_banner_content');
 
+add_action( 'response_subheader', 'response_subheader_content');
+
+/**
+* Define content of subheader
+*/
+function response_subheader_content() {
+?>
+	<div id="subheader">
+		<div class="container">
+			<div class="row">
+				<div class="five columns">
+
+				<!-- Begin @Core header description hook -->
+					<?php response_header_site_description(); ?> 
+				<!-- End @Core header description hook -->				
+				</div>	
+			
+				<div class="seven columns">
+					<div class="subheader_icons">
+				
+					<!-- Begin @Core header social icon hook -->
+						<?php response_header_social_icons(); ?> 
+					<!-- End @Core header contact social icon hook -->			
+					</div>	
+				</div>
+			</div><!--end row-->
+		</div>	
+	</div>
+<?php
+}
+
 /**
 * Establishes the theme font family.
 *

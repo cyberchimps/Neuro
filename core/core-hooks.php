@@ -15,6 +15,14 @@
 * @since 1.0
 */
 
+/** 
+* Subheader
+*/
+function response_subheader() {
+	do_action ('response_subheader');
+}
+
+
 /**
 * Facebook like and plus one. 
 *
