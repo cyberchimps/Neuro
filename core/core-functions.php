@@ -356,11 +356,8 @@ function response_title_tag_filter( $old_title ) {
 	elseif ($blogtitle != '') { /*Title if blog page with custom title */ 
 		$title_tag = get_bloginfo('name').' - '.$blogtitle ; 
 	}
-	elseif( isset( $_GET['feed'] ) ) { /* Title if rss page */ 
-		$title_tag = $old_title;
-	}
 	else { /*Title if blog page without custom title */
-		$title_tag = get_bloginfo('name').$old_title; 
+		$title_tag = $old_title; 
 	}
 	
 	return $title_tag;
