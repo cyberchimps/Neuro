@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.26 (10-23-12)
+-Comments form hidden when protected page / post.
+-Social icon fix.
+
 Version 2.0.25 (10-15-12)
 -Quick edit fix.
 
