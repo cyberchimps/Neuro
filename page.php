@@ -33,17 +33,27 @@
 
 <div class="container">
 	<div class="row"> 
-	<div class="wrap">
-		<?php
-			foreach(explode(",", $page_section_order) as $key) {
-				$fn = 'response_' . $key;
-				if(function_exists($fn)) {
-					call_user_func_array($fn, array());
+		<div class="wrap">
+			<?php
+			// Checking for password protection.
+			if( ! post_password_required() ) {
+				foreach(explode(",", $page_section_order) as $key) {
+					$fn = 'response_' . $key;
+					if(function_exists($fn)) {
+						call_user_func_array($fn, array());
+					}
 				}
 			}
-		?>	
-	</div><!--end row-->
-</div><!--end container-->
+			else {
+			?>
+				<!-- Get the form to submit password -->
+				<div class="post_container">
+					<?php echo get_the_password_form(); ?>
+				</div>
+			<?php
+			} ?>	
+		</div><!--end row-->
+	</div><!--end container-->
 </div>
 
 <?php get_footer(); ?>
