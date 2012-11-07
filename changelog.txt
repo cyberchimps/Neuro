@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.28 (11-07-12)
+-Password protection for elements.
+
 Version 2.0.27 (10-31-12)
 -Presstrends updated.
 -Google font fix.
