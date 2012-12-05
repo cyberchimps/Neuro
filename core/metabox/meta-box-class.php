@@ -334,17 +334,17 @@ class RW_Meta_Box {
 	
 	
 	function show_field_pagehelp($field, $meta) {
-		global $ne_themenamefull, $ne_pagedocs; 
+		global $themenamefull, $pagedocs; 
 		
 		$this->show_field_begin($field, $meta);
-		echo "Visit our $ne_themenamefull Page Options help page here: <a href='$ne_pagedocs' target='_blank'>Page Options Documentation</a></td>";
+		echo "Visit our $themenamefull Page Options help page here: <a href='$pagedocs' target='_blank'>Page Options Documentation</a></td>";
 	}
 		
 	function show_field_sliderhelp($field, $meta) {
-		global $ne_themenamefull, $ne_sliderdocs;
+		global $themenamefull, $sliderdocs;
 		
 		$this->show_field_begin($field, $meta);
-		echo "Visit our $ne_themenamefull Slider help page here: <a href='$ne_sliderdocs' target='_blank'>Slider Documentation</a></td>";
+		echo "Visit our $themenamefull Slider help page here: <a href='$sliderdocs' target='_blank'>Slider Documentation</a></td>";
 	}
 	
 	function show_field_reorder($field, $meta) {
@@ -463,7 +463,7 @@ class RW_Meta_Box {
 	}
 
 	function show_field_section_order($field, $meta) {
-		$ne_root = get_template_directory_uri();  
+		$root = get_template_directory_uri();  
 		$this->show_field_begin($field, $meta);
 		$meta = explode(",", $meta);
 		echo "<div class='section_order'>";
@@ -473,13 +473,13 @@ class RW_Meta_Box {
 			foreach($field['options'] as $key => $value) {
 				if(in_array($key, $meta)) continue;
 				echo "<div class='list_item'>";
-					echo "<img src='$ne_root/images/minus.png' class='action' title='Remove'/>";
+					echo "<img src='$root/images/minus.png' class='action' title='Remove'/>";
 					echo "<span data-key='{$key}'>{$value}</span>";
 				echo "</div>";
 			}
 		echo "</div>";
 		echo "</div>";
-		echo "<div id='arrow'><img src='$ne_root/images/arrowdrag.png' /></div>";
+		echo "<div id='arrow'><img src='$root/images/arrowdrag.png' /></div>";
 		echo "<div class='right_list'>";
 		echo "<div id='active'>Active Elements</div>";
 		echo "<div id='drag'>Drag & Drop Elements</div>";
@@ -488,7 +488,7 @@ class RW_Meta_Box {
 				if(!$key) continue;
 				$value = $field['options'][$key];
 				echo "<div class='list_item'>";
-					echo "<img src='$ne_root/images/minus.png' class='action' title='Remove'/>";
+					echo "<img src='$root/images/minus.png' class='action' title='Remove'/>";
 					echo "<span data-key='{$key}'>{$value}</span>";
 				echo "</div>";
 			}
@@ -609,8 +609,8 @@ class RW_Meta_Box {
 				foreach ($tab['fields'] as $field) {
 					$name = $field['id'];
 					$type = $field['type'];
-					$old = get_post_meta($post_id, $name, !$field['multiple']);
-					$new = isset($_POST[$name]) ? $_POST[$name] : ($field['multiple'] ? array() : '');
+					$old = get_post_meta($post_id, $name, !(isset($field['multiple']) && $field['multiple']));
+					$new = isset($_POST[$name]) ? $_POST[$name] : ((isset($field['multiple']) && $field['multiple']) ? array() : '');
 
 					// validate meta value
 					if (class_exists('RW_Meta_Box_Validate') && method_exists('RW_Meta_Box_Validate', $field['validate_func'])) {
@@ -626,7 +626,7 @@ class RW_Meta_Box {
 					}
 				}
 			}
-		}	
+		}
 	}
 
 	// Common functions for saving field
@@ -634,7 +634,7 @@ class RW_Meta_Box {
 		$name = $field['id'];
 
 		// single value
-		if (!$field['multiple']) {
+		if (!(isset($field['multiple']) && $field['multiple'])) {
 			if ('' != $new && $new != $old) {
 				update_post_meta($post_id, $name, $new);
 			} elseif ('' == $new) {
