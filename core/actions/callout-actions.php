@@ -48,7 +48,7 @@ function response_callout_section_content() {
 
 	if ($tcolor != "") {
 		echo '<style type="text/css" media="screen">';
-		echo "#callout_text {color: $tcolor ;}";
+		echo ".callout_title {color: $tcolor ;}";
 		echo '</style>';
 	}
 			
