@@ -101,10 +101,11 @@ add_action( 'wp_head', 'neuro_header_wrap' );
 function neuro_full_nav() {
 	global $options, $ne_themeslug;
 	$enable = $options->get($ne_themeslug.'_full_menu');
-	
+	$width = abs( $options->get( $ne_themeslug ."_row_max_width" ) ) - 1 . "px";
 	if ($enable == '1') {
 		echo "<style type='text/css'>";
-		echo ".wrap {border-radius: 0px 0px 0px 0px;}";
+		echo ".wrap {border-radius: 0px 0px 0px 0px;}
+					#fullmenu {width:". $width .";}";
 		echo "</style>";
 	}
 }
