@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.32 (12-6-12)
+-3.5 fixes.
+
 Version 2.0.31 (11-26-12)
 -Pinch to zoom.
 
