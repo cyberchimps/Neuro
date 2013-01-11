@@ -11,32 +11,32 @@
     	</div>
 		
 		<div class="widget-container">    
-		<h2 class="widget-title"><?php printf( __('Pages', 'response' )); ?></h2>
+		<h2 class="widget-title"><?php _e('Pages', 'response' ); ?></h2>
 		<ul>
     	<?php wp_list_pages('title_li=' ); ?>
     	</ul>
     	</div>
     
 		<div class="widget-container">    
-    	<h2 class="widget-title"><?php printf( __( 'Archives', 'response' )); ?></h2>
+    	<h2 class="widget-title"><?php _e( 'Archives', 'response' ); ?></h2>
     	<ul>
     		<?php wp_get_archives('type=monthly'); ?>
     	</ul>
     	</div>
         
 		<div class="widget-container">    
-       <h2 class="widget-title"><?php printf( __('Categories', 'response' )); ?></h2>
+       <h2 class="widget-title"><?php _e('Categories', 'response' ); ?></h2>
         <ul>
     	   <?php wp_list_categories('show_count=1&title_li='); ?>
         </ul>
         </div>
         
 		<div class="widget-container">    
-    	<h2 class="widget-title"><?php printf( __('WordPress', 'response' )); ?></h2>
+    	<h2 class="widget-title"><?php _e('WordPress', 'response' ); ?></h2>
     	<ul>
     		<?php wp_register(); ?>
     		<li><?php wp_loginout(); ?></li>
-    		<li><a href="<?php echo esc_url( __('http://wordpress.org/', 'response' )); ?>" target="_blank" title="<?php esc_attr_e('Powered by WordPress, state-of-the-art semantic personal publishing platform.', 'response'); ?>"> <?php printf( __('WordPress', 'response' )); ?></a></li>
+    		<li><a href="<?php echo esc_url( __('http://wordpress.org/', 'response' )); ?>" target="_blank" title="<?php esc_attr_e('Powered by WordPress, state-of-the-art semantic personal publishing platform.', 'response'); ?>"> <?php _e('WordPress', 'response' ); ?></a></li>
     		<?php wp_meta(); ?>
     	</ul>
     	</div>
@@ -44,8 +44,8 @@
     	<div class="widget-container">
     	<h2 class="widget-title"><?php printf( __('Subscribe', 'response' )); ?></h2>
     	<ul>
-    		<li><a href="<?php bloginfo('rss2_url'); ?>"><?php printf( __('Entries (RSS)', 'response' )); ?></a></li>
-    		<li><a href="<?php bloginfo('comments_rss2_url'); ?>"><?php printf( __('Comments (RSS)', 'response' )); ?></a></li>
+    		<li><a href="<?php bloginfo('rss2_url'); ?>"><?php _e('Entries (RSS)', 'response' ); ?></a></li>
+    		<li><a href="<?php bloginfo('comments_rss2_url'); ?>"><?php _e('Comments (RSS)', 'response' ); ?></a></li>
     	</ul>
     	</div>
 	
