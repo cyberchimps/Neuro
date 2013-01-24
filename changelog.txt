@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.38 (1-23-13)
+-Printf call to _e.
+-Meta class fix.
+
 Version 2.0.37 (1-14-13)
 -Sidebar fix.
 
