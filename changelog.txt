@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.39 (1-25-13)
+-Fix image upload
+
 Version 2.0.38 (1-23-13)
 -Printf call to _e.
 -Meta class fix.
