@@ -196,6 +196,23 @@ function neuro_excerpt_link($more) {
 add_filter('excerpt_more', 'neuro_excerpt_link');
 
 /**
+* Set custom post excerpt link if excerpt is supplied manually.
+*/ 
+function manual_excerpt_read_more_link($output) {
+
+	global $ne_themeslug, $options, $post;
+
+	$linktext = $options->get($ne_themeslug.'_excerpt_link_text');
+	$linktext = $linktext == '' ? 'Continue Reading...' : $linktext;
+	
+	if(!empty($post->post_excerpt))
+		return $output . '</p><a class="more-link" href="'. get_permalink($post->ID) . '">'.$linktext.'</a>';
+	else
+		return $output;
+}
+add_filter('the_excerpt', 'manual_excerpt_read_more_link');
+
+/**
 * Set custom post excerpt length based on theme option.
 */ 
 function neuro_excerpt_length($length) {
