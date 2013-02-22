@@ -2,6 +2,11 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.42 (2-21-13)
+-Widget class placeholder.
+-Changed default Twitter account.
+-Repositioned wp-footer.
+
 Version 2.0.41 (2-14-13)
 -Fixed notice - Undefined offset: 1.
 
