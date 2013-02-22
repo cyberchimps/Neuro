@@ -101,7 +101,7 @@ $options
 		->subsection("Social")
 			->images($ne_themeslug."_icon_style", "Icon set", array( 'options' => array('legacy' => TEMPLATE_URL . '/images/social/thumbs/icons-classic.png', 'default' =>
 TEMPLATE_URL . '/images/social/thumbs/icons-default.png' ), 'default' => 'default' ) )
-			->text($ne_themeslug."_twitter", "Twitter Icon URL", array('default' => 'http://twitter.com/WordPress'))
+			->text($ne_themeslug."_twitter", "Twitter Icon URL", array('default' => 'http://twitter.com'))
 			->checkbox($ne_themeslug."_hide_twitter_icon", "Hide Twitter Icon", array('default' => true))
 			->text($ne_themeslug."_facebook", "Facebook Icon URL", array('default' => 'http://facebook.com'))
 			->checkbox($ne_themeslug."_hide_facebook_icon", "Hide Facebook Icon" , array('default' => true))
