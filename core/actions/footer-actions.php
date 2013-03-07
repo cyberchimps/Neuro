@@ -87,17 +87,13 @@ function response_secondary_footer_copyright() {
 *
 * @since 1.0
 */
-function response_secondary_footer_credit() { 
-		
-	global $options, $ne_themeslug; //call globals
-	
-	if ($options->get($ne_themeslug.'_hide_link') == "1") {?>
-		
-		<div id="credit" class="six columns">
-			<a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/achimps.png" alt="credit" /></a>
-		</div> 
-	
-	<?php }
+function response_secondary_footer_credit() {
+?>	
+	<div id="credit" class="six columns">
+		<a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/achimps.png" alt="credit" /></a>
+	</div> 
+
+<?php
 }
 /**
 * End
