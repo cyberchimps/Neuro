@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.44 (3-8-13)
+-Removed the unused global variables from the footer_credit function.
+
 Version 2.0.43 (3-1-13)
 -Added hide/show effect for the banner options, earlier it was only for banner image.
 -Replaced get_template_directory_uri() with '$directory_uri', the variable defined with the same value.
