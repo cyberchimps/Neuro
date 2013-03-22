@@ -1,6 +1,10 @@
 Neuro Changelog
 
 ****************************
+
+Version 2.0.46 (3-15-13)
+-Stylesheet cleaned (shortcode.css)
+
 Version 2.0.45 (3-15-13)
 -Replaced the get_template_directory_uri() with the global variable defined with same value.
 
