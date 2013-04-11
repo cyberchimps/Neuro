@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.48 (4-5-13)
+-Removed the unused global variables from the comments-actions.php.
+
 Version 2.0.47 (3-29-13)
 -Removed the unused global variables from the archive-actions.php.
 
