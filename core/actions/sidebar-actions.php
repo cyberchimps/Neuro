@@ -68,9 +68,9 @@ function response_sidebar_init_content() {
 * @since 1.0
 */
 function response_before_content_sidebar_markup() { 
-	global $options, $ne_themeslug, $post, $sidebar; // call globals ?>
+	global $sidebar;
 				
-	<?php if ($sidebar == 'right-left' OR $sidebar == "2"): ?>
+	if ($sidebar == 'right-left' OR $sidebar == "2"): ?>
 	<div id="sidebar-left" class="three columns">
 		<?php get_sidebar('left'); ?>
 	</div>
@@ -89,9 +89,9 @@ function response_before_content_sidebar_markup() {
 * @since 1.0
 */
 function response_after_content_sidebar_markup() {
-	global $options, $ne_themeslug, $post, $sidebar; // call globals ?>
+	global $sidebar;
 	
-	<?php if ($sidebar == 'right' OR $sidebar == '0' OR $sidebar == '' ): ?>
+	if ($sidebar == 'right' OR $sidebar == '0' OR $sidebar == '' ): ?>
 	<div id="sidebar" class="four columns">
 		<?php get_sidebar(); ?>
 	</div>
