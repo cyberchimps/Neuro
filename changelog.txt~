@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.51 (4-26-13)
+-Removed unused global variables from slider-actions.php file.
+
 Version 2.0.50 (4-19-13)
 -Removed unused global variables from sidebar-actions.php file.
 
