@@ -4,7 +4,7 @@
 
 function enqueue_store_styles() {
  
- 	global $ne_themename, $ne_themeslug, $options;
+ 	global $ne_themeslug;
  	wp_register_style($ne_themeslug.'storecss', get_template_directory_uri(). '/core/classy-options/themes.css');
 
       
