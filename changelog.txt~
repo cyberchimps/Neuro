@@ -1,6 +1,12 @@
 Neuro Changelog
 
 ****************************
+Version 2.0.53 (5-9-13)
+-Removed unused global variables from options-themes.php
+
+Version 2.0.52 (5-2-13)
+-Replaced stripslashes with esc_url for the urls
+-Sanitized social link urls with esc_url
 
 Version 2.0.51 (4-26-13)
 -Removed unused global variables from slider-actions.php file.
