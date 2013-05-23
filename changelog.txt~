@@ -2,6 +2,12 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.55 (5-23-13)
+Removed unused global variables from core/core-functions.php.
+
+Version 2.0.54 (5-17-13)
+-Stylesheet cleaned (core/classy-options/themes.css)
+
 Version 2.0.53 (5-9-13)
 -Removed unused global variables from options-themes.php
 
