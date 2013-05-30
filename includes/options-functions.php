@@ -211,7 +211,7 @@ add_action( 'wp_head', 'postbar_option');
 
 function featured_image_alignment() {
 
-	global $ne_themename, $ne_themeslug, $options;
+	global $ne_themeslug, $options;
 	
 	if ($options->get($ne_themeslug.'_featured_image_align') == "key3" ) {
 	
@@ -240,7 +240,7 @@ add_action( 'wp_head', 'featured_image_alignment');
 
 function post_meta_data_width() {
 
-	global $ne_themename, $ne_themeslug, $options;
+	global $ne_themeslug, $options;
 
 	if ($options->get($ne_themeslug.'_blog_sidebar') == "two-right" OR $options->get($ne_themeslug.'_blog_sidebar') == "right-left") {
 
@@ -257,7 +257,7 @@ add_action( 'wp_head', 'post_meta_data_width');
 
 function add_sitetitle_color() {
 
-	global $ne_themename, $ne_themeslug, $options;
+	global $ne_themeslug, $options;
 
 	if ($options->get($ne_themeslug.'_sitetitle_color') == "") {
 		$sitetitle = '#717171';
@@ -278,7 +278,7 @@ add_action( 'wp_head', 'add_sitetitle_color');
 
 function add_link_color() {
 
-	global $ne_themename, $ne_themeslug, $options;
+	global $ne_themeslug, $options;
 
 	if ($options->get($ne_themeslug.'_link_color') != '') {
 		$link = $options->get($ne_themeslug.'_link_color'); 
@@ -296,7 +296,7 @@ add_action( 'wp_head', 'add_link_color');
 
 function add_link_hover_color() {
 
-	global $ne_themename, $ne_themeslug, $options;
+	global $ne_themeslug, $options;
 
 	if ($options->get($ne_themeslug.'_link_hover_color') != '') {
 		$link = $options->get($ne_themeslug.'_link_hover_color'); 
@@ -314,7 +314,7 @@ add_action( 'wp_head', 'add_link_hover_color');
 
 function add_tagline_color() {
 
-	global $ne_themename, $ne_themeslug, $options;
+	global $ne_themeslug, $options;
 
 	if ($options->get($ne_themeslug.'_tagline_color') != '') {
 		$color = $options->get($ne_themeslug.'_tagline_color'); 
@@ -331,7 +331,7 @@ add_action( 'wp_head', 'add_tagline_color');
 
 function add_posttitle_color() {
 
-	global $ne_themename, $ne_themeslug, $options;
+	global $ne_themeslug, $options;
 
 	if ($options->get($ne_themeslug.'_posttitle_color') != '') {
 		$posttitle = $options->get($ne_themeslug.'_posttitle_color'); 
@@ -347,7 +347,7 @@ add_action( 'wp_head', 'add_posttitle_color');
  
 function add_menu_font() {
 		
-	global $ne_themename, $ne_themeslug, $options;	
+	global $ne_themeslug, $options;	
 		
 	if ($options->get($ne_themeslug.'_menu_font') == "") {
 		$font = 'Arial';
@@ -389,7 +389,7 @@ add_action( 'wp_head', 'add_menu_font');
 
 function custom_css() {
 
-	global $ne_themename, $ne_themeslug, $options;
+	global $ne_themeslug, $options;
 	
 	$custom =$options->get($ne_themeslug.'_css_options');
 	echo '<style type="text/css">' . "\n";
