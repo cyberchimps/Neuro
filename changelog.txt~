@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.56 (5-30-13)
+-Removed unused global variables from includes/options-functions.php
+
 Version 2.0.55 (5-23-13)
 Removed unused global variables from core/core-functions.php.
 
