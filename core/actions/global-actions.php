@@ -64,7 +64,7 @@ function response_loop_content($content) {
 				<img src="<?php echo get_template_directory_uri(); ?>/images/formats/<?php echo $format ;?>.png" alt="formats" />
 			</div><!--end format-icon-->
 			<?php endif; ?>
-				<h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+				<h2 class="posts_title entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 					<!--Call @response Meta hook-->
 			<?php response_post_byline(); ?>
 				<?php
@@ -76,7 +76,7 @@ function response_loop_content($content) {
   					echo '</div>';
 				}
 			?>	
-				<div class="entry" <?php if ( has_post_thumbnail() && $featured_images == '1' && !is_single()  ) { echo 'style="min-height: 115px;" '; }?>>
+				<div class="entry entry-content" <?php if ( has_post_thumbnail() && $featured_images == '1' && !is_single()  ) { echo 'style="min-height: 115px;" '; }?>>
 					<?php 
 						if ($excerpts == '1' && !is_single() ) {
 						the_excerpt();
@@ -136,8 +136,8 @@ function response_post_byline_content() {
 	}?>
 	
 	<div class="meta">
-		<?php if (($hidden[$ne_themeslug.'_hide_date']) != '0'):?> <?php _e( 'Published on', 'response' ); ?> <a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>,<?php endif;?>
-		<?php if (($hidden[$ne_themeslug.'_hide_author']) != '0'):?><?php _e( 'by', 'response' ); ?> <?php the_author_posts_link(); ?> <?php endif;?> 
+		<?php if (($hidden[$ne_themeslug.'_hide_date']) != '0'):?> <?php _e( 'Published on', 'response' ); ?> <a href="<?php the_permalink() ?>" class="updated" datetime="<?php the_time('Y-m-d H:i') ?>"><?php echo get_the_date(); ?></a>,<?php endif;?>
+		<?php if (($hidden[$ne_themeslug.'_hide_author']) != '0'):?><?php _e( 'by', 'response' ); ?> <span class="vcard author"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="url fn"><?php the_author_meta( 'display_name' ); ?></a></span>  <?php endif;?> 
 		<?php if (($hidden[$ne_themeslug.'_hide_categories']) != '0'):?><?php _e( 'in', 'response' ); ?> <?php the_category(', ') ?>.<?php endif;?>
 		
 	</div> <?php
