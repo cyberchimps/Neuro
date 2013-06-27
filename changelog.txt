@@ -2,7 +2,9 @@ Neuro Changelog
 
 ****************************
 
-Version 2.0.59 (6-21-13)
+Version 2.0.60 (6-27-13)
+-Removed unused global variables from page.php.
+
 -Removed unused global variables from single.php.
 
 Version 2.0.58 (6-13-13)
