@@ -594,6 +594,10 @@ ol, ul {list-style-position: inside;margin-left: 21px;}
 	background: #fff;
 }
 
+.widget-container select {
+    max-width: 200px;
+}
+
 .widget-container li {list-style: none; margin-left: 5px;}
 
 .textwidget {padding-top: 10px;}
