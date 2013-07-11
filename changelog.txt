@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.62 (7-11-13)
+- Removed unused global variable from archive.php.
+
 Version 2.0.61 (7-4-13)
 -Fixed issue "Long select field is overflowing the sidebar".
 
