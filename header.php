@@ -15,7 +15,7 @@
 * @since 2.0
 */
 
-	global $options, $ne_themeslug, $ne_themename; // call globals
+	global $options, $ne_themeslug; // call globals
 
 ?>
 	<?php response_head_tag(); ?>
