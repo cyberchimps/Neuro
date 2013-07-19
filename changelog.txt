@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 2.0.63 (7-19-13)
+- Removed unused variable from header.php.
+
 Version 2.0.62 (7-11-13)
 - Removed unused global variable from archive.php.
 
