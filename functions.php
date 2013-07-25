@@ -106,27 +106,27 @@ function cyberchimps_theme_check() {
 }
 //Theme Name
 function cyberchimps_options_theme_name(){
-	$text = 'CyberChimps';
+	$text = 'Neuro';
 	return $text;
 }
 //Theme Pro Name
 function cyberchimps_upgrade_bar_pro_title() {
-	$text = 'CyberChimps Pro';
+	$text = 'Neuro Pro 3';
 	return $text;
 }
 //Upgrade link
 function cyberchimps_upgrade_bar_pro_link() {
-	$url = 'http://cyberchimps.com/responsepro/';
+	$url = 'http://cyberchimps.com/store/neuro-pro/';
 	return $url;
 }
 //Doc's URL
 function cyberchimps_options_documentation_url() {
-	$url = 'http://cyberchimps.com/responsepro/docs/';
+	$url = 'http://cyberchimps.com/guides/';
 	return $url;
 }
 // Support Forum URL
 function cyberchimps_options_support_forum() {
-	$url = 'http://cyberchimps.com/forum/free/';
+	$url = 'http://cyberchimps.com/forum/free/neuro-free/';
 	return $url;
 }
 //Page Options Help URL
@@ -136,7 +136,7 @@ function cyberchimps_options_page_options_help() {
 }
 // Slider Options Help URL
 function cyberchimps_options_slider_options_help() {
-	$url = 'http://cyberchimps.com/responsepro/docs/';
+	$url = 'http://cyberchimps.com/guide/how-to-use-the-slider-lite-element-2/';
 	return $url;
 }
 add_filter( 'cyberchimps_current_theme_name', 'cyberchimps_options_theme_name', 1 );
