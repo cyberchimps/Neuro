@@ -1,11 +1,1330 @@
-/*   
-Theme Name: Neuro
-Theme URI: http://cyberchimps.com/neuro/
-Description: A professional responsive HTML5 blog WordPress theme with drag and drop theme options by CyberChimps WordPress Themes.
-Author: CyberChimps WordPress Themes
-Author URI: http://cyberchimps.com
-Version: 2.0.63
-Tags: white, light, silver, gray, pink, two-columns, flexible-width, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post, custom-background, custom-colors, featured-images, full-width-template, post-formats, right-sidebar, translation-ready, theme-options
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+/*
+Theme Name: Neuro Pro 3
+Theme URI: http://www.cyberchimps.com/neuropro/
+Author: CyberChimps
+Author URI: http://www.cyberchimps.com/
+Description: Neuro Pro is a fully Responsive Drag & Drop Wordpress Theme for bloggers that adds amazing new functionality to your Wordpress website. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device.
+Version: 3.0.0.0
+Tags: white, black, silver, light, two-columns, right-sidebar, fixed-width, custom-background, custom-colors, custom-menu, featured-images, post-formats, theme-options, threaded-comments, sticky-post
+License: GNU General Public License
+License URI: http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
 */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:400,700);
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;*/
+
+/********************************************************************************************************************/
+/******************************************** MAIN HTML STYLES ******************************************************/
+/********************************************************************************************************************/
+body {
+  font-weight: 300;
+  font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+@media screen and (max-width:767px) {
+  body {
+    padding: 0;
+  }
+}
+
+a {
+  color: #666666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-family: 'Titillium Web', Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+table .label {
+  padding: 7px;
+  background: none;
+  text-shadow: none;
+  line-height: normal;
+}
+
+tr {
+  border-bottom: 1px solid #cccccc;
+}
+
+td {
+  padding: 5px;
+}
+
+dt {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 26px;
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 15px;
+  margin-left: 26px;
+}
+
+ul, ol {
+  margin: 0 0 10px 0;
+}
+
+ol, ul {
+  margin-left: 21px;
+  list-style-position: inside;
+}
+
+pre {
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+code {
+  white-space: pre-wrap;
+}
+
+header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-left {
+  clear: left;
+}
+
+/********************************************************************************************************************/
+/******************************************** HEADER ****************************************************************/
+/********************************************************************************************************************/
+
+#header_section {
+  margin-bottom: 30px;
+  background: transparent;
+}
+
+/*======================================= SOCIAL ==============================================*/
+
+header #social .icons a {
+  float: right;
+  margin-left: 5px;
+}
+
+.icons {
+  margin-top: 15px;
+}
+
+/*======================================= DETAILS =============================================*/
+
+header#cc-header .site-description {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 28px;
+}
+
+header#cc-header .contact_details {
+  float: right;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header#cc-header .register {
+  float: right;
+}
+
+header#cc-header .blog_description {
+  float: right;
+}
+
+header#cc-header p {
+  margin-top: 50px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+/*======================================= SEARCH ===============================================*/
+
+header #search #searchform {
+  float: right;
+}
+
+/********************************************************************************************************************/
+/******************************************** MENU ******************************************************************/
+/********************************************************************************************************************/
+
+#navigation_menu {
+  background: #1c1c1c;
+  font-family: 'Titillium Web', Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#navigation {
+}
+
+.main-navigation.navbar {
+  margin-bottom: 0;
+}
+
+.main-navigation .navbar-inner {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: none;
+}
+
+.main-navigation .nav li a {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #90989b;
+  text-shadow: none;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus,
+.navbar .nav li.dropdown.open>.dropdown-toggle,
+.navbar .nav li.dropdown.active>.dropdown-toggle,
+.navbar .nav li.dropdown.open.active>.dropdown-toggle {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.main-navigation .nav li a:hover, .main-navigation .nav li.current-menu-ancestor > a {
+  color: #ffffff;
+}
+
+.navbar .nav li.dropdown > a:hover .caret, .navbar .nav li.dropdown.active > .dropdown-toggle .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.main-navigation .nav li ul li ul {
+  margin-left: 0;
+  list-style: none;
+}
+
+.main-navigation .nav li ul li ul li a {
+  padding-left: 24px;
+}
+
+.main-navigation .nav li ul li ul li ul li a {
+  padding-left: 30px;
+}
+
+.main-navigation .nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.main-navigation .nav li ul li a {
+  background: none;
+}
+
+.main-navigation .nav li ul li a:hover {
+  background: none;
+  color: #333333;
+}
+
+.main-navigation .nav li ul li.current-menu-item a {
+  color: #333333;
+}
+
+#navigation #searchform {
+  margin-right: 15px;
+}
+
+.navbar .btn-navbar {
+  margin-bottom: 5px;
+  background: #ffffff;
+}
+
+.navbar .btn.btn-navbar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar .btn-navbar span.icon-bar {
+  background-color: #000000;
+}
+
+.navbar .btn-navbar:hover {
+  background: #b7b6b6;
+}
+
+.current-menu-ancestor.dropdown >a {
+  color: #ffffff;
+}
+
+.nav li.current-menu-ancestor.dropdown > .dropdown-toggle .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+@media (max-width: 979px) {
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    font-weight: normal;
+  }
+
+  .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+    color: #ffffff;
+  }
+
+  .nav-collapse .nav > li.current-menu-item > a, .navbar-inverse .nav-collapse .nav > li.current-menu-ancestor > a, .nav-collapse .nav li ul li.current-menu-item a {
+    background-color: transparent;
+    color: #ffffff;
+  }
+
+  .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+    background-color: transparent;
+  }
+
+  .nav-collapse .dropdown .caret {
+    display: none;
+  }
+
+  .nav-collapse .dropdown-menu {
+    display: block;
+  }
+
+  .nav-collapse .dropdown-menu .active > a {
+    background-image: none;
+    color: #ffffff;
+  }
+
+  .nav-collapse .dropdown-menu .active > a:hover {
+    color: #90989b;
+  }
+
+  .nav-collapse .nav>li>a:hover, .nav-collapse .dropdown-menu a:hover {
+    background-color: transparent;
+  }
+
+  .nav-collapse .nav li ul li a:hover {
+    color: #ffffff;
+  }
+
+}
+
+/********************************************************************************************************************/
+/******************************************** MAIN CONTENT **********************************************************/
+/********************************************************************************************************************/
+
+#sub_body {
+  background: #ffffff url('images/bg.jpg') 0 0 repeat-x;
+}
+
+.container {
+  background: transparent;
+}
+
+#container {
+  background: #ffffff;
+}
+
+article.post, article.page, article.attachment {
+  margin: 0 15px 15px 15px;
+  padding: 20px 0;
+  border: none;
+}
+
+.entry-content {
+  margin: 20px 0;
+}
+
+.page-header {
+  margin-top: 0;
+  padding: 0;
+  border: none;
+}
+
+#wrapper {
+  /*background-color: #f5f5f5;*/
+  padding: 0;
+  /*box-shadow: 1px 1px 10px #666;*/
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    *zoom: 1;
+  }
+
+  .container-full-width {
+    padding: 0;
+  }
+}
+
+/*==================================== POST AND PAGE CONTENT ===========================================*/
+
+.entry-header {
+  margin-top: 0;
+}
+
+.entry-summary {
+  margin: 10px 0;
+}
+
+.postformats {
+  float: right;
+}
+
+blockquote {
+  margin: 20px 10px;
+  padding: 3px;
+  background-color: #cccccc;
+}
+
+blockquote p {
+  margin: 10px;
+}
+
+blockquote cite {
+  font-size: 0.9em;
+}
+
+blockquote cite:before {
+  position: relative;
+  top: -2px;
+  margin: 0 5px;
+  content: ' ̶ ';
+}
+
+.page-links {
+  clear: both;
+}
+
+.more-content {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+}
+
+.previous-post {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+.next-post {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: right;
+}
+
+/*==================================== TAXONOMY ========================================================*/
+
+h2.entry-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2.4em;
+  line-height: 1.1em;
+}
+
+h2.entry-title a {
+  color: #333333;
+}
+
+h2.entry-title a:hover {
+  color: #005580;
+}
+
+article.post p, article.page p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+/*==================================== IMAGES ==========================================================*/
+
+.alignnone {
+  display: block;
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto
+}
+
+img.size-full {
+  max-width: 100%;
+  height: auto;
+}
+
+.wp-caption {
+  padding: 15px 3px 10px;
+  max-width: 96%;
+  border: 1px solid #f0f0f0; /* Image does not overflow the content area */
+  background: #ffffff;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  margin: 0;
+  padding: 0;
+  max-width: 95%;
+  width: auto;
+  height: auto;
+  border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+  margin: 0;
+  padding: 0 4px 5px;
+  font-size: 11px;
+  line-height: 17px;
+}
+
+.caption_title {
+  font-size: 16px;
+}
+
+.gallery-pagination {
+  margin: 20px 0;
+}
+
+.gallery-pagination .previous-image a {
+  float: left;
+}
+
+.gallery-pagination .next-image a {
+  float: right;
+}
+
+article .featured-image {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+/*==================================== META ============================================================*/
+
+.entry-meta {
+  margin-top: 14px;
+  color: #333333;
+  font-size: 1em;
+}
+
+footer.entry-meta {
+  clear: both;
+  margin-top: -5px;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.edit-link {
+  margin-bottom: 10px;
+}
+
+.edit-link a {
+  padding: 2px 4px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #888888;
+  color: #ffffff;
+}
+
+.edit-link a:visited {
+  color: #ffffff;
+}
+
+.edit-link a:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.cyberchimps_article_share {
+  float: right;
+}
+
+/*==================================== COMMENTS ========================================================*/
+
+.comments-area {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #ffffff;
+}
+
+#comments .navigation {
+  padding: 0 0 18px 0;
+}
+
+label[for="comment"] {
+  display: block;
+}
+
+ol.commentlist {
+  list-style: none;
+}
+
+ol.commentlist p {
+  clear: left;
+  margin-left: 8px;
+}
+
+ol.commentlist li.comment {
+  padding: 10px;
+}
+
+ol.commentlist li.comment div.vcard cite.fn {
+  font-style: normal;
+}
+
+ol.commentlist li.comment div.vcard img.avatar {
+  margin: 0 10px 10px 10px;
+}
+
+ol.commentlist li.comment div.comment-meta {
+  font-size: 11px;
+}
+
+ol.commentlist li.comment div.comment-meta a {
+  color: #888888;
+}
+
+ol.commentlist li.comment div.reply {
+  margin-left: 8px;
+  font-size: 11px;
+}
+
+ol.commentlist li.comment div.reply a {
+  font-weight: bold;
+}
+
+ol.commentlist li.comment ul.children {
+  margin: 10px 0 0;
+  list-style: none;
+}
+
+ol.commentlist li.comment ul.children li.depth-2 {
+  margin: 0 0 10px 10px;
+}
+
+ol.commentlist li.comment ul.children li.depth-3 {
+  margin: 0 0 10px 10px;
+}
+
+ol.commentlist li.comment ul.children li.depth-4 {
+  margin: 0 0 10px 10px;
+}
+
+ol.commentlist li.even {
+  border: 1px solid #cccccc;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+ol.commentlist li.odd {
+  border: 1px solid #cccccc;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.comment, .trackback, .pingback {
+  margin: 10px 0 10px 0;
+  padding: 10px;
+}
+
+.odd {
+  background: #f8f8f8;
+}
+
+#form-allowed-tags code {
+  font-size: 12px;
+}
+
+#respond input, #respond textarea {
+  overflow: auto;
+  margin: 0 5px 5px 0;
+}
+
+input[type=submit] {
+  padding: 10px 20px;
+  border-width: 1px;
+  border-style: solid; /* Old browsers */
+  border-color: #e5e5e5; /* FF3.6+ */
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25); /* Chrome,Safari4+ */
+  -webkit-border-radius: 5px; /* Chrome10+,Safari5.1+ */
+  -moz-border-radius: 5px; /* Opera 11.10+ */
+  border-radius: 5px; /* IE10+ */
+  background: #e6e6e6; /* W3C */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* IE6-9 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+  color: #333333;
+  font-size: 1.2em;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+}
+
+input[type=submit]:hover {
+  background: #e6e6e6;
+}
+
+#respond textarea {
+  width: 99%;
+  height: 150px;
+}
+
+.avatar {
+  float: left;
+}
+
+/********************************************************************************************************************/
+/******************************************** SIDEBAR & WIDGETS *****************************************************/
+/********************************************************************************************************************/
+
+.widget-container {
+  margin-bottom: 15px;
+  padding: 5px 0px 5px 15px;
+  border: none;
+  background: transparent;
+}
+
+h3.widget-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: -5px;
+  padding: 15px 0px 15px 15px;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* Old browsers */
+  background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%); /* FF3.6+ */
+  color: #333333; /* Chrome,Safari4+ */
+  text-transform: uppercase; /* Chrome10+,Safari5.1+ */
+  text-shadow: 1px 1px 0 #ffffff; /* Opera 11.10+ */
+  font-weight: normal; /* IE10+ */
+  font-size: 1.2em; /* W3C */
+  line-height: 1em; /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+}
+
+.widget-container ul, .widget ul {
+  margin-left: 5px;
+}
+
+.widget-container ul li, .widget ul li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  border-bottom: 1px solid #ededed;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+.widget-container ul li:last-child, .widget ul li:last-child {
+  border-bottom: none;
+}
+
+table#wp-calendar {
+  width: 100%;
+}
+
+table#wp-calendar th {
+  font-size: 14px;
+}
+
+table#wp-calendar td {
+  padding: 5px 0;
+  width: 14.28571428571429%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.widget-container #searchform.pull-right {
+  margin-right: 30px;
+}
+
+.widget-container #searchform input.input-medium {
+  display: inline-block;
+  float: none;
+  width: 100%;
+}
+
+/*==================================== SEARCH FORM ====================================================*/
+
+#searchform {
+  margin-bottom: 5px;
+}
+
+/********************************************************************************************************************/
+/******************************************** FOOTER ****************************************************************/
+/********************************************************************************************************************/
+
+#footer_section {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background: #ffffff url(images/bg_footer.jpg) repeat-x center top;
+}
+
+#footer-widgets {
+  margin-bottom: 30px;
+}
+
+#footer-widgets .widget-container {
+  border: none;
+}
+
+#footer-widget-container {
+}
+
+#footer-widgets {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#footer-widget-container {
+  position: relative;
+}
+
+#footer-widget-container:before {
+  right: 100%;
+}
+
+#footer-widget-container:after {
+  left: 100%;
+}
+
+#footer-widgets h3 {
+  margin-top: 4px;
+  margin-bottom: 11px;
+  padding: 0 0 0 14px;
+  background: none;
+}
+
+#after_footer {
+  background: #ffffff;
+}
+
+.site-footer {
+  padding: 10px 0;
+}
+
+.site-footer #copyright {
+  text-align: right;
+}
+
+/********************************************************************************************************************/
+/******************************************** WORDPRESS DEFAULTS ****************************************************/
+/********************************************************************************************************************/
+
+.sticky {
+}
+
+.gallery-caption {
+}
+
+.bypostauthor {
+}
+
+/********************************************************************************************************************/
+/******************************************** ELEMENTS **************************************************************/
+/********************************************************************************************************************/
+
+/*==================================== SLIDER =====================================================*/
+
+#slider {
+  border: none;
+  margin-bottom: 30px;
+}
+
+#slider .carousel-control {
+  line-height: 30px;
+}
+
+.item.active img {
+  border: none;
+}
+
+/*==================================== CALLOUT ====================================================*/
+
+#callout_section_section {
+  margin-bottom: 30px;
+  border-top: 1px dashed #777777;
+  border-bottom: 1px dashed #777777;
+  background-color: #ededed;
+}
+
+#callout_container {
+
+}
+
+#callout {
+  margin: 30px 0;
+}
+
+.callout-text h2.callout-title {
+  margin-top: 0;
+  font-size: 1.7em;
+  line-height: 1em;
+}
+
+.callout-text p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.callout-text p:last-child {
+  margin-bottom: 0;
+}
+
+#callout_button a {
+  float: right;
+  margin-top: 5px;
+}
+
+#callout_button .btn-primary {
+  border-color: #e5e5e5;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  background: #e6e6e6;
+  background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6)); /* FF3.6+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* Chrome,Safari4+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%); /* IE10+ */
+  color: #333333; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0); /* IE6-9 */
+}
+
+#callout_button .btn-primary:hover {
+  background: #e6e6e6;
+}
+
+/*==================================== PRODUCT  ===============================================*/
+
+#cyberchimps_product_container {
+  margin-bottom: 30px;
+}
+
+#cyberchimps_product_container .text-left #cyberchimps_product_media {
+  text-align: right;
+}
+
+.cyberchimps-product-link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cyberchimps-product-link a button {
+  font-size: 1em;
+}
+
+/*==================================== WIDGET BOXES ===============================================*/
+
+.box {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: none;
+  background: #e6e6e6; /* Old browsers */
+  background: -moz-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #e6e6e6), color-stop(30%, #ffffff), color-stop(82%, #e6e6e6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* IE10+ */
+  background: linear-gradient(to bottom, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=0); /* IE6-9 */
+}
+
+h2.box-widget-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000000;
+  text-align: center;
+  text-shadow: 2px 2px 0 #ffffff;
+  font-size: 1.6em;
+  line-height: 1em;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  h2.box-widget-title {
+    margin-top: 25px;
+  }
+}
+
+.box:hover h2 {
+  text-decoration: underline;
+}
+
+.box:hover a {
+  opacity: .7;
+}
+
+.box p {
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #ffffff;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+h2.box-widget-title {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+/*==================================== BOXES ======================================================*/
+
+#boxes_container h2.box-widget-title {
+  margin-top: 20px;
+}
+
+#boxes_container .box a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#boxes_container .box-no-url {
+  cursor: default;
+}
+
+/*==================================== CAROUSEL ===================================================*/
+
+#carousel {
+  padding: 20px 50px;
+  background: #ffffff;
+}
+
+#carousel ul {
+  margin: 0;
+  padding: 0;
+  max-height: 150px;
+  width: 100%;
+}
+
+#carousel ul li {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#carousel ul li .carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+#carousel .carousel-control {
+  top: 50%;
+  border: none;
+}
+
+#carousel .carousel-control.left {
+  left: 5px;
+}
+
+#carousel .carousel-control.right {
+  right: 5px;
+}
+
+@media (max-width: 767px) {
+  #carousel [class*="span"], .row-fluid #carousel [class*="span"] {
+    float: left;
+    margin-left: 2.762430939%;
+    width: 14.364640883%;
+  }
+
+  #carousel [class*="span"]:first-child, .row-fluid #carousel [class*="span"]:first-child {
+    margin-left: 0;
+  }
+}
+
+/*==================================== PORTFOLIO ===================================================*/
+
+#portfolio {
+  margin-bottom: 30px;
+}
+
+#gallery {
+  background: #ffffff;
+}
+
+#gallery ul.row-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+#gallery h2 {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.6em;
+  line-height: 1em;
+}
+
+#gallery ul.row-fluid li#portfolio_wrap {
+  text-align: center;
+}
+
+#gallery ul.row-fluid li#portfolio_wrap .portfolio-item {
+  padding: 20px;
+}
+
+/*==================================== TWITTER =====================================================*/
+
+#twitter_container {
+  margin-bottom: 30px;
+}
+
+#twitter_text ul {
+  margin: 0;
+  list-style: none;
+}
+
+#twitter_bar #twitter_text li {
+  float: left;
+  clear: left;
+  margin: 5px 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+#twitter_text li.odd {
+  background: #dddddd;
+}
+
+#twitter_text li img {
+  float: left;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+#twitter_text p.twitter-followers {
+  margin: 5px 0 0 10px;
+}
+
+#twitter_text li p {
+  padding-left: 75px;
+}
+
+@media (max-width: 480px) {
+  #twitter_bar #twitter_text img {
+    margin-top: 0;
+    width: 30px;
+    height: 21px;
+  }
+
+  #twitter_bar #twitter_text p {
+    padding-left: 40px;
+  }
+}
+
+/*==================================== BREADCRUMBS =================================================*/
+
+.breadcrumbs {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background: #ffffff;
+  font-size: 1.1em;
+}
+
+/*==================================== PAGINATION ==================================================*/
+
+.pagination ul li a {
+  background: #ffffff;
+}
+
+/*==================================== RECENT POSTS ================================================*/
+
+#recent_posts {
+  background: #ffffff;
+}
+
+#recent_posts .recent-posts-container {
+  margin-bottom: 30px;
+}
+
+#recent_posts h5.recent-posts-post-title {
+  margin-top: 0;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+#recent_posts h5.recent-posts-post-title a {
+  color: #000000;
+}
+
+.recent-posts-image {
+  margin-bottom: 10px;
+}
+
+#recent_posts h6 {
+  padding: 5px 0;
+  border-top: 1px dashed #cccccc;
+  border-bottom: 1px dashed #cccccc;
+}
+
+#recent_posts h6, #recent_posts a {
+  font-size: 1.0em;
+}
+
+#recent_posts .more-link {
+  margin-top: 20px;
+}
+
+/*==================================== HTML BOX ==================================================*/
+
+#htmlbox_container {
+  margin-bottom: 30px;
+}
+
+/*==================================== MAGAZINE ==================================================*/
+
+#magazine .magazine-post-container {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+#magazine .magazine-post-container  h2.posts-title {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  line-height: 1em;
+}
+
+#magazine .magazine-metadata {
+  padding-bottom: 10px;
+  font-size: 11px;
+}
+
+#magazine .magazine-post-container  div#comments {
+  font-size: 11px;
+  line-height: 1em;
+}
+
+#magazine .magazine-post-container img.wp-post-image {
+  width: 100%;
+  height: auto;
+}
+
+#magazine .magazine-wide-post img.wp-post-image {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: auto;
+  height: auto;
+}
+
+/********************************************************************************************************************/
+/****************************************** MEDIA QUERIES ***********************************************************/
+/********************************************************************************************************************/
+
+/*==================================== PHONES ====================================================*/
+
+@media (max-width: 480px) {
+  header#cc-header .span7 {
+    text-align: center;
+  }
+
+  header#cc-header .span5 {
+    text-align: center;
+  }
+
+  header#cc-header .span5 div.icons a {
+    float: none;
+  }
+
+  header#cc-header .span5 div.blog-description {
+    float: none;
+  }
+
+  header#cc-header .span5 div.register {
+    float: none;
+  }
+
+  header#cc-header .span5 #searchform {
+    float: none;
+  }
+}
+
+/* ==================================== FIX PHONE BODY BORDER ================================================== */
+
+@media screen and (max-width:767px) {
+  #sub_body .container-full-width .container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .widget-container {
+    padding: 5px 0;
+  }
+}
