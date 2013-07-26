@@ -5,52 +5,50 @@ msgstr ""
 "POT-Creation-Date: 2013-07-25 09:48:34 UTC\n"
 "PO-Revision-Date: 2013-07-26 13:41+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
-"Language-Team: German, Germany\n"
+"Language-Team: Chinese, China\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "Oops! Diese Seite kann nicht gefunden werden."
+msgstr "哎呀 ！无法找到该网页。"
 
 #: ../../404.php
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
-msgstr ""
-"Es sieht aus wie nichts an dieser Stelle gefunden wurde. Vielleicht suchen "
-"Sie dafür?"
+msgstr "看起来像什么也没有找到在此位置。也许尝试寻找它吗？"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
-msgstr "Archiv der Kategorie: %s"
+msgstr "分类存档: %s"
 
 #: ../../archive.php
 msgid "Tag Archives: %s"
-msgstr "Tag-Archiv: %s"
+msgstr "标记档案： %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
-msgstr "Archiv des Autors: %s"
+msgstr "作者存档：%s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr "Tag Archive: %s"
+msgstr "每日存档：%s"
 
 #: ../../archive.php
 msgid "Monthly Archives: %s"
-msgstr "Monatsarchive: %s"
+msgstr "每月存档：%s"
 
 #: ../../archive.php
 msgid "Yearly Archives: %s"
-msgstr "Jahresarchive: %s"
+msgstr "每年存档：%s"
 
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "Archiv"
+msgstr "档案"
 
 #: ../../comments.php
 msgid "One thought on %2$s"
@@ -59,45 +57,45 @@ msgstr[0] ""
 
 #: ../../comments.php
 msgid "Comment navigation"
-msgstr "Kommentar-navigation"
+msgstr "评论导航"
 
 #: ../../comments.php
 msgid "Older Comments"
-msgstr "Ältere Kommentare"
+msgstr "较早的评论"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "Neuere Kommentare"
+msgstr "较新的评论"
 
 #: ../../comments.php
 msgid "Comments are closed."
-msgstr "Kommentare sind geschlossen."
+msgstr "评论已关闭。"
 
 #: ../../content.php
 msgid "Permalink to %s"
-msgstr "Permalink zu %s"
+msgstr "连结到%s"
 
 #: ../../content.php
 msgid "Continue reading"
-msgstr "Weiterlesen"
+msgstr "继续阅读"
 
 #: ../../content.php ../../image.php
 msgid "Pages:"
-msgstr "Seiten"
+msgstr "页"
 
 #: ../../content.php ../../image.php
 msgid "Edit"
-msgstr "ed"
+msgstr "编辑"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Pages"
-msgstr "Seiten"
+msgstr "页"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Categories"
-msgstr "Kategorien"
+msgstr "类别"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -108,126 +106,120 @@ msgstr "WordPress"
 #: ../../sidebar.php
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
-"Powered by WordPress, semantische persönliche publishing-Plattform von State "
-"of Art."
+msgstr "基于 WordPress，优美的个人信息发布平台。"
 
 #: ../../functions.php
 msgid "Pingback:"
-msgstr "Pingback:"
+msgstr "通告:"
 
 #: ../../functions.php
 msgid "(Edit)"
-msgstr "(Edit)"
+msgstr "（编辑）"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "sagt:"
+msgstr "说:"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
-msgstr "Dein Kommentar wartet auf Mäßigung."
+msgstr "您的评论需要审核…"
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%1$s um %2$s"
+msgstr "%1$s于%2$s"
 
 #: ../../functions.php
 msgid "Neuro Pro 3 an Elegant and Responsive Wordpress Theme"
-msgstr "Neuro Pro 3 eine elegante und reaktionsschnelle Wordpress-Theme"
+msgstr "神经 Pro 3 间优雅的和敏感的 Wordpress 主题"
 
 #: ../../functions.php
 msgid "Cyberchimps Link"
-msgstr "Cyberchimps Link"
+msgstr "Cyberchimps 链接"
 
 #: ../../image.php
 msgid "Published"
-msgstr "Veröffentlicht"
+msgstr "出版"
 
 #: ../../image.php
 msgid "size"
-msgstr "Gre"
+msgstr "大小"
 
+#: ../../image.php
 msgid "in"
-msgstr "in"
+msgstr "在"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "vorher"
+msgstr "預覽"
 
 #: ../../image.php
 msgid "Next"
-msgstr "Vor"
+msgstr "下一个"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Schreiben Sie einen Kommentar"
+msgstr "发表评论"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "oder hinterlasse einen trackback"
+msgstr "或离开引用通告"
 
 #: ../../image.php
 msgid "Trackback URL"
-msgstr "Trackback-URL"
+msgstr "引用通告 URL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr ""
-"Kommentare sind geschlossen, aber Sie können einen Trackback hinterlassen: "
+msgstr "评论已关闭，但你可以离开引用通告："
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
-msgstr "Trackbacks sind geschlossen, aber Sie können %s"
+msgstr "引用通告已关闭，但你可以 %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Schreiben Sie einen Kommentar"
+msgstr "发表评论"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Kommentare und Trackbacks sind derzeit geschlossen."
+msgstr "目前关闭评论和引用通告。"
 
 #: ../../no-results.php
 msgid "Nothing Found"
-msgstr "Nichts gefunden"
+msgstr "没有找到"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "Sind Sie bereit, Ihr ersten Beitrag zu veröffentlichen?"
+msgstr "准备第一次发布了吗？"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "Hier loslegen"
+msgstr "从这里开始吧"
 
 #: ../../no-results.php
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr ""
-"Sorry, aber nichts entsprach Ihre Suchbegriffe. Bitte versuchen Sie erneut, "
-"mit einigen anderen Suchbegriffen."
+msgstr "对不起，但没有匹配您的搜索条件。请用一些不同的关键字再试一次。"
 
 #: ../../no-results.php
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-"Es scheint, dass wir nicht finden können, was du suchst. Vielleicht suchen "
-"helfen."
+msgstr "看来我们不能找到你在找什么。搜索，也许可以帮助。"
 
 #: ../../search.php
 msgid "Search Results for: %s"
-msgstr "Suchergebnisse für: %s"
+msgstr "搜索结果：%s"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"
-msgstr "Abonnieren"
+msgstr "订阅"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"
-msgstr "Einträge (RSS)"
+msgstr "条目 (RSS)"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"
-msgstr "Kommentare (RSS)"
+msgstr "评论 (RSS)"

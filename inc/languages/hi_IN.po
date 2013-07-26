@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Neuro Pro 3\n"
+"Project-Id-Version: Neuro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-24 10:07:38 UTC\n"
-"PO-Revision-Date: 2013-07-24 17:50+0530\n"
+"POT-Creation-Date: 2013-07-25 09:48:34 UTC\n"
+"PO-Revision-Date: 2013-07-26 13:41+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Hindi, India\n"
 "MIME-Version: 1.0\n"
@@ -14,13 +14,13 @@ msgstr ""
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "उफ़! उस पृष्ठ नहीं मिल सका।"
+msgstr "उफ़! उस पृष्ठ पाया जा नहीं कर सकता।"
 
 #: ../../404.php
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
 msgstr ""
-"ऐसा लगता है कि इस स्थान पर कुछ भी नहीं पाया गया था. शायद इसके लिए खोज की कोशिश की?"
+"ऐसा लगता है कि कुछ भी नहीं इस स्थान पर पाया गया था। शायद इसके लिए खोज का प्रयास करें?"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
@@ -49,7 +49,7 @@ msgstr "वार्षिक संग्रह: %s"
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "अभिलेखागार"
+msgstr "अभिलेख"
 
 #: ../../comments.php
 msgid "One thought on %2$s"
@@ -58,7 +58,7 @@ msgstr[0] ""
 
 #: ../../comments.php
 msgid "Comment navigation"
-msgstr "नेविगेशन टिप्पणी"
+msgstr "टिप्पणी नेविगेशन"
 
 #: ../../comments.php
 msgid "Older Comments"
@@ -66,11 +66,11 @@ msgstr "पुराना टिप्पणियाँ"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "टिप्पणियां नए"
+msgstr "नई टिप्पणियाँ"
 
 #: ../../comments.php
 msgid "Comments are closed."
-msgstr "टिप्पणियाँ बंद हो जाती हैं."
+msgstr "टिप्पणियाँ बंद हो जाती हैं।"
 
 #: ../../content.php
 msgid "Permalink to %s"
@@ -91,7 +91,7 @@ msgstr "संपादन"
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Pages"
-msgstr "पृष्ठों"
+msgstr "पृष्ठ"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -163,7 +163,7 @@ msgstr "पोस्ट एक टिप्पणी"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "या एक trackback छोड़"
+msgstr "या एक trackback छोड़ दो"
 
 #: ../../image.php
 msgid "Trackback URL"
@@ -171,7 +171,7 @@ msgstr "Trackback यूआरएल"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "टिप्पणियाँ बंद हो जाती हैं, लेकिन आप एक trackback छोड़ सकते हैं"
+msgstr "टिप्पणियाँ बंद हो जाती हैं, लेकिन तुम एक trackback छोड़ कर सकते हैं: "
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -183,7 +183,7 @@ msgstr "पोस्ट एक टिप्पणी"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr "दोनों ही टिप्पणियाँ और trackbacks वर्तमान में बंद हो जाती हैं."
+msgstr "दोनों ही टिप्पणियाँ और trackbacks वर्तमान में बंद हो जाती हैं।"
 
 #: ../../no-results.php
 msgid "Nothing Found"
@@ -191,27 +191,26 @@ msgstr "कुछ भी नहीं पाया"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "अपनी पहली पोस्ट प्रकाशित करने के लिए तैयार है?"
+msgstr "अपनी पहली पोस्ट प्रकाशित करने के लिए तैयार हैं?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "यहाँ शुरू हो जाओ"
+msgstr "यहाँ प्रारंभ करें"
 
 #: ../../no-results.php
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"क्षमा करें, लेकिन कुछ भी नहीं अपना खोज शब्द मिलान। कृपया कुछ अलग अलग खोजशब्दों के साथ "
-"पुन: प्रयास करें।"
+"क्षमा करें, लेकिन कुछ भी नहीं अपना खोज शब्द मिलान। कृपया फिर से के साथ कुछ अलग अलग "
+"खोजशब्दों की कोशिश करो।"
 
 #: ../../no-results.php
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"ऐसा लगता है हम मिल नहीं कर सकता क्या आप के लिए देख रहे हैं। शायद खोज करने में मदद कर "
-"सकते हैं।"
+"ऐसा लगता है हम मिल नहीं कर सकता क्या आप के लिए देख रहे हैं। शायद खोज में मदद कर सकते हैं।"
 
 #: ../../search.php
 msgid "Search Results for: %s"

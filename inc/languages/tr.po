@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Neuro Pro 3\n"
+"Project-Id-Version: Neuro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-24 10:07:38 UTC\n"
-"PO-Revision-Date: 2013-07-24 17:50+0530\n"
+"POT-Creation-Date: 2013-07-25 09:48:34 UTC\n"
+"PO-Revision-Date: 2013-07-26 13:41+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
@@ -14,18 +14,19 @@ msgstr ""
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "Oops! Bu sayfa bulunamadı."
+msgstr "Oops! Bu sayfa bulunamıyor."
 
 #: ../../404.php
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
-msgstr "Bu konumda hiçbir şey bulunamamış gözüküyor. Bir de aramayı deneyin?"
+msgstr ""
+"Görünüşe göre hiçbir şey bu konumda bulundu. Belki bunun için aramayı "
+"deneyin?"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
 msgstr "Kategori Archives: %s"
 
-#: ../../archive.php
 msgid "Tag Archives: %s"
 msgstr "Tag Archives: %s"
 
@@ -48,7 +49,7 @@ msgstr "Yıllık arşiv: %s"
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "Arşivler"
+msgstr "Arşiv"
 
 #: ../../comments.php
 msgid "One thought on %2$s"
@@ -61,11 +62,11 @@ msgstr "Yorum Gezinti"
 
 #: ../../comments.php
 msgid "Older Comments"
-msgstr "Eski yorumlar"
+msgstr "Eski Yorumlar"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "Yeni Yorumlar"
+msgstr "Daha yeni yorumlar"
 
 #: ../../comments.php
 msgid "Comments are closed."
@@ -90,7 +91,7 @@ msgstr "Düzen"
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Pages"
-msgstr "Sayfaları"
+msgstr "Sayfalar"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -134,7 +135,7 @@ msgstr "Nöro Pro 3 zarif ve duyarlı bir Wordpress Tema"
 
 #: ../../functions.php
 msgid "Cyberchimps Link"
-msgstr "Cyberchimps Link"
+msgstr "Cyberchimps bağlantı"
 
 #: ../../image.php
 msgid "Published"
@@ -158,7 +159,7 @@ msgstr "Geri"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Yorum Gönder"
+msgstr "Yorum yazmak"
 
 #: ../../image.php
 msgid "or leave a trackback"
@@ -170,15 +171,15 @@ msgstr "Trackback URL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "Yorum are yumuk, ama eğer trackback bırakabilirsiniz:"
+msgstr "Yorum are yumuk, ama sen-ayrılmak a trackback: "
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
-msgstr "Trackbacks kapalı, ancak %s yapabilirsiniz"
+msgstr "Trackbacks kapalı, ancak yapabilirsiniz %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Yorum Gönder"
+msgstr "Yorum yazmak"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
@@ -190,7 +191,7 @@ msgstr "Hiçbir şey bulunamadı"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "İlk yazı yayınlamak için hazır mısınız?"
+msgstr "İlk yazı yayımlamak hazır mısın?"
 
 #: ../../no-results.php
 msgid "Get started here"
@@ -201,15 +202,15 @@ msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Üzgünüz, ama hiçbir şey arama terimlerinizle eşleşen. Tekrar biraz farklı "
-"anahtar kelimeler ile deneyin."
+"Üzgünüz, ama hiçbir şey Arama terimlerinizi eşleştirdi. Lütfen biraz farklı "
+"anahtar kelimeler ile yeniden deneyin."
 
 #: ../../no-results.php
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Biz size aradığınızı bulamıyor görünüyor. Belki de aramayı yardımcı olabilir."
+"Görünüşe göre biz ne aradığını bulamıyor. Belki de arama yardımcı olabilir."
 
 #: ../../search.php
 msgid "Search Results for: %s"

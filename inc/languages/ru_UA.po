@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Neuro Pro 3\n"
+"Project-Id-Version: Neuro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-24 10:07:38 UTC\n"
-"PO-Revision-Date: 2013-07-24 17:51+0530\n"
+"POT-Creation-Date: 2013-07-25 09:48:34 UTC\n"
+"PO-Revision-Date: 2013-07-26 13:41+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
-"Language-Team: Russian, Russia\n"
+"Language-Team: Russian, Ukraine\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,14 +15,14 @@ msgstr ""
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "Упс! Эта страница не найдена."
+msgstr "Oops! Эта страница не найдена."
 
 #: ../../404.php
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
 msgstr ""
-"Похоже, ничего найдено не было на этом месте. Может быть, попробуйте "
-"поискать его?"
+"Это выглядит как ничего не было найдено в этом месте. Может быть, "
+"попробовать, искать для него?"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
@@ -51,7 +51,7 @@ msgstr "Архивы за год: %s"
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "Архивы"
+msgstr "Архив"
 
 #: ../../comments.php
 msgid "One thought on %2$s"
@@ -64,7 +64,7 @@ msgstr "Комментарий навигации"
 
 #: ../../comments.php
 msgid "Older Comments"
-msgstr "Пожилые Комментарии"
+msgstr "Старые комментарии"
 
 #: ../../comments.php
 msgid "Newer Comments"
@@ -123,7 +123,7 @@ msgstr "(Edit)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "говорит"
+msgstr "говорит:"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
@@ -151,31 +151,31 @@ msgstr "Размер"
 
 #: ../../image.php
 msgid "in"
-msgstr "в"
+msgstr "д"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "ранее"
+msgstr "Пред."
 
 #: ../../image.php
 msgid "Next"
-msgstr "далее"
+msgstr "след."
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Добавить комментарий"
+msgstr "Оставить комментарий"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "или трекбек"
+msgstr "или оставить trackback"
 
 #: ../../image.php
 msgid "Trackback URL"
-msgstr "URL-АДРЕС"
+msgstr "Trackback URL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "Комментарии закрыты, но вы можете оставить Архив:"
+msgstr "Комментарии закрыты, но вы можете оставить Архив: "
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -183,7 +183,7 @@ msgstr "Trackbacks закрыты, но вы можете %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Добавить комментарий"
+msgstr "оставить комментарий"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
@@ -199,7 +199,7 @@ msgstr "Готовы опубликовать ваш первый пост?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "Начните здесь"
+msgstr "Начать здесь"
 
 #: ../../no-results.php
 msgid ""
@@ -207,18 +207,17 @@ msgid ""
 "different keywords."
 msgstr ""
 "Извините, но ничего не соответствует условиям поиска. Пожалуйста, попробуйте "
-"еще раз с некоторыми различных ключевых слов."
+"еще раз с некоторыми разные ключевые слова."
 
 #: ../../no-results.php
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-"Кажется, мы не можем найти то, что вы ищете. Возможно, поиск может помочь."
+msgstr "Кажется, мы не можем найти то, что вы ищете. Возможно, поиск поможет."
 
 #: ../../search.php
 msgid "Search Results for: %s"
-msgstr "Результаты по запросу: %s"
+msgstr "Результаты поиска для: %s"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Neuro Pro 3\n"
+"Project-Id-Version: Neuro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-24 10:07:38 UTC\n"
-"PO-Revision-Date: 2013-07-24 17:51+0530\n"
+"POT-Creation-Date: 2013-07-25 09:48:34 UTC\n"
+"PO-Revision-Date: 2013-07-26 13:41+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Japanese, Japan\n"
 "MIME-Version: 1.0\n"
@@ -14,13 +14,12 @@ msgstr ""
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "おっと！そのページが見つかりません。"
+msgstr "おっと ！そのページが見つかりません。"
 
 #: ../../404.php
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
-msgstr ""
-"何もこの場所で発見されたように見えます。多分それを検索してみてください？"
+msgstr "何もこの場所で発見されたように見えます。多分それを探してみてください。"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
@@ -49,7 +48,7 @@ msgstr "%sのお知らせ"
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "アーカイブ"
+msgstr "お知らせ"
 
 #: ../../comments.php
 msgid "One thought on %2$s"
@@ -62,7 +61,7 @@ msgstr "コメント"
 
 #: ../../comments.php
 msgid "Older Comments"
-msgstr "古いコメント"
+msgstr "過去のコメント"
 
 #: ../../comments.php
 msgid "Newer Comments"
@@ -113,7 +112,7 @@ msgstr ""
 
 #: ../../functions.php
 msgid "Pingback:"
-msgstr "ピンバック"
+msgstr "ピングバック:"
 
 #: ../../functions.php
 msgid "(Edit)"
@@ -121,7 +120,7 @@ msgstr "（編集）"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "発言"
+msgstr "言う："
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
@@ -165,19 +164,19 @@ msgstr "コメントを投稿します。"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "かtrackbackを残す"
+msgstr "またはトラック バックを残す"
 
 #: ../../image.php
 msgid "Trackback URL"
-msgstr "トラックバックURL"
+msgstr "トラック バック URL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "コメント閉鎖されていますが、トラックバックを残すことができ"
+msgstr "コメントを閉じていますが、トラック バックを残すことができます。"
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
-msgstr "トラック バックを閉じているが %s することができます。"
+msgstr "トラック バックは受け付けが %s"
 
 #: ../../image.php
 msgid "post a comment"
@@ -193,18 +192,18 @@ msgstr "何が見つかりました"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "最初の投稿を公開する準備はできましたか？"
+msgstr "あなたの最初の記事を公開する準備ができて？"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "ここで始める"
+msgstr "ここに始める"
 
 #: ../../no-results.php
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"申し訳ありませんが、何もあなたの検索用語に一致します。いくつかの異なるキー"
+"申し訳ありませんが、何もあなたの検索用語と一致します。いくつかの異なるキー"
 "ワードでやり直してください。"
 
 #: ../../no-results.php
@@ -212,8 +211,8 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"それはあなたが探しているものを見つけることができないようです。おそらく、検索"
-"することができます。"
+"我々 が探しているものを見つけることができないようです。おそらく、検索助けるこ"
+"とができます。"
 
 #: ../../search.php
 msgid "Search Results for: %s"
@@ -225,8 +224,8 @@ msgstr "購読"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"
-msgstr "エントリ（のRSS）"
+msgstr "エントリ （の RSS）"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"
-msgstr "コメント（RSS）"
+msgstr "コメント （の RSS）"

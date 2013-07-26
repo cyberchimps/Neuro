@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Neuro Pro 3\n"
+"Project-Id-Version: Neuro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-24 10:07:38 UTC\n"
-"PO-Revision-Date: 2013-07-24 17:50+0530\n"
+"POT-Creation-Date: 2013-07-25 09:48:34 UTC\n"
+"PO-Revision-Date: 2013-07-26 13:41+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Croatian, Croatia\n"
 "MIME-Version: 1.0\n"
@@ -98,8 +98,6 @@ msgstr "Stranice"
 msgid "Categories"
 msgstr "Kategorije"
 
-#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
-#: ../../sidebar.php
 msgid "WordPress"
 msgstr "WordPress"
 
@@ -113,7 +111,6 @@ msgstr "Pokreće WordPress, najmodernija osobna izdavačka platforma."
 msgid "Pingback:"
 msgstr "Pingback"
 
-#: ../../functions.php
 msgid "(Edit)"
 msgstr "Uredi"
 
@@ -133,7 +130,6 @@ msgstr "%1$s na %2$s"
 msgid "Neuro Pro 3 an Elegant and Responsive Wordpress Theme"
 msgstr "Neuro Pro 3 Elegantan i uzvratni Wordpress Theme"
 
-#: ../../functions.php
 msgid "Cyberchimps Link"
 msgstr "Cyberchimps Link"
 

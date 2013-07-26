@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Neuro Pro 3\n"
+"Project-Id-Version: Neuro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-24 10:07:38 UTC\n"
-"PO-Revision-Date: 2013-07-24 17:50+0530\n"
+"POT-Creation-Date: 2013-07-25 09:48:34 UTC\n"
+"PO-Revision-Date: 2013-07-26 13:42+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Spanish, Spain\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr "¡ Uy! Esa página no se encuentra."
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
 msgstr ""
-"Parece que no se encontró nada en este lugar. Tal vez intente buscarlo?"
+"Parece que no encontraron nada en este lugar. ¿Quizás intentar buscarla?"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../functions.php
 msgid "Pingback:"
-msgstr "Pingback: "
+msgstr "Pingback:"
 
 #: ../../functions.php
 msgid "(Edit)"
@@ -121,7 +121,7 @@ msgstr "(Editar)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "dice"
+msgstr "dice:"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
@@ -137,11 +137,11 @@ msgstr "Neuro Pro 3 un elegante y sensible tema de Wordpress"
 
 #: ../../functions.php
 msgid "Cyberchimps Link"
-msgstr "Enlace Cyberchimps"
+msgstr "Link Cyberchimps"
 
 #: ../../image.php
 msgid "Published"
-msgstr "Publicado"
+msgstr "Publicada"
 
 #: ../../image.php
 msgid "size"
@@ -149,7 +149,7 @@ msgstr "Tamaño"
 
 #: ../../image.php
 msgid "in"
-msgstr "en"
+msgstr "pg"
 
 #: ../../image.php
 msgid "Previous"
@@ -161,7 +161,7 @@ msgstr "Avanzar"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Publicar un comentar"
+msgstr "Publicar un comentario"
 
 #: ../../image.php
 msgid "or leave a trackback"
@@ -169,11 +169,11 @@ msgstr "o deja un trackback"
 
 #: ../../image.php
 msgid "Trackback URL"
-msgstr "URL Trackback"
+msgstr "URL de Trackback"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "Los comentarios están cerrados, pero puedes dejar un trackback"
+msgstr "Los comentarios están cerrados, pero puedes dejar un trackback: "
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -181,11 +181,11 @@ msgstr "Trackbacks están cerrados, pero puedes %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Publicar un comentar"
+msgstr "publicar un comentario"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Comentarios y trackbacks están cerrados."
+msgstr "Tanto comentarios y trackbacks están cerrados."
 
 #: ../../no-results.php
 msgid "Nothing Found"
@@ -193,26 +193,27 @@ msgstr "Nada encontrado"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "Listo para publicar su primer post?"
+msgstr "¿Listo para publicar tu primer post?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "Comience aquí"
+msgstr "Comenzar aquí"
 
 #: ../../no-results.php
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Lo sentimos, pero nada corresponde a tus criterios de búsqueda. Por favor, "
-"inténtalo de nuevo con palabras clave diferentes."
+"Lo sentimos, pero nada con tus términos de búsqueda. Por favor, pruebe con "
+"algunas palabras clave diferente."
 
 #: ../../no-results.php
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Parece que no podemos encontrar lo que buscas. Tal vez buscar puede ayudar."
+"Parece que no podemos encontrar lo que estás buscando. Tal vez el ámbito "
+"puede ayudar."
 
 #: ../../search.php
 msgid "Search Results for: %s"
@@ -228,4 +229,4 @@ msgstr "Entradas (RSS)"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"
-msgstr "Comentarios"
+msgstr "Comentarios (RSS)"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Neuro Pro 3\n"
+"Project-Id-Version: Neuro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-24 10:07:38 UTC\n"
-"PO-Revision-Date: 2013-07-24 17:50+0530\n"
+"POT-Creation-Date: 2013-07-25 09:48:34 UTC\n"
+"PO-Revision-Date: 2013-07-26 13:41+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Portuguese, Brazil\n"
 "MIME-Version: 1.0\n"
@@ -14,12 +14,12 @@ msgstr ""
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "Opa! Essa página não foi encontrada."
+msgstr "Opa! Essa página não pode ser encontrada."
 
 #: ../../404.php
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
-msgstr "Parece que nada foi encontrado no local. Talvez tente procurá-lo?"
+msgstr "Parece que nada foi encontrado neste local. Talvez tente procurá-lo?"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
@@ -31,11 +31,11 @@ msgstr "Arquivos da Tag: %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
-msgstr "Arquivos do Autor:%s"
+msgstr "Arquivo do Autor: %s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr "Arquivos diários:%s"
+msgstr "Diário Archives: %s"
 
 #: ../../archive.php
 msgid "Monthly Archives: %s"
@@ -48,7 +48,7 @@ msgstr "Arquivos anual: %s"
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "Archives"
+msgstr "Arquivo"
 
 #: ../../comments.php
 msgid "One thought on %2$s"
@@ -57,7 +57,7 @@ msgstr[0] ""
 
 #: ../../comments.php
 msgid "Comment navigation"
-msgstr "Comentário de navegação"
+msgstr "Navegação de comentário"
 
 #: ../../comments.php
 msgid "Older Comments"
@@ -107,8 +107,8 @@ msgstr "WordPress"
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr ""
-"Alimentado por WordPress, plataforma de publicação pessoal semântica estado-"
-"da-arte."
+"Criado com WordPress, plataforma de publicação pessoal sem&acirc;ntica de "
+"vanguarda."
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -120,7 +120,7 @@ msgstr "(Editar)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "diz"
+msgstr "diz:"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
@@ -136,7 +136,7 @@ msgstr "Neuro Pro 3 um tema Wordpress elegante e ágil"
 
 #: ../../functions.php
 msgid "Cyberchimps Link"
-msgstr "Fazer a ligação Cyberchimps"
+msgstr "Cyberchimps Link"
 
 #: ../../image.php
 msgid "Published"
@@ -148,7 +148,7 @@ msgstr "Tamanho"
 
 #: ../../image.php
 msgid "in"
-msgstr "de"
+msgstr "em"
 
 #: ../../image.php
 msgid "Previous"
@@ -156,11 +156,11 @@ msgstr "Anterior"
 
 #: ../../image.php
 msgid "Next"
-msgstr "Próximo"
+msgstr "próximo"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "Enviar um comentário"
+msgstr "Postar um comentário"
 
 #: ../../image.php
 msgid "or leave a trackback"
@@ -172,7 +172,7 @@ msgstr "Trackback URL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "Comentários estão fechados, mas você pode deixar um trackback"
+msgstr "Comentários estão fechados, mas você pode deixar um trackback: "
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -180,11 +180,11 @@ msgstr "Trackbacks estão fechados, mas você pode %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Enviar um comentário"
+msgstr "postar um comentário"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Comentários e trackbacks estão atualmente fechados."
+msgstr "Ambos os comentários e trackbacks estão fechados no momento."
 
 #: ../../no-results.php
 msgid "Nothing Found"
@@ -196,22 +196,22 @@ msgstr "Pronto para publicar o seu primeiro post?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "Comece aqui"
+msgstr "Começar aqui"
 
 #: ../../no-results.php
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Desculpe, mas nada foi encontrado termos de pesquisa. Por favor, tente "
-"novamente com algumas palavras-chave diferentes."
+"Desculpa, mas nada combinado seus termos de pesquisa. Por favor, tente "
+"novamente com algumas palavras-chave diferente."
 
 #: ../../no-results.php
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Parece que não podemos encontrar o que você está procurando. Buscando talvez "
+"Parece que não encontramos o que você está procurando. Talvez procurando "
 "pode ajudar."
 
 #: ../../search.php
@@ -224,7 +224,7 @@ msgstr "Inscrever"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"
-msgstr "Posts (RSS)"
+msgstr "Entradas (RSS)"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Neuro Pro 3\n"
+"Project-Id-Version: Neuro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-24 10:07:38 UTC\n"
-"PO-Revision-Date: 2013-07-24 17:50+0530\n"
+"POT-Creation-Date: 2013-07-25 09:48:34 UTC\n"
+"PO-Revision-Date: 2013-07-26 13:41+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Dutch, Netherlands\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "Oops! Die pagina kan niet worden gevonden."
+msgstr "Oeps! Die pagina kan niet worden gevonden."
 
 #: ../../404.php
 msgid ""
@@ -33,11 +33,11 @@ msgstr "Tagarchief: %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
-msgstr "Auteursarchief: %s"
+msgstr "Auteur Archief: %s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr "Dagelijks archief: %s"
+msgstr "Dagelijks Archief: %s"
 
 #: ../../archive.php
 msgid "Monthly Archives: %s"
@@ -50,7 +50,7 @@ msgstr "Jaarlijks Archief: %s"
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "Archieven"
+msgstr "Archief"
 
 #: ../../comments.php
 msgid "One thought on %2$s"
@@ -67,7 +67,7 @@ msgstr "Oudere Reacties"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "Nieuwere reacties"
+msgstr "Nieuwere opmerkingen"
 
 #: ../../comments.php
 msgid "Comments are closed."
@@ -92,7 +92,7 @@ msgstr "ed"
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Pages"
-msgstr "Pagina 's"
+msgstr "Paginas"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -120,7 +120,7 @@ msgstr "(Edit)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "zegt"
+msgstr "zegt:"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
@@ -172,7 +172,7 @@ msgstr "Trackback URL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr "Reacties zijn gesloten, maar u kunt laat een trackback:"
+msgstr "Reacties zijn gesloten, maar u kunt laat een trackback: "
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
@@ -180,11 +180,11 @@ msgstr "Trackbacks zijn gesloten, maar u kunt %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "Plaats een reactie"
+msgstr "plaats een reactie"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Zowel reacties als trackbacks zijn momenteel gesloten."
+msgstr "Beide opmerkingen en trackbacks zijn momenteel gesloten."
 
 #: ../../no-results.php
 msgid "Nothing Found"
@@ -196,7 +196,7 @@ msgstr "Klaar om te publiceren uw eerste post?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "Get hier begon"
+msgstr "Hier aan de slag"
 
 #: ../../no-results.php
 msgid ""
@@ -215,7 +215,7 @@ msgstr ""
 
 #: ../../search.php
 msgid "Search Results for: %s"
-msgstr "Zoekresultaten voor: %s"
+msgstr "Zoekresulaten voor : %s"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"
@@ -223,7 +223,7 @@ msgstr "Abonneer"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"
-msgstr "RSS"
+msgstr "Entries (RSS)"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"
