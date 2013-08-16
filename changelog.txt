@@ -2,6 +2,11 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.3 (8-16-13)
+- Fixed heading typography.
+- Footer copyright - allow all html through.
+- Added custom css option to customizer.
+
 Version 3.0.2 (8-9-13)
 - Removed duplicated customizer menu for WPv3.6.
 - Fixed standard violation notices regarding Walker class for WPv3.6.
