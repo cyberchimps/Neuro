@@ -2,6 +2,11 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.4 (8-23-13)
+- Social icons reordering.
+- Upsell page update: Updated screenshot and info of Neuro Pro.
+- Fixed background option.
+
 Version 3.0.3 (8-16-13)
 - Fixed heading typography.
 - Footer copyright - allow all html through.
