@@ -2,6 +2,12 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.5 (9-6-13)
+- Minified multi media upload.
+- Meta box fix - changed save_post hook to pre_post_update.
+- Wrapped home_url() with esc_url()
+- Removed function_exists() check before add_image_size() call.
+
 Version 3.0.5 (8-30-13)
 - Removed new meta-box options due to unresolved bug that affected some users.
 
