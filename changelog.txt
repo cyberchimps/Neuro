@@ -2,7 +2,11 @@ Neuro Changelog
 
 ****************************
 
-Version 3.0.5 (9-6-13)
+Version 3.0.7 (13-6-13)
+- Updated README file.
+- Fixed menu background in IE9 and IE8.
+
+Version 3.0.6 (9-6-13)
 - Minified multi media upload.
 - Meta box fix - changed save_post hook to pre_post_update.
 - Wrapped home_url() with esc_url()
