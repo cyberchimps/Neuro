@@ -2,7 +2,11 @@ Neuro Changelog
 
 ****************************
 
-Version 3.0.7 (13-6-13)
+Version 3.0.8 (9-20-13)
+- Slider option from post is removed as it was not part of free themes.
+- Fixed google font issue.
+
+Version 3.0.7 (9-13-13)
 - Updated README file.
 - Fixed menu background in IE9 and IE8.
 
