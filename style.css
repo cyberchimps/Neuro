@@ -19,86 +19,86 @@ font-family: 'Titillium Web', sans-serif;*/
 /******************************************** MAIN HTML STYLES ******************************************************/
 /********************************************************************************************************************/
 body {
-  font-weight: 300;
-  font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 @media screen and (max-width:767px) {
-  body {
-    padding: 0;
-  }
+	body {
+		padding: 0;
+	}
 }
 
 a {
-  color: #666666;
+	color: #666666;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 15px;
-  font-weight: 700;
-  font-family: 'Titillium Web', Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-family: 'Titillium Web', Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 table .label {
-  padding: 7px;
-  background: none;
-  text-shadow: none;
-  line-height: normal;
+	padding: 7px;
+	background: none;
+	text-shadow: none;
+	line-height: normal;
 }
 
 tr {
-  border-bottom: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
 }
 
 td {
-  padding: 5px;
+	padding: 5px;
 }
 
 dt {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 26px;
-  font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 26px;
+	font-weight: bold;
 }
 
 dd {
-  margin-bottom: 15px;
-  margin-left: 26px;
+	margin-bottom: 15px;
+	margin-left: 26px;
 }
 
 ul, ol {
-  margin: 0 0 10px 0;
+	margin: 0 0 10px 0;
 }
 
 ol, ul {
-  margin-left: 21px;
-  list-style-position: inside;
+	margin-left: 21px;
+	list-style-position: inside;
 }
 
 pre {
-  -moz-border-radius: 0;
-  border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 }
 
 code {
-  white-space: pre-wrap;
+	white-space: pre-wrap;
 }
 
 header {
-  margin-top: 15px;
-  margin-bottom: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .clear {
-  clear: both;
+	clear: both;
 }
 
 .clear-right {
-  clear: right;
+	clear: right;
 }
 
 .clear-left {
-  clear: left;
+	clear: left;
 }
 
 /********************************************************************************************************************/
@@ -106,55 +106,55 @@ header {
 /********************************************************************************************************************/
 
 #header_section {
-  margin-bottom: 30px;
-  background: transparent;
+	margin-bottom: 30px;
+	background: transparent;
 }
 
 /*======================================= SOCIAL ==============================================*/
 
 header #social .icons a {
-  float: right;
-  margin-left: 5px;
+	float: right;
+	margin-left: 5px;
 }
 
 .icons {
-  margin-top: 15px;
+	margin-top: 15px;
 }
 
 /*======================================= DETAILS =============================================*/
 
 header#cc-header .site-description {
-  margin: 10px 0 0;
-  padding: 0;
-  font-size: 28px;
+	margin: 10px 0 0;
+	padding: 0;
+	font-size: 28px;
 }
 
 header#cc-header .contact_details {
-  float: right;
-  margin-top: 50px;
-  font-weight: bold;
-  font-size: 24px;
+	float: right;
+	margin-top: 50px;
+	font-weight: bold;
+	font-size: 24px;
 }
 
 header#cc-header .register {
-  float: right;
+	float: right;
 }
 
 header#cc-header .blog_description {
-  float: right;
+	float: right;
 }
 
 header#cc-header p {
-  margin-top: 50px;
-  text-align: right;
-  font-weight: bold;
-  font-size: 1.4em;
+	margin-top: 50px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 1.4em;
 }
 
 /*======================================= SEARCH ===============================================*/
 
 header #search #searchform {
-  float: right;
+	float: right;
 }
 
 /********************************************************************************************************************/
@@ -162,30 +162,30 @@ header #search #searchform {
 /********************************************************************************************************************/
 
 #navigation_menu {
-  background: #1c1c1c;
-  font-family: 'Titillium Web', Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: #1c1c1c;
+	font-family: 'Titillium Web', Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 #navigation {
 }
 
 .main-navigation.navbar {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .main-navigation .navbar-inner {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  background-image: none;
-  filter: none;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	background-image: none;
+	filter: none;
 }
 
 .main-navigation .nav li a {
-  padding-right: 20px;
-  padding-left: 20px;
-  color: #90989b;
-  text-shadow: none;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #90989b;
+	text-shadow: none;
 }
 
 .navbar .nav > .active > a,
@@ -194,130 +194,130 @@ header #search #searchform {
 .navbar .nav li.dropdown.open>.dropdown-toggle,
 .navbar .nav li.dropdown.active>.dropdown-toggle,
 .navbar .nav li.dropdown.open.active>.dropdown-toggle {
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  color: #ffffff;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #ffffff;
 }
 
 .main-navigation .nav li a:hover, .main-navigation .nav li.current-menu-ancestor > a {
-  color: #ffffff;
+	color: #ffffff;
 }
 
 .navbar .nav li.dropdown > a:hover .caret, .navbar .nav li.dropdown.active > .dropdown-toggle .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
+	border-top-color: #ffffff;
+	border-bottom-color: #ffffff;
 }
 
 .main-navigation .nav li ul li ul {
-  margin-left: 0;
-  list-style: none;
+	margin-left: 0;
+	list-style: none;
 }
 
 .main-navigation .nav li ul li ul li a {
-  padding-left: 24px;
+	padding-left: 24px;
 }
 
 .main-navigation .nav li ul li ul li ul li a {
-  padding-left: 30px;
+	padding-left: 30px;
 }
 
 .main-navigation .nav li.dropdown:hover ul.dropdown-menu {
-  display: block;
-  margin-top: 0;
+	display: block;
+	margin-top: 0;
 }
 
 .main-navigation .nav li ul li a {
-  background: none;
+	background: none;
 }
 
 .main-navigation .nav li ul li a:hover {
-  background: none;
-  color: #333333;
+	background: none;
+	color: #333333;
 }
 
 .main-navigation .nav li ul li.current-menu-item a {
-  color: #333333;
+	color: #333333;
 }
 
 #navigation #searchform {
-  margin-right: 15px;
+	margin-right: 15px;
 }
 
 .navbar .btn-navbar {
-  margin-bottom: 5px;
-  background: #ffffff;
+	margin-bottom: 5px;
+	background: #ffffff;
 }
 
 .navbar .btn.btn-navbar {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 .navbar .btn-navbar span.icon-bar {
-  background-color: #000000;
+	background-color: #000000;
 }
 
 .navbar .btn-navbar:hover {
-  background: #b7b6b6;
+	background: #b7b6b6;
 }
 
 .current-menu-ancestor.dropdown >a {
-  color: #ffffff;
+	color: #ffffff;
 }
 
 .nav li.current-menu-ancestor.dropdown > .dropdown-toggle .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
+	border-top-color: #ffffff;
+	border-bottom-color: #ffffff;
 }
 
 @media (max-width: 979px) {
-  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
-    font-weight: normal;
-  }
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+		font-weight: normal;
+	}
 
-  .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
-    color: #ffffff;
-  }
+	.nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+		color: #ffffff;
+	}
 
-  .nav-collapse .nav > li.current-menu-item > a, .navbar-inverse .nav-collapse .nav > li.current-menu-ancestor > a, .nav-collapse .nav li ul li.current-menu-item a {
-    background-color: transparent;
-    color: #ffffff;
-  }
+	.nav-collapse .nav > li.current-menu-item > a, .navbar-inverse .nav-collapse .nav > li.current-menu-ancestor > a, .nav-collapse .nav li ul li.current-menu-item a {
+		background-color: transparent;
+		color: #ffffff;
+	}
 
-  .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
-    background-color: transparent;
-  }
+	.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+		background-color: transparent;
+	}
 
-  .nav-collapse .dropdown .caret {
-    display: none;
-  }
+	.nav-collapse .dropdown .caret {
+		display: none;
+	}
 
-  .nav-collapse .dropdown-menu {
-    display: block;
-  }
+	.nav-collapse .dropdown-menu {
+		display: block;
+	}
 
-  .nav-collapse .dropdown-menu .active > a {
-    background-image: none;
-    color: #ffffff;
-  }
+	.nav-collapse .dropdown-menu .active > a {
+		background-image: none;
+		color: #ffffff;
+	}
 
-  .nav-collapse .dropdown-menu .active > a:hover {
-    color: #90989b;
-  }
+	.nav-collapse .dropdown-menu .active > a:hover {
+		color: #90989b;
+	}
 
-  .nav-collapse .nav>li>a:hover, .nav-collapse .dropdown-menu a:hover {
-    background-color: transparent;
-  }
+	.nav-collapse .nav>li>a:hover, .nav-collapse .dropdown-menu a:hover {
+		background-color: transparent;
+	}
 
-  .nav-collapse .nav li ul li a:hover {
-    color: #ffffff;
-  }
+	.nav-collapse .nav li ul li a:hover {
+		color: #ffffff;
+	}
 
 }
 
@@ -326,414 +326,414 @@ header #search #searchform {
 /********************************************************************************************************************/
 
 .container {
-  background: transparent;
+	background: transparent;
 }
 
 #container {
-  background: #ffffff;
+	background: #ffffff;
 }
 
 article.post, article.page, article.attachment {
-  margin: 0 15px 15px 15px;
-  padding: 20px 0;
-  border: none;
+	margin: 0 15px 15px 15px;
+	padding: 20px 0;
+	border: none;
 }
 
 .entry-content {
-  margin: 20px 0;
+	margin: 20px 0;
 }
 
 .page-header {
-  margin-top: 0;
-  padding: 0;
-  border: none;
+	margin-top: 0;
+	padding: 0;
+	border: none;
 }
 
 #wrapper {
-  /*background-color: #f5f5f5;*/
-  padding: 0;
-  /*box-shadow: 1px 1px 10px #666;*/
+	/*background-color: #f5f5f5;*/
+	padding: 0;
+	/*box-shadow: 1px 1px 10px #666;*/
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-    *zoom: 1;
-  }
+	.container-fluid {
+		padding-right: 0px;
+		padding-left: 0px;
+		*zoom: 1;
+	}
 
-  .container-full-width {
-    padding: 0;
-  }
+	.container-full-width {
+		padding: 0;
+	}
 }
 
 /*==================================== POST AND PAGE CONTENT ===========================================*/
 
 .entry-header {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 .entry-summary {
-  margin: 10px 0;
+	margin: 10px 0;
 }
 
 .postformats {
-  float: right;
+	float: right;
 }
 
 blockquote {
-  margin: 20px 10px;
-  padding: 3px;
-  background-color: #cccccc;
+	margin: 20px 10px;
+	padding: 3px;
+	background-color: #cccccc;
 }
 
 blockquote p {
-  margin: 10px;
+	margin: 10px;
 }
 
 blockquote cite {
-  font-size: 0.9em;
+	font-size: 0.9em;
 }
 
 blockquote cite:before {
-  position: relative;
-  top: -2px;
-  margin: 0 5px;
-  content: ' ̶ ';
+	position: relative;
+	top: -2px;
+	margin: 0 5px;
+	content: ' ̶ ';
 }
 
 .page-links {
-  clear: both;
+	clear: both;
 }
 
 .more-content {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #dddddd;
-  background: #ffffff;
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid #dddddd;
+	background: #ffffff;
 }
 
 .previous-post {
-  margin-top: 5px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  text-align: left;
+	margin-top: 5px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: left;
 }
 
 .next-post {
-  margin-top: 5px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  text-align: right;
+	margin-top: 5px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: right;
 }
 
 /*==================================== TAXONOMY ========================================================*/
 
 h2.entry-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 2.4em;
-  line-height: 1.1em;
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 2.4em;
+	line-height: 1.1em;
 }
 
 h2.entry-title a {
-  color: #333333;
+	color: #333333;
 }
 
 h2.entry-title a:hover {
-  color: #005580;
+	color: #005580;
 }
 
 article.post p, article.page p {
-  font-size: 1.1em;
-  line-height: 1.5em;
+	font-size: 1.1em;
+	line-height: 1.5em;
 }
 
 /*==================================== IMAGES ==========================================================*/
 
 .alignnone {
-  display: block;
-  margin: 5px 20px 20px 0;
+	display: block;
+	margin: 5px 20px 20px 0;
 }
 
 .aligncenter, div.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto;
+	display: block;
+	margin: 5px auto 5px auto;
 }
 
 .alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
+	float: right;
+	margin: 5px 0 20px 20px;
 }
 
 .alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
+	float: left;
+	margin: 5px 20px 20px 0;
 }
 
 .aligncenter {
-  display: block;
-  margin: 5px auto 5px auto;
+	display: block;
+	margin: 5px auto 5px auto;
 }
 
 a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
+	float: right;
+	margin: 5px 0 20px 20px;
 }
 
 a img.alignnone {
-  margin: 5px 20px 20px 0;
+	margin: 5px 20px 20px 0;
 }
 
 a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0;
+	float: left;
+	margin: 5px 20px 20px 0;
 }
 
 a img.aligncenter {
-  display: block;
-  margin-right: auto;
-  margin-left: auto
+	display: block;
+	margin-right: auto;
+	margin-left: auto
 }
 
 img.size-full {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .wp-caption {
-  padding: 15px 3px 10px;
-  max-width: 96%;
-  border: 1px solid #f0f0f0; /* Image does not overflow the content area */
-  background: #ffffff;
-  text-align: center;
+	padding: 15px 3px 10px;
+	max-width: 96%;
+	border: 1px solid #f0f0f0; /* Image does not overflow the content area */
+	background: #ffffff;
+	text-align: center;
 }
 
 .wp-caption.alignnone {
-  margin: 5px 20px 20px 0;
+	margin: 5px 20px 20px 0;
 }
 
 .wp-caption.alignleft {
-  margin: 5px 20px 20px 0;
+	margin: 5px 20px 20px 0;
 }
 
 .wp-caption.alignright {
-  margin: 5px 0 20px 20px;
+	margin: 5px 0 20px 20px;
 }
 
 .wp-caption img {
-  margin: 0;
-  padding: 0;
-  max-width: 95%;
-  width: auto;
-  height: auto;
-  border: 0 none;
+	margin: 0;
+	padding: 0;
+	max-width: 95%;
+	width: auto;
+	height: auto;
+	border: 0 none;
 }
 
 .wp-caption p.wp-caption-text {
-  margin: 0;
-  padding: 0 4px 5px;
-  font-size: 11px;
-  line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+	font-size: 11px;
+	line-height: 17px;
 }
 
 .caption_title {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .gallery-pagination {
-  margin: 20px 0;
+	margin: 20px 0;
 }
 
 .gallery-pagination .previous-image a {
-  float: left;
+	float: left;
 }
 
 .gallery-pagination .next-image a {
-  float: right;
+	float: right;
 }
 
 article .featured-image {
-  float: left;
-  margin: 0 10px 10px 0;
+	float: left;
+	margin: 0 10px 10px 0;
 }
 
 /*==================================== META ============================================================*/
 
 .entry-meta {
-  margin-top: 14px;
-  color: #333333;
-  font-size: 1em;
+	margin-top: 14px;
+	color: #333333;
+	font-size: 1em;
 }
 
 footer.entry-meta {
-  clear: both;
-  margin-top: -5px;
-  color: #999999;
-  text-transform: uppercase;
-  font-size: .8em;
+	clear: both;
+	margin-top: -5px;
+	color: #999999;
+	text-transform: uppercase;
+	font-size: .8em;
 }
 
 .edit-link {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .edit-link a {
-  padding: 2px 4px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  background: #888888;
-  color: #ffffff;
+	padding: 2px 4px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #888888;
+	color: #ffffff;
 }
 
 .edit-link a:visited {
-  color: #ffffff;
+	color: #ffffff;
 }
 
 .edit-link a:hover {
-  color: #cccccc;
-  text-decoration: none;
+	color: #cccccc;
+	text-decoration: none;
 }
 
 .cyberchimps_article_share {
-  float: right;
+	float: right;
 }
 
 /*==================================== COMMENTS ========================================================*/
 
 .comments-area {
-  margin-bottom: 15px;
-  padding: 15px;
-  background: #ffffff;
+	margin-bottom: 15px;
+	padding: 15px;
+	background: #ffffff;
 }
 
 #comments .navigation {
-  padding: 0 0 18px 0;
+	padding: 0 0 18px 0;
 }
 
 label[for="comment"] {
-  display: block;
+	display: block;
 }
 
 ol.commentlist {
-  list-style: none;
+	list-style: none;
 }
 
 ol.commentlist p {
-  clear: left;
-  margin-left: 8px;
+	clear: left;
+	margin-left: 8px;
 }
 
 ol.commentlist li.comment {
-  padding: 10px;
+	padding: 10px;
 }
 
 ol.commentlist li.comment div.vcard cite.fn {
-  font-style: normal;
+	font-style: normal;
 }
 
 ol.commentlist li.comment div.vcard img.avatar {
-  margin: 0 10px 10px 10px;
+	margin: 0 10px 10px 10px;
 }
 
 ol.commentlist li.comment div.comment-meta {
-  font-size: 11px;
+	font-size: 11px;
 }
 
 ol.commentlist li.comment div.comment-meta a {
-  color: #888888;
+	color: #888888;
 }
 
 ol.commentlist li.comment div.reply {
-  margin-left: 8px;
-  font-size: 11px;
+	margin-left: 8px;
+	font-size: 11px;
 }
 
 ol.commentlist li.comment div.reply a {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 ol.commentlist li.comment ul.children {
-  margin: 10px 0 0;
-  list-style: none;
+	margin: 10px 0 0;
+	list-style: none;
 }
 
 ol.commentlist li.comment ul.children li.depth-2 {
-  margin: 0 0 10px 10px;
+	margin: 0 0 10px 10px;
 }
 
 ol.commentlist li.comment ul.children li.depth-3 {
-  margin: 0 0 10px 10px;
+	margin: 0 0 10px 10px;
 }
 
 ol.commentlist li.comment ul.children li.depth-4 {
-  margin: 0 0 10px 10px;
+	margin: 0 0 10px 10px;
 }
 
 ol.commentlist li.even {
-  border: 1px solid #cccccc;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background: #fafafa;
+	border: 1px solid #cccccc;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #fafafa;
 }
 
 ol.commentlist li.odd {
-  border: 1px solid #cccccc;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background: #ffffff;
+	border: 1px solid #cccccc;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #ffffff;
 }
 
 .comment, .trackback, .pingback {
-  margin: 10px 0 10px 0;
-  padding: 10px;
+	margin: 10px 0 10px 0;
+	padding: 10px;
 }
 
 .odd {
-  background: #f8f8f8;
+	background: #f8f8f8;
 }
 
 #form-allowed-tags code {
-  font-size: 12px;
+	font-size: 12px;
 }
 
 #respond input, #respond textarea {
-  overflow: auto;
-  margin: 0 5px 5px 0;
+	overflow: auto;
+	margin: 0 5px 5px 0;
 }
 
 input[type=submit] {
-  padding: 10px 20px;
-  border-width: 1px;
-  border-style: solid; /* Old browsers */
-  border-color: #e5e5e5; /* FF3.6+ */
-  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25); /* Chrome,Safari4+ */
-  -webkit-border-radius: 5px; /* Chrome10+,Safari5.1+ */
-  -moz-border-radius: 5px; /* Opera 11.10+ */
-  border-radius: 5px; /* IE10+ */
-  background: #e6e6e6; /* W3C */
-  background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* IE6-9 */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
-  background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
-  background: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
-  background: -ms-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
-  color: #333333;
-  font-size: 1.2em;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+	padding: 10px 20px;
+	border-width: 1px;
+	border-style: solid; /* Old browsers */
+	border-color: #e5e5e5; /* FF3.6+ */
+	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25); /* Chrome,Safari4+ */
+	-webkit-border-radius: 5px; /* Chrome10+,Safari5.1+ */
+	-moz-border-radius: 5px; /* Opera 11.10+ */
+	border-radius: 5px; /* IE10+ */
+	background: #e6e6e6; /* W3C */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* IE6-9 */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+	background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+	color: #333333;
+	font-size: 1.2em;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
 }
 
 input[type=submit]:hover {
-  background: #e6e6e6;
+	background: #e6e6e6;
 }
 
 #respond textarea {
-  width: 99%;
-  height: 150px;
+	width: 99%;
+	height: 150px;
 }
 
 .avatar {
-  float: left;
+	float: left;
 }
 
 /********************************************************************************************************************/
@@ -741,80 +741,80 @@ input[type=submit]:hover {
 /********************************************************************************************************************/
 
 .widget-container {
-  margin-bottom: 15px;
-  padding: 5px 0px 5px 15px;
-  border: none;
-  background: transparent;
+	margin-bottom: 15px;
+	padding: 5px 0px 5px 15px;
+	border: none;
+	background: transparent;
 }
 
 h3.widget-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  margin-left: -5px;
-  padding: 15px 0px 15px 15px;
-  background: #ffffff;
-  background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
-  background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
-  background: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
-  background: -ms-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* Old browsers */
-  background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%); /* FF3.6+ */
-  color: #333333; /* Chrome,Safari4+ */
-  text-transform: uppercase; /* Chrome10+,Safari5.1+ */
-  text-shadow: 1px 1px 0 #ffffff; /* Opera 11.10+ */
-  font-weight: normal; /* IE10+ */
-  font-size: 1.2em; /* W3C */
-  line-height: 1em; /* IE6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: -5px;
+	padding: 15px 0px 15px 15px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%, #e6e6e6 100%); /* Old browsers */
+	background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%); /* FF3.6+ */
+	color: #333333; /* Chrome,Safari4+ */
+	text-transform: uppercase; /* Chrome10+,Safari5.1+ */
+	text-shadow: 1px 1px 0 #ffffff; /* Opera 11.10+ */
+	font-weight: normal; /* IE10+ */
+	font-size: 1.2em; /* W3C */
+	line-height: 1em; /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
 }
 
 .widget-container ul, .widget ul {
-  margin-left: 5px;
+	margin-left: 5px;
 }
 
 .widget-container ul li, .widget ul li {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 4px;
-  border-bottom: 1px solid #ededed;
-  list-style: none;
-  font-size: 14px;
-  line-height: 1.8em;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	border-bottom: 1px solid #ededed;
+	list-style: none;
+	font-size: 14px;
+	line-height: 1.8em;
 }
 
 .widget-container ul li:last-child, .widget ul li:last-child {
-  border-bottom: none;
+	border-bottom: none;
 }
 
 table#wp-calendar {
-  width: 100%;
+	width: 100%;
 }
 
 table#wp-calendar th {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 table#wp-calendar td {
-  padding: 5px 0;
-  width: 14.28571428571429%;
-  text-align: center;
-  font-size: 14px;
+	padding: 5px 0;
+	width: 14.28571428571429%;
+	text-align: center;
+	font-size: 14px;
 }
 
 .widget-container #searchform.pull-right {
-  margin-right: 30px;
+	margin-right: 30px;
 }
 
 .widget-container #searchform input.input-medium {
-  display: inline-block;
-  float: none;
-  width: 100%;
+	display: inline-block;
+	float: none;
+	width: 100%;
 }
 
 /*==================================== SEARCH FORM ====================================================*/
 
 #searchform {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 /********************************************************************************************************************/
@@ -822,56 +822,56 @@ table#wp-calendar td {
 /********************************************************************************************************************/
 
 #footer_section {
-  padding-top: 20px;
-  padding-bottom: 60px;
-  background: #ffffff url(images/bg_footer.jpg) repeat-x center top;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	background: #ffffff url(images/bg_footer.jpg) repeat-x center top;
 }
 
 #footer-widgets {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 #footer-widgets .widget-container {
-  border: none;
+	border: none;
 }
 
 #footer-widget-container {
 }
 
 #footer-widgets {
-  margin: 0 auto;
-  width: 100%;
+	margin: 0 auto;
+	width: 100%;
 }
 
 #footer-widget-container {
-  position: relative;
+	position: relative;
 }
 
 #footer-widget-container:before {
-  right: 100%;
+	right: 100%;
 }
 
 #footer-widget-container:after {
-  left: 100%;
+	left: 100%;
 }
 
 #footer-widgets h3 {
-  margin-top: 4px;
-  margin-bottom: 11px;
-  padding: 0 0 0 14px;
-  background: none;
+	margin-top: 4px;
+	margin-bottom: 11px;
+	padding: 0 0 0 14px;
+	background: none;
 }
 
 #after_footer {
-  background: #ffffff;
+	background: #ffffff;
 }
 
 .site-footer {
-  padding: 10px 0;
+	padding: 10px 0;
 }
 
 .site-footer #copyright {
-  text-align: right;
+	text-align: right;
 }
 
 /********************************************************************************************************************/
@@ -894,131 +894,130 @@ table#wp-calendar td {
 /*==================================== SLIDER =====================================================*/
 
 #slider {
-  border: none;
-  margin-bottom: 30px;
+	border: none;
+	margin-bottom: 30px;
 }
 
 #slider .carousel-control {
-  line-height: 30px;
+	line-height: 30px;
 }
 
 .item.active img {
-  border: none;
+	border: none;
 }
 
 /*==================================== WIDGET BOXES ===============================================*/
 
 .box {
-  margin-bottom: 30px;
-  padding: 20px;
-  border: none;
-  background: #e6e6e6; /* Old browsers */
-  background: -moz-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #e6e6e6), color-stop(30%, #ffffff), color-stop(82%, #e6e6e6)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* IE10+ */
-  background: linear-gradient(to bottom, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=0); /* IE6-9 */
+	margin-bottom: 30px;
+	padding: 20px;
+	border: none;
+	background: #e6e6e6; /* Old browsers */
+	background: -moz-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #e6e6e6), color-stop(30%, #ffffff), color-stop(82%, #e6e6e6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* IE10+ */
+	background: linear-gradient(to bottom, #e6e6e6 30%, #ffffff 30%, #e6e6e6 82%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=0); /* IE6-9 */
 }
 
 h2.box-widget-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #000000;
-  text-align: center;
-  text-shadow: 2px 2px 0 #ffffff;
-  font-size: 1.6em;
-  line-height: 1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #000000;
+	text-align: center;
+	text-shadow: 2px 2px 0 #ffffff;
+	font-size: 1.6em;
+	line-height: 1em;
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  h2.box-widget-title {
-    margin-top: 25px;
-  }
+	h2.box-widget-title {
+		margin-top: 25px;
+	}
 }
 
 .box:hover h2 {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .box:hover a {
-  opacity: .7;
+	opacity: .7;
 }
 
 .box p {
-  margin-bottom: 10px;
-  text-align: center;
-  text-shadow: 1px 1px 0 #ffffff;
-  font-size: 1.1em;
-  line-height: 1.5em;
+	margin-bottom: 10px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #ffffff;
+	font-size: 1.1em;
+	line-height: 1.5em;
 }
 
 h2.box-widget-title {
-  margin: 0 0 20px;
-  text-align: center;
+	margin: 0 0 20px;
+	text-align: center;
 }
 
 /*==================================== BOXES ======================================================*/
 
 #boxes_container h2.box-widget-title {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 #boxes_container .box a {
-  display: block;
-  width: 100%;
-  text-align: center;
+	display: block;
+	width: 100%;
+	text-align: center;
 }
 
 #boxes_container .box-no-url {
-  cursor: default;
+	cursor: default;
 }
-
 
 /*==================================== PORTFOLIO ===================================================*/
 
 #portfolio {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 #gallery {
-  background: #ffffff;
+	background: #ffffff;
 }
 
 #gallery ul.row-fluid {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 #gallery h2 {
-  margin-top: 0;
-  font-weight: 400;
-  font-size: 1.6em;
-  line-height: 1em;
+	margin-top: 0;
+	font-weight: 400;
+	font-size: 1.6em;
+	line-height: 1em;
 }
 
 #gallery ul.row-fluid li#portfolio_wrap {
-  text-align: center;
+	text-align: center;
 }
 
 #gallery ul.row-fluid li#portfolio_wrap .portfolio-item {
-  padding: 20px;
+	padding: 20px;
 }
 
 /*==================================== BREADCRUMBS =================================================*/
 
 .breadcrumbs {
-  margin-bottom: 30px;
-  padding: 10px 20px;
-  background: #ffffff;
-  font-size: 1.1em;
+	margin-bottom: 30px;
+	padding: 10px 20px;
+	background: #ffffff;
+	font-size: 1.1em;
 }
 
 /*==================================== PAGINATION ==================================================*/
 
 .pagination ul li a {
-  background: #ffffff;
+	background: #ffffff;
 }
 
 /********************************************************************************************************************/
@@ -1028,40 +1027,40 @@ h2.box-widget-title {
 /*==================================== PHONES ====================================================*/
 
 @media (max-width: 480px) {
-  header#cc-header .span7 {
-    text-align: center;
-  }
+	header#cc-header .span7 {
+		text-align: center;
+	}
 
-  header#cc-header .span5 {
-    text-align: center;
-  }
+	header#cc-header .span5 {
+		text-align: center;
+	}
 
-  header#cc-header .span5 div.icons a {
-    float: none;
-  }
+	header#cc-header .span5 div.icons a {
+		float: none;
+	}
 
-  header#cc-header .span5 div.blog-description {
-    float: none;
-  }
+	header#cc-header .span5 div.blog-description {
+		float: none;
+	}
 
-  header#cc-header .span5 div.register {
-    float: none;
-  }
+	header#cc-header .span5 div.register {
+		float: none;
+	}
 
-  header#cc-header .span5 #searchform {
-    float: none;
-  }
+	header#cc-header .span5 #searchform {
+		float: none;
+	}
 }
 
 /* ==================================== FIX PHONE BODY BORDER ================================================== */
 
 @media screen and (max-width:767px) {
-  #sub_body .container-full-width .container {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
+	#sub_body .container-full-width .container {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
 
-  .widget-container {
-    padding: 5px 0;
-  }
+	.widget-container {
+		padding: 5px 0;
+	}
 }
