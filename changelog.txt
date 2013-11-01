@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.14 (11-1-13)
+- Added new metabox class.
+
 Version 3.0.13 (10-30-13)
 - Slider lite ID separator change from (-) to(_). Changed affected JS and CSS.
 - Theme License update to GPL v3.0
