@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.20 (12-12-13)
+- Fixed social icon links.
+- Fixed metabox toggle option.
+
 Version 3.0.19 (12-11-13)
 - Added Font-Based Social Icons.
 - Integrated Font Awesome (Bootstrap font).
