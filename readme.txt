@@ -1,4 +1,4 @@
-Neuro responsive Wordpress theme
+Neuro responsive WordPress theme
 ====================================
 
 - Neuro, Copyright 2013

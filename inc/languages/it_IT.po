@@ -108,7 +108,7 @@ msgstr "WordPress"
 #: ../../sidebar.php
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "Funziona con Wordpress."
+msgstr "Funziona con WordPress."
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -131,8 +131,8 @@ msgid "%1$s at %2$s"
 msgstr "%1$s in %2$s"
 
 #: ../../functions.php
-msgid "Neuro Pro 3 an Elegant and Responsive Wordpress Theme"
-msgstr "Neuro Pro 3 un tema Wordpress elegante e reattivo"
+msgid "Neuro Pro 3 an Elegant and Responsive WordPress Theme"
+msgstr "Neuro Pro 3 un tema WordPress elegante e reattivo"
 
 #: ../../functions.php
 msgid "Cyberchimps Link"

@@ -130,8 +130,8 @@ msgid "%1$s at %2$s"
 msgstr "%1$s, %2$s"
 
 #: ../../functions.php
-msgid "Neuro Pro 3 an Elegant and Responsive Wordpress Theme"
-msgstr "Nöro Pro 3 zarif ve duyarlı bir Wordpress Tema"
+msgid "Neuro Pro 3 an Elegant and Responsive WordPress Theme"
+msgstr "Nöro Pro 3 zarif ve duyarlı bir WordPress Tema"
 
 #: ../../functions.php
 msgid "Cyberchimps Link"
