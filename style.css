@@ -381,6 +381,12 @@ article.post, article.page, article.attachment {
 	float: right;
 }
 
+.postformats .glyphicon {
+	color: #ccc;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
 blockquote {
 	margin: 20px 10px;
 	padding: 3px;
