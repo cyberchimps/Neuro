@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.23 (1-6-14)
+- Modified Helvetica font-family.
+- Removed translation of a variable.
+
 Version 3.0.22 (12-23-13)
 - Fixed drag and drop font icons on page options.
 - Added metabox field type unfiltered_textarea.
