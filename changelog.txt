@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.25 (1-21-14)
+- Email icon made not to open a new tab.
+- Removed Twitter bar from default option.
+
 Version 3.0.24 (1-14-14)
 - Changed blog layout option text.
 - Fixed upload button not working issue with child themes.
