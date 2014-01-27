@@ -2,6 +2,11 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.26 (1-27-14)
+- Boxes: Added latest default images and retina versions.
+- Added Danish translation to core.
+- Added hook to set blog layout option default.
+
 Version 3.0.25 (1-21-14)
 - Email icon made not to open a new tab.
 - Removed Twitter bar from default option.
