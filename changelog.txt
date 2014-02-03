@@ -2,11 +2,26 @@ Neuro Changelog
 
 ****************************
 
+Version 2.1.0 (02-03-2014)
+-CyberChimps logo removed
+-404 page blank footer bugfix
+-Losts of translation bugs quenched
+-Translation capability added to lots of static texts
+-Fixed search bar inline text localization problem
+-The color of post format images has changed to fancy blue
+-Added capability of using shortcodes in widgets
+-Qtranslate header menu links issues has solved
+-Attention! Theme update feature of WordPress blocked,
+because of that Neuro has new 3.x updates.
+If you updated Neuro accidentally, it'd be a disaster.
+So, theme updates must be blocked.
+
+
 Version 2.0.63 (7-19-13)
-- Removed unused variable from header.php.
+-Removed unused variable from header.php.
 
 Version 2.0.62 (7-11-13)
-- Removed unused global variable from archive.php.
+-Removed unused global variable from archive.php.
 
 Version 2.0.61 (7-4-13)
 -Fixed issue "Long select field is overflowing the sidebar".

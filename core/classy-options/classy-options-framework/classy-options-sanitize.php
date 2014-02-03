@@ -1,5 +1,10 @@
 <?php
 
+/**
+* Text Domain: response
+*/
+
+
 class ClassyOptionsSanitize {
 	static function initialize() {
 		add_filter( 'cof_font_face', array( __CLASS__, 'sanitize_font_face' ) );

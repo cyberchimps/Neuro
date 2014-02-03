@@ -2,7 +2,7 @@
 
 /**
 * This file should only load if options.php isn't present in the theme.
-*
+* Text Domain: response
 */
 
 /* Defaults the settings to 'optionsframework' */

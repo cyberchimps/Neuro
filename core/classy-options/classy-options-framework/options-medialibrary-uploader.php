@@ -2,7 +2,7 @@
 
 /**
  * WooThemes Media Library-driven AJAX File Uploader Module (2010-11-05)
- *
+ * Text Domain: response
  * Slightly modified for use in the Options Framework.
  */
 

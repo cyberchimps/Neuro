@@ -149,7 +149,7 @@ function response_post_byline_content() {
 * @since 1.0
 */
 function response_edit_link_content() {
-	edit_post_link('Edit', '<p>', '</p>');
+	edit_post_link(__( 'Edit', 'response' ), '<p>', '</p>');
 }
 
 /**

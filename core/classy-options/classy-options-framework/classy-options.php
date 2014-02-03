@@ -1,4 +1,10 @@
 <?php
+
+/**
+* Text Domain: response
+*/
+
+
 global $options, $ne_themeslug, $ne_themenamefull, $ne_root;
 
 class ClassyOptions {

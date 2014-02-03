@@ -1,11 +1,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Core 1.0\n"
-"Report-Msgid-Bugs-To: http://cyberchimps.com/forum\n"
-"POT-Creation-Date: 10-17-11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-03 09:52+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,266 +14,391 @@ msgstr ""
 "X-Poedit-Language: \n"
 "X-Poedit-Country: \n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
 "X-Poedit-Basepath: \n"
 "X-Poedit-Bookmarks: \n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
+"X-Textdomain-Support: yes\n"
 
-#: core/actions/archive-actions.php:36
-#@ response
-msgid "Archive for the &#8216;"
-msgstr "Archiv pro &#8216;"
-
-#: core/actions/archive-actions.php:36
-#@ response
-msgid "&#8217; Category:"
-msgstr "&#8217; Kategorie:"
-
-#: core/actions/archive-actions.php:39
-#@ response
-msgid "Posts Tagged &#8216;"
-msgstr "Příspěvků: Označen &#8216;"
-
-#: core/actions/archive-actions.php:39
-#@ response
-msgid "&#8217;:"
-msgstr "&#8217;:"
-
-#: core/actions/archive-actions.php:42
-#: core/actions/archive-actions.php:45
-#@ response
-msgid "Archive for"
-msgstr "Archiv pro"
-
-#: core/actions/archive-actions.php:48
-#@ response
-msgid "Archive for:"
-msgstr "Archiv pro:"
-
-#: core/actions/archive-actions.php:51
-#@ response
-msgid "Author Archive:"
-msgstr "Archiv autora:"
-
-#: core/actions/archive-actions.php:54
-#@ response
-msgid "Blog Archives:"
-msgstr "Blog Archiv:"
-
-#: core/actions/comments-actions.php:49
-#@ response
-msgid "No Responses"
-msgstr "Žádné odpovědi"
-
-#: core/actions/comments-actions.php:49
-#@ response
-msgid "One Response"
-msgstr "Jedna reakce"
-
-#: core/actions/comments-actions.php:49
-#@ response
-msgid "% Responses"
-msgstr "% Odpovědi"
-
-#: core/actions/comments-actions.php:88
-#@ response
-msgid "You must be"
-msgstr "Musíte být"
-
-#: core/actions/comments-actions.php:88
-#@ response
-msgid "logged in"
-msgstr "přihlášeni"
-
-#: core/actions/comments-actions.php:88
-#@ ifeture
-msgid "to post a comment."
-msgstr ""
-
-#: core/actions/footer-actions.php:39
-#@ response
-msgid "Recent Posts"
-msgstr "Poslední příspěvky"
-
-#: core/actions/footer-actions.php:46
-#: sidebar.php:26
-#@ response
-#@ response
-msgid "Archives"
-msgstr "Archiv"
-
-#: core/actions/footer-actions.php:53
-#@ response
-msgid "Links"
-msgstr "Odkazy"
-
-#: core/actions/footer-actions.php:60
-#: core/actions/footer-actions.php:64
-#: sidebar.php:40
-#: sidebar.php:44
-#@ response
-#@ response
-msgid "WordPress"
-msgstr "WordPress"
-
-#: core/actions/footer-actions.php:64
-#: sidebar.php:44
-#@ response
-#@ response
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
-#: core/actions/footer-actions.php:64
-#: sidebar.php:44
-#@ response
-#@ response
-msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-
-#: core/actions/global-actions.php:43
-#@ response
-msgid "Published on"
-msgstr "Publikované dne"
-
-#: core/actions/global-actions.php:44
-#@ response
-msgid "by"
-msgstr "podle"
-
-#: core/actions/global-actions.php:45
-#@ response
-msgid "in"
-msgstr "v"
-
-#: core/actions/global-actions.php:70
-#@ response
-msgid "No Comments &#187;"
-msgstr "Žádné komentáře &#187;"
-
-#: core/actions/global-actions.php:70
-#@ response
-msgid "1 Comment &#187;"
-msgstr "1 komentář &#187;"
-
-#: core/actions/global-actions.php:70
-#@ response
-msgid "% Comments &#187;"
-msgstr "% Komentáře &#187;"
-
-#: core/actions/global-actions.php:86
-#@ response
-msgid "Read more…"
-msgstr "Čtěte více ..."
-
-#: core/actions/global-actions.php:187
-#@ response
-msgid "Tags: "
-msgstr "Tagy:"
-
-#: core/actions/pagination-actions.php:49
-#@ response
-msgid "of"
-msgstr "z"
-
-#: core/actions/index-actions.php:276
-#@ response
-msgid "Page"
-msgstr "Strana"
-
-#: core/actions/pagination-actions.php:50
-#@ response
-msgid "&laquo; First"
-msgstr "&laquo; První"
-
-#: core/actions/pagination-actions.php:51
-#@ response
-msgid "&lsaquo; Previous"
-msgstr "&lsaquo; Předchozí"
-
-#: core/actions/pagination-actions.php:61
-#@ response
-msgid "Next &rsaquo;"
-msgstr "Další &rsaquo;"
-
-#: core/actions/pagination-actions.php:62
-#@ response
-msgid "Last &raquo;"
-msgstr "Poslední &raquo;"
-
-#: core/actions/pagination-actions.php:99
-#@ response
-msgid "Pages:"
-msgstr "Stránky:"
-
-#: searchform.php:15
-#@ response
-msgid "Search"
-msgstr "Hledat"
-
-#: functions.php:85
-#@ response
-msgid "Your comment is awaiting moderation."
-msgstr "Váš komentář čeká na moderování."
-
-#: functions.php:89
-#, php-format
-#@ response
-msgid "%1$s at %2$s"
-msgstr "%1$s at %2$s"
-
-#: functions.php:89
-#@ response
-msgid "(Edit)"
-msgstr "(Upravit)"
-
-#: functions.php:222
-#@ response
-msgid "Slides"
-msgstr "Sklíčka"
-
-#: functions.php:237
-#@ response
-msgid "Carousel"
-msgstr "Kolotoč"
-
-#: functions.php:238
-#@ response
-msgid "Posts"
-msgstr "Příspěvky"
-
-#: functions.php:390
-#@ response
-msgid "Header Menu"
-msgstr "Hlavička Menu"
-
-#: functions.php:390
-#@ response
-msgid "Footer Menu"
-msgstr "Menu zápatí"
-
-#: sidebar.php:19
-#@ response
+# @ response
+#: sidebar.php:14
 msgid "Pages"
 msgstr "Stránky"
 
-#: sidebar.php:33
-#@ response
+# @ response
+# @ response
+#: sidebar.php:21
+msgid "Archives"
+msgstr "Archiv"
+
+# @ response
+#: sidebar.php:28
 msgid "Categories"
 msgstr "Kategorie"
 
-#: sidebar.php:50
-#@ response
+# @ response
+# @ response
+#: sidebar.php:35 sidebar.php:39 core/actions/footer-actions.php:51
+#: core/actions/footer-actions.php:55
+msgid "WordPress"
+msgstr "WordPress"
+
+# @ response
+# @ response
+#: sidebar.php:39 core/actions/footer-actions.php:55
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+# @ response
+#: sidebar.php:45
 msgid "Subscribe"
 msgstr "Odebírat"
 
-#: sidebar.php:52
-#@ response
+# @ response
+#: sidebar.php:47
 msgid "Entries (RSS)"
 msgstr "Příspěvky (RSS)"
 
-#: sidebar.php:53
-#@ response
+# @ response
+#: sidebar.php:48
 msgid "Comments (RSS)"
 msgstr "Komentáře (RSS)"
 
+#: core/core-functions.php:194
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\"></span>"
+msgstr ""
+
+# @ response
+#: core/core-functions.php:197
+msgid "Your comment is awaiting moderation."
+msgstr "Váš komentář čeká na moderování."
+
+# @ response
+#: core/core-functions.php:201
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s at %2$s"
+
+# @ response
+#: core/core-functions.php:201
+msgid "(Edit)"
+msgstr "(Upravit)"
+
+#: core/core-functions.php:226
+msgid "Home"
+msgstr ""
+
+# @ response
+#: core/core-functions.php:245
+#, fuzzy
+msgid "Archive for category \""
+msgstr "Archiv pro &#8216;"
+
+# @ response
+#: core/core-functions.php:301
+#, fuzzy
+msgid "Posts tagged \""
+msgstr "Příspěvků: Označen &#8216;"
+
+#: core/core-functions.php:306
+msgid "Articles posted by "
+msgstr ""
+
+# @ response
+#: core/core-functions.php:314 core/actions/pagination-actions.php:49
+msgid "Page"
+msgstr "Strana"
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:26
+msgid "Options Framework Internal Container"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:128
+#: core/classy-options/classy-options-framework/classy-options.php:415
+#: core/metabox/meta-box-class.php:575
+msgid "Upload"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:151
+msgid "View File"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:288
+msgid "Gallery"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:288
+msgid "Previously Uploaded"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:145
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:175
+msgid "Default options restored."
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:184
+msgid "Options Imported"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:187
+msgid "Invalid Data for Import"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:246
+msgid "Options saved."
+msgstr ""
+
+# @ response
+#: core/actions/pagination-actions.php:49
+msgid "of"
+msgstr "z"
+
+# @ response
+#: core/actions/pagination-actions.php:50
+msgid "&laquo; First"
+msgstr "&laquo; První"
+
+# @ response
+#: core/actions/pagination-actions.php:51
+msgid "&lsaquo; Previous"
+msgstr "&lsaquo; Předchozí"
+
+# @ response
+#: core/actions/pagination-actions.php:61
+msgid "Next &rsaquo;"
+msgstr "Další &rsaquo;"
+
+# @ response
+#: core/actions/pagination-actions.php:62
+msgid "Last &raquo;"
+msgstr "Poslední &raquo;"
+
+# @ response
+#: core/actions/archive-actions.php:32
+msgid "Archive for the &#8216;"
+msgstr "Archiv pro &#8216;"
+
+# @ response
+#: core/actions/archive-actions.php:32
+msgid "&#8217; Category:"
+msgstr "&#8217; Kategorie:"
+
+# @ response
+#: core/actions/archive-actions.php:35
+msgid "Posts Tagged &#8216;"
+msgstr "Příspěvků: Označen &#8216;"
+
+# @ response
+#: core/actions/archive-actions.php:35
+msgid "&#8217;:"
+msgstr "&#8217;:"
+
+# @ response
+#: core/actions/archive-actions.php:38 core/actions/archive-actions.php:41
+msgid "Archive for"
+msgstr "Archiv pro"
+
+# @ response
+#: core/actions/archive-actions.php:44
+msgid "Archive for:"
+msgstr "Archiv pro:"
+
+# @ response
+#: core/actions/archive-actions.php:47
+msgid "Author Archive:"
+msgstr "Archiv autora:"
+
+# @ response
+#: core/actions/archive-actions.php:50
+msgid "Blog Archives:"
+msgstr "Blog Archiv:"
+
+# @ response
+#: core/actions/global-actions.php:116
+#, fuzzy
+msgid "No Comments"
+msgstr "Žádné komentáře &#187;"
+
+# @ response
+#: core/actions/global-actions.php:116
+#, fuzzy
+msgid "1 Comment"
+msgstr "1 komentář &#187;"
+
+# @ response
+#: core/actions/global-actions.php:116
+#, fuzzy
+msgid "% Comments"
+msgstr "% Komentáře &#187;"
+
+# @ response
+#: core/actions/global-actions.php:139
+msgid "Published on"
+msgstr "Publikované dne"
+
+# @ response
+#: core/actions/global-actions.php:140
+msgid "by"
+msgstr "podle"
+
+# @ response
+#: core/actions/global-actions.php:141
+msgid "in"
+msgstr "v"
+
+# @ response
+#: core/actions/global-actions.php:152 core/actions/page-actions.php:66
+#, fuzzy
+msgid "Edit"
+msgstr "(Upravit)"
+
+# @ response
+#: core/actions/global-actions.php:174
+msgid "Tags: "
+msgstr "Tagy:"
+
+#: core/actions/search-actions.php:30
+#, php-format
+msgid "Search Results For: %s"
+msgstr ""
+
+#: core/actions/search-actions.php:31
+msgid "No posts found."
+msgstr ""
+
+# @ response
+#: core/actions/footer-actions.php:37
+#, fuzzy
+msgid "Footer Widgets"
+msgstr "Menu zápatí"
+
+# @ response
+#: core/actions/footer-actions.php:44
+msgid "Recent Posts"
+msgstr "Poslední příspěvky"
+
+# @ response
+#: core/actions/comments-actions.php:45
+msgid "No Responses"
+msgstr "Žádné odpovědi"
+
+# @ response
+#: core/actions/comments-actions.php:45
+msgid "One Response"
+msgstr "Jedna reakce"
+
+# @ response
+#: core/actions/comments-actions.php:45
+msgid "% Responses"
+msgstr "% Odpovědi"
+
+# @ response
+#: core/actions/comments-actions.php:87
+msgid "You must be"
+msgstr "Musíte být"
+
+# @ response
+#: core/actions/comments-actions.php:87
+msgid "logged in"
+msgstr "přihlášeni"
+
+# @ ifeture
+#: core/actions/comments-actions.php:87
+msgid "to post a comment."
+msgstr ""
+
+#: core/actions/404-actions.php:35
+msgid "Error 404: Page not found."
+msgstr ""
+
+#: core/metabox/meta-box-class.php:373
+msgid "Uploaded files"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:387
+msgid "Upload new files"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:390
+msgid "Add more file"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:415
+msgid "Uploaded images"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:429
+msgid "Upload new images (Make sure to publish the post to save)"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:441
+msgid "Select a color"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:576
+msgid "or enter URL"
+msgstr ""
+
+#: archive.php:67
+msgid "Nothing found"
+msgstr ""
+
+# @ response
+#: searchform.php:26
+msgid "Search"
+msgstr "Hledat"
+
+#: includes/presstrends.php:14
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: functions.php:119
+msgid "Neuro Options"
+msgstr ""
+
+#: functions.php:194 functions.php:207
+msgid "Continue Reading..."
+msgstr ""
+
+# @ response
+#: functions.php:304
+msgid "Header Menu"
+msgstr "Hlavička Menu"
+
+# @ response
+#~ msgid "Links"
+#~ msgstr "Odkazy"
+
+# @ response
+# @ response
+#~ msgid ""
+#~ "Powered by WordPress, state-of-the-art semantic personal publishing "
+#~ "platform."
+#~ msgstr ""
+#~ "Powered by WordPress, state-of-the-art semantic personal publishing "
+#~ "platform."
+
+# @ response
+#~ msgid "Read more…"
+#~ msgstr "Čtěte více ..."
+
+# @ response
+#~ msgid "Pages:"
+#~ msgstr "Stránky:"
+
+# @ response
+#~ msgid "Slides"
+#~ msgstr "Sklíčka"
+
+# @ response
+#~ msgid "Carousel"
+#~ msgstr "Kolotoč"
+
+# @ response
+#~ msgid "Posts"
+#~ msgstr "Příspěvky"
