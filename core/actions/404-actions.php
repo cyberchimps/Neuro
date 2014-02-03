@@ -32,7 +32,7 @@ function response_404_content() {
 		$message_text = $options->get($ne_themeslug.'_custom_404');
 	}
 	else {
-		$message_text = apply_filters( 'response_404_message', __( 'Error 404', 'response' ) );
+		$message_text = apply_filters( 'response_404_message', __( 'Error 404: Page not found.', 'response' ) );
 	} ?>
 	<div class="error"><?php echo $message_text; ?><br />	</div> 
 	<?php

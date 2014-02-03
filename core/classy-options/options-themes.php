@@ -1,6 +1,8 @@
 <?php
-
-// Add scripts and stylesheet
+/**
+* Add scripts and stylesheet
+* Text Domain: response
+*/
 
 function enqueue_store_styles() {
  

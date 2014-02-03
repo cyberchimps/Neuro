@@ -63,7 +63,7 @@ function response_page_section_content() {
 					<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 
 
-				<?php edit_post_link('Edit', '<p>', '</p>'); ?>
+				<?php edit_post_link(__( 'Edit', 'response' ), '<p>', '</p>'); ?>
 
 				</div><!--end post-->
 		

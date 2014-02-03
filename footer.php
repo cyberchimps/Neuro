@@ -10,7 +10,7 @@
 * You should have received a copy of the GNU General Public License,
 * along with this software. In the main directory, see: /licensing/
 * If not, see: {@link http://www.gnu.org/licenses/}.
-*
+* Text Domain: response
 * @package Neuro.
 * @since 2.0
 */
@@ -35,12 +35,14 @@
 		<?php response_footer(); ?>
 	<!-- End @response footer hook content-->
 				</div>
+<!-- Disabled CyberChimps Logo
 			<div class="row" >
 				<div id="credit" class="twelve columns">
 					<a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/achimps.png" alt="credit" /></a>
 				
 				</div>
 			</div>
+-->
 	<?php endif;?>
 	
 

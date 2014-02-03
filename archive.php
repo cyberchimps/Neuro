@@ -64,7 +64,7 @@
 	 
 		 <?php else : ?>
 
-		<h2>Nothing found</h2>
+		<h2><?php _e('Nothing found', 'response' ); ?></h2>
 
 		<?php endif; ?>
 

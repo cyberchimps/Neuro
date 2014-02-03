@@ -27,8 +27,8 @@ add_action( 'response_search', 'response_search_content' );
 */
 function response_search_content() { 
 	global $options, $ne_themeslug;
-	$results = apply_filters( 'response_search_results_message', 'Search Results For: %s' ); 
-	$noresults = apply_filters( 'response_no_search_results_message', 'No posts found.' ); ?>
+	$results = apply_filters( 'response_search_results_message', __('Search Results For: %s', 'response' ) ); 
+	$noresults = apply_filters( 'response_no_search_results_message', __('No posts found.', 'response' ) ); ?>
 	
 	<div id="content_left">
 		<div class="content_padding">

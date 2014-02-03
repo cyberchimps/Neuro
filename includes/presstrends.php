@@ -1,5 +1,8 @@
 <?php
-// Add PressTrends Option
+/**
+* Add PressTrends Option
+* Text Domain: response
+*/
 add_action('admin_menu', 'presstrends_theme_menu');
 
 function presstrends_theme_menu() {

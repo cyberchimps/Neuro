@@ -10,7 +10,7 @@
 * You should have received a copy of the GNU General Public License,
 * along with this software. In the main directory, see: /licensing/
 * If not, see: {@link http://www.gnu.org/licenses/}.
-*
+* Text Domain: response
 * @package Response
 * @since 1.0
 */

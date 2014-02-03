@@ -7,6 +7,7 @@ Version: 0.0.1
 Author: Utkarsh Kukreti
 Author URI: http://utkar.sh
 License: GPLv2
+Text Domain: response
 */
 
 /*

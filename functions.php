@@ -10,7 +10,7 @@
 * You should have received a copy of the GNU General Public License,
 * along with this software. In the main directory, see: /licensing/
 * If not, see: {@link http://www.gnu.org/licenses/}.
-*
+* Text Domain: response
 * @package Neuro.
 * @since 2.0
 */
@@ -116,7 +116,7 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow =="themes.php" ) {
 function neuro_admin_link() {
 	global $wp_admin_bar;
 
-	$wp_admin_bar->add_menu( array( 'id' => 'neuro', 'title' => 'Neuro Options', 'href' => admin_url('themes.php?page=neuro')  ) ); 
+	$wp_admin_bar->add_menu( array( 'id' => 'neuro', 'title' => __( 'Neuro Options', 'response' ), 'href' => admin_url('themes.php?page=neuro')  ) ); 
 }
 add_action( 'admin_bar_menu', 'neuro_admin_link', 113 );
 
@@ -183,14 +183,15 @@ add_filter('response_post_formats_gallery_content', 'neuro_custom_gallery_post_f
 function neuro_excerpt_link($more) {
 
 	global $ne_themename, $ne_themeslug, $options, $post;
-    
+    /**
     	if ($options->get($ne_themeslug.'_excerpt_link_text') == '') {
     		$linktext = '(Read More...)';
-   		}
+    		}
     	else {
     		$linktext = $options->get($ne_themeslug.'_excerpt_link_text');
-   		}
-
+    		}
+    */
+	$linktext = __( 'Continue Reading...', 'response' );
 	return '</p><a href="'. get_permalink($post->ID) . '">'.$linktext.'</a>';
 }
 add_filter('excerpt_more', 'neuro_excerpt_link');
@@ -203,7 +204,7 @@ function manual_excerpt_read_more_link($output) {
 	global $ne_themeslug, $options, $post;
 
 	$linktext = $options->get($ne_themeslug.'_excerpt_link_text');
-	$linktext = $linktext == '' ? 'Continue Reading...' : $linktext;
+	$linktext = $linktext == '' ? __( 'Continue Reading...', 'response' ) : $linktext;
 	
 	if(!empty($post->post_excerpt))
 		return $output . '</p><a class="more-link" href="'. get_permalink($post->ID) . '">'.$linktext.'</a>';
@@ -348,6 +349,60 @@ function neuro_widgets_init() {
 	));
 }
 add_action ('widgets_init', 'neuro_widgets_init');
+
+
+/** qTranslate Plugin Menu Integration */
+add_filter('walker_nav_menu_start_el', 'qtrans_in_nav_el', 10, 4);
+
+function qtrans_in_nav_el($item_output, $item, $depth, $args){
+
+    $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+
+    $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+
+    $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+
+    
+
+   // Determine integration with qTranslate Plugin
+
+   if (function_exists('qtrans_convertURL')) {
+
+      $attributes .= ! empty( $item->url ) ? ' href="' . qtrans_convertURL(esc_attr( $item->url )) .'"' : '';
+
+   } else {
+
+      $attributes .= ! empty( $item->url ) ? ' href="' . esc_attr( $item->url ) .'"' : '';
+
+   }
+
+   
+
+   $item_output = $args->before;
+
+   $item_output .= '<a'. $attributes .'>';
+
+   $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+
+   $item_output .= '</a>';
+
+   $item_output .= $args->after;
+
+      
+
+   return $item_output;
+
+}
+/** -----------------END----------------- */
+
+add_filter('widget_text', 'do_shortcode', 11); //Using shortcodes in widgets
+
+
+/** Remove theme update notifications in dashboard */
+remove_action ('load-update-core.php', 'wp_update_themes'); 
+add_filter ('pre_site_transient_update_themes',create_function ('$a', "return null;"));
+/** -----------------------END-------------------- */
+
 
 /**
 * End

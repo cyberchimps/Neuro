@@ -1,12 +1,13 @@
-#@ response
+# @ response
 msgid ""
 msgstr ""
 "Project-Id-Version: Core 1.0\n"
-"Report-Msgid-Bugs-To: http://cyberchimps.com/forum\n"
-"POT-Creation-Date: 10-17-11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-04 00:22+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,263 +15,400 @@ msgstr ""
 "X-Poedit-Language: \n"
 "X-Poedit-Country: \n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
 "X-Poedit-Basepath: \n"
 "X-Poedit-Bookmarks: \n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
+"X-Textdomain-Support: yes\n"
 
-#@ response
-#: core/actions/archive-actions.php:32
-msgid "Archive for the &#8216;"
-msgstr "Archivo para el &#8216;"
-
-#@ response
-#: core/actions/archive-actions.php:32
-msgid "&#8217; Category:"
-msgstr "&#8217; Categoría:"
-
-#@ response
-#: core/actions/archive-actions.php:35
-msgid "Posts Tagged &#8216;"
-msgstr "Entradas Marcadas &#8216;"
-
-#@ response
-#: core/actions/archive-actions.php:35
-msgid "&#8217;:"
-msgstr "&#8217;:"
-
-#@ response
-#: core/actions/archive-actions.php:38
-#: core/actions/archive-actions.php:41
-msgid "Archive for"
-msgstr "Archivo para"
-
-#@ response
-#: core/actions/archive-actions.php:44
-msgid "Archive for:"
-msgstr "Archivo para:"
-
-#@ response
-#: core/actions/archive-actions.php:47
-msgid "Author Archive:"
-msgstr "Autor del Archivo:"
-
-#@ response
-#: core/actions/archive-actions.php:50
-msgid "Blog Archives:"
-msgstr "Archivos del Blog:"
-
-#@ response
-#: core/actions/comments-actions.php:49
-msgid "No Responses"
-msgstr "No hay respuestas"
-
-#@ response
-#: core/actions/comments-actions.php:49
-msgid "One Response"
-msgstr "Una respuesta"
-
-#@ response
-#: core/actions/comments-actions.php:49
-msgid "% Responses"
-msgstr "% de respuestas"
-
-#@ response
-#: core/actions/comments-actions.php:89
-msgid "You must be"
-msgstr "Usted debe ser"
-
-#@ response
-#: core/actions/comments-actions.php:89
-msgid "logged in"
-msgstr "Registrado"
-
-#@ response
-#: core/actions/comments-actions.php:89
-msgid "to post a comment."
-msgstr "para publicar un cometario"
-
-#@ response
-#: core/actions/footer-actions.php:45
-msgid "Recent Posts"
-msgstr "Entradas recientes"
-
-#@ response
-#@ response
-#: core/actions/footer-actions.php:52
-#: sidebar.php:26
-msgid "Archives"
-msgstr "Archivos"
-
-#@ response
-#@ response
-#: core/actions/footer-actions.php:59
-#: core/actions/footer-actions.php:63
-#: sidebar.php:40
-#: sidebar.php:44
-msgid "WordPress"
-msgstr "WordPress"
-
-#@ response
-#@ response
-#: core/actions/footer-actions.php:63
-#: sidebar.php:44
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
-#@ response
-#@ response
-#: core/actions/footer-actions.php:63
-#: sidebar.php:44
-msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "Potenciado por WordPress, la última plataforma de publicación semántica personal."
-
-#@ response
-#: core/actions/global-actions.php:162
-msgid "Published on"
-msgstr "Publicado en"
-
-#@ response
-#: core/actions/global-actions.php:163
-msgid "by"
-msgstr "por"
-
-#@ response
-#: core/actions/global-actions.php:164
-msgid "in"
-msgstr "en"
-
-#@ response
-#: core/actions/global-actions.php:95
-msgid "Read more…"
-msgstr "Leer más..."
-
-#@ response
-#: core/actions/global-actions.php:196
-msgid "Tags: "
-msgstr "Etiquetas:"
-
-#@ response
-#: searchform.php:15
-msgid "Search"
-msgstr "Buscar"
-
-#@ response
-#: sidebar.php:19
+# @ response
+#: sidebar.php:14
 msgid "Pages"
 msgstr "Páginas"
 
-#@ response
-#: sidebar.php:33
+# @ response
+# @ response
+#: sidebar.php:21
+msgid "Archives"
+msgstr "Archivos"
+
+# @ response
+#: sidebar.php:28
 msgid "Categories"
 msgstr "Categorías"
 
-#@ response
-#: sidebar.php:50
+# @ response
+# @ response
+#: sidebar.php:35 sidebar.php:39 core/actions/footer-actions.php:51
+#: core/actions/footer-actions.php:55
+msgid "WordPress"
+msgstr "WordPress"
+
+# @ response
+# @ response
+#: sidebar.php:39 core/actions/footer-actions.php:55
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+# @ response
+#: sidebar.php:45
 msgid "Subscribe"
 msgstr "Suscribirse"
 
-#@ response
-#: sidebar.php:52
+# @ response
+#: sidebar.php:47
 msgid "Entries (RSS)"
 msgstr "Entradas (RSS)"
 
-#@ response
-#: core/actions/footer-actions.php:38
-msgid "Footer Widgets"
-msgstr "Widgets del Pié"
+# @ response
+#: sidebar.php:48
+msgid "Comments (RSS)"
+msgstr "Comentarios (RSS)"
 
-#@ response
-#: core/actions/global-actions.php:137
-msgid "No Comments"
-msgstr "No hay Comentarios"
-
-#@ response
-#: core/actions/global-actions.php:137
-#: core/widgets/tabbed-widget.php:75
-#: core/widgets/tabbed-widget.php:102
-msgid "1 Comment"
-msgstr "1 Comentario"
-
-#@ response
-#: core/actions/global-actions.php:137
-#: core/widgets/tabbed-widget.php:75
-#: core/widgets/tabbed-widget.php:102
-msgid "% Comments"
-msgstr "% Comentarios"
-
-#@ response
-#: core/core-functions.php:131
+# @ response
+#: core/core-functions.php:194
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\"></span>"
 msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\"></span>"
 
-#@ response
-#: core/core-functions.php:134
+# @ response
+#: core/core-functions.php:197
 msgid "Your comment is awaiting moderation."
 msgstr "Su comentario está esperando moderación."
 
-#@ response
-#: core/core-functions.php:138
+# @ response
+#: core/core-functions.php:201
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s en %2$s"
 
-#@ response
-#: core/core-functions.php:138
+# @ response
+#: core/core-functions.php:201
 msgid "(Edit)"
 msgstr "(Editar)"
 
-#@ response
-#: core/core-functions.php:247
+#: core/core-functions.php:226
+msgid "Home"
+msgstr ""
+
+# @ response
+#: core/core-functions.php:245
+#, fuzzy
+msgid "Archive for category \""
+msgstr "Archivo para el &#8216;"
+
+# @ response
+#: core/core-functions.php:301
+#, fuzzy
+msgid "Posts tagged \""
+msgstr "Entradas Marcadas &#8216;"
+
+#: core/core-functions.php:306
+msgid "Articles posted by "
+msgstr ""
+
+# @ response
+#: core/core-functions.php:314 core/actions/pagination-actions.php:49
 msgid "Page"
 msgstr "Página"
 
-#@ response
-#: core/widgets/tabbed-widget.php:14
-msgid "A tabbed widget that display popular posts, recent posts, comments and tags."
-msgstr "Un Widget con pestañas que muestra entradas populares, entradas recientes, comentarios y etiquetas."
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:26
+msgid "Options Framework Internal Container"
+msgstr ""
 
-#@ response
-#: core/widgets/tabbed-widget.php:25
-msgid "iFeature Tabbed Widget"
-msgstr "Widget con Pestañas de iFeature "
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:128
+#: core/classy-options/classy-options-framework/classy-options.php:415
+#: core/metabox/meta-box-class.php:575
+msgid "Upload"
+msgstr ""
 
-#@ response
-#: core/widgets/tabbed-widget.php:75
-#: core/widgets/tabbed-widget.php:102
-msgid "No comments"
-msgstr "No hay comentarios"
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:151
+msgid "View File"
+msgstr ""
 
-#@ response
-#: core/widgets/tabbed-widget.php:118
-#: core/widgets/tabbed-widget.php:122
-msgid "on "
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:288
+msgid "Gallery"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/options-medialibrary-uploader.php:288
+msgid "Previously Uploaded"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:145
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:175
+msgid "Default options restored."
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:184
+msgid "Options Imported"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:187
+msgid "Invalid Data for Import"
+msgstr ""
+
+#: core/classy-options/classy-options-framework/classy-options.php:246
+msgid "Options saved."
+msgstr ""
+
+#: core/actions/pagination-actions.php:49
+msgid "of"
+msgstr ""
+
+#: core/actions/pagination-actions.php:50
+msgid "&laquo; First"
+msgstr ""
+
+#: core/actions/pagination-actions.php:51
+msgid "&lsaquo; Previous"
+msgstr ""
+
+#: core/actions/pagination-actions.php:61
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: core/actions/pagination-actions.php:62
+msgid "Last &raquo;"
+msgstr ""
+
+# @ response
+#: core/actions/archive-actions.php:32
+msgid "Archive for the &#8216;"
+msgstr "Archivo para el &#8216;"
+
+# @ response
+#: core/actions/archive-actions.php:32
+msgid "&#8217; Category:"
+msgstr "&#8217; Categoría:"
+
+# @ response
+#: core/actions/archive-actions.php:35
+msgid "Posts Tagged &#8216;"
+msgstr "Entradas Marcadas &#8216;"
+
+# @ response
+#: core/actions/archive-actions.php:35
+msgid "&#8217;:"
+msgstr "&#8217;:"
+
+# @ response
+#: core/actions/archive-actions.php:38 core/actions/archive-actions.php:41
+msgid "Archive for"
+msgstr "Archivo para"
+
+# @ response
+#: core/actions/archive-actions.php:44
+msgid "Archive for:"
+msgstr "Archivo para:"
+
+# @ response
+#: core/actions/archive-actions.php:47
+msgid "Author Archive:"
+msgstr "Autor del Archivo:"
+
+# @ response
+#: core/actions/archive-actions.php:50
+msgid "Blog Archives:"
+msgstr "Archivos del Blog:"
+
+# @ response
+#: core/actions/global-actions.php:116
+msgid "No Comments"
+msgstr "No hay Comentarios"
+
+# @ response
+#: core/actions/global-actions.php:116
+msgid "1 Comment"
+msgstr "1 Comentario"
+
+# @ response
+#: core/actions/global-actions.php:116
+msgid "% Comments"
+msgstr "% Comentarios"
+
+# @ response
+#: core/actions/global-actions.php:139
+msgid "Published on"
+msgstr "Publicado en"
+
+# @ response
+#: core/actions/global-actions.php:140
+msgid "by"
+msgstr "por"
+
+# @ response
+#: core/actions/global-actions.php:141
+msgid "in"
 msgstr "en"
 
-#@ response
-#: core/widgets/tabbed-widget.php:166
-msgid "Popular Title:"
-msgstr "Título popular:"
+# @ response
+#: core/actions/global-actions.php:152 core/actions/page-actions.php:66
+#, fuzzy
+msgid "Edit"
+msgstr "(Editar)"
 
-#@ response
-#: core/widgets/tabbed-widget.php:171
-msgid "Recent Title:"
-msgstr "Título reciente:"
+# @ response
+#: core/actions/global-actions.php:174
+msgid "Tags: "
+msgstr "Etiquetas:"
 
-#@ ifeture
-#: core/widgets/tabbed-widget.php:176
-msgid "Comment Title:"
-msgstr "Título del comentario:"
+#: core/actions/search-actions.php:30
+#, php-format
+msgid "Search Results For: %s"
+msgstr ""
 
-#@ response
-#: core/widgets/tabbed-widget.php:181
-msgid "Tag Title:"
-msgstr "Título de la etiqueta:"
+# @ response
+#: core/actions/search-actions.php:31
+#, fuzzy
+msgid "No posts found."
+msgstr "para publicar un cometario"
 
-#@ response
-#: sidebar.php:53
-msgid "Comments (RSS)"
-msgstr "Comentarios (RSS)"
+# @ response
+#: core/actions/footer-actions.php:37
+msgid "Footer Widgets"
+msgstr "Widgets del Pié"
 
+# @ response
+#: core/actions/footer-actions.php:44
+msgid "Recent Posts"
+msgstr "Entradas recientes"
+
+# @ response
+#: core/actions/comments-actions.php:45
+msgid "No Responses"
+msgstr "No hay respuestas"
+
+# @ response
+#: core/actions/comments-actions.php:45
+msgid "One Response"
+msgstr "Una respuesta"
+
+# @ response
+#: core/actions/comments-actions.php:45
+msgid "% Responses"
+msgstr "% de respuestas"
+
+# @ response
+#: core/actions/comments-actions.php:87
+msgid "You must be"
+msgstr "Usted debe ser"
+
+# @ response
+#: core/actions/comments-actions.php:87
+msgid "logged in"
+msgstr "Registrado"
+
+# @ response
+#: core/actions/comments-actions.php:87
+msgid "to post a comment."
+msgstr "para publicar un cometario"
+
+#: core/actions/404-actions.php:35
+msgid "Error 404: Page not found."
+msgstr ""
+
+#: core/metabox/meta-box-class.php:373
+msgid "Uploaded files"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:387
+msgid "Upload new files"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:390
+msgid "Add more file"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:415
+msgid "Uploaded images"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:429
+msgid "Upload new images (Make sure to publish the post to save)"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:441
+msgid "Select a color"
+msgstr ""
+
+#: core/metabox/meta-box-class.php:576
+msgid "or enter URL"
+msgstr ""
+
+#: archive.php:67
+msgid "Nothing found"
+msgstr ""
+
+# @ response
+#: searchform.php:21
+msgid "Search"
+msgstr "Buscar"
+
+#: includes/presstrends.php:14
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: functions.php:119
+msgid "Neuro Options"
+msgstr ""
+
+#: functions.php:194 functions.php:207
+msgid "Continue Reading..."
+msgstr ""
+
+#: functions.php:304
+msgid "Header Menu"
+msgstr ""
+
+# @ response
+# @ response
+#~ msgid ""
+#~ "Powered by WordPress, state-of-the-art semantic personal publishing "
+#~ "platform."
+#~ msgstr ""
+#~ "Potenciado por WordPress, la última plataforma de publicación semántica "
+#~ "personal."
+
+# @ response
+#~ msgid "Read more…"
+#~ msgstr "Leer más..."
+
+# @ response
+#~ msgid ""
+#~ "A tabbed widget that display popular posts, recent posts, comments and "
+#~ "tags."
+#~ msgstr ""
+#~ "Un Widget con pestañas que muestra entradas populares, entradas "
+#~ "recientes, comentarios y etiquetas."
+
+# @ response
+#~ msgid "iFeature Tabbed Widget"
+#~ msgstr "Widget con Pestañas de iFeature "
+
+# @ response
+#~ msgid "No comments"
+#~ msgstr "No hay comentarios"
+
+# @ response
+#~ msgid "on "
+#~ msgstr "en"
+
+# @ response
+#~ msgid "Popular Title:"
+#~ msgstr "Título popular:"
+
+# @ response
+#~ msgid "Recent Title:"
+#~ msgstr "Título reciente:"
+
+# @ ifeture
+#~ msgid "Comment Title:"
+#~ msgstr "Título del comentario:"
+
+# @ response
+#~ msgid "Tag Title:"
+#~ msgstr "Título de la etiqueta:"
