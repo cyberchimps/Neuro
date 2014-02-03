@@ -351,13 +351,7 @@ function neuro_widgets_init() {
 add_action ('widgets_init', 'neuro_widgets_init');
 
 
-/**
-
-* Değiştirdiğim Bölüm, Menü Bağlantılarının Düzeltilmesi,
-* Bileşenlere kısakod gömme ve tema güncelleme uyarısı kapatma
-*/
-
-
+/** qTranslate Plugin Menu Integration */
 add_filter('walker_nav_menu_start_el', 'qtrans_in_nav_el', 10, 4);
 
 function qtrans_in_nav_el($item_output, $item, $depth, $args){
@@ -399,20 +393,15 @@ function qtrans_in_nav_el($item_output, $item, $depth, $args){
    return $item_output;
 
 }
+/** -----------------END----------------- */
+
+add_filter('widget_text', 'do_shortcode', 11); //Using shortcodes in widgets
 
 
-add_filter('widget_text', 'do_shortcode', 11);
-
-
-
-remove_action ('load-update-core.php', 'wp_update_themes');
+/** Remove theme update notifications in dashboard */
+remove_action ('load-update-core.php', 'wp_update_themes'); 
 add_filter ('pre_site_transient_update_themes',create_function ('$a', "return null;"));
-
-/**
-
-* Değiştirdiğim Bölüm Bitişi
-
-*/
+/** -----------------------END-------------------- */
 
 /**
 * End

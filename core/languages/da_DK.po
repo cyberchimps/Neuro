@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Core 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-03 09:52+0200\n"
+"POT-Creation-Date: 2014-02-04 00:22+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Kristian Risager Larsen <ifeaturepro@kezze.dk>\n"
 "Language-Team: Elementum, http://elementum.dk \n"
@@ -342,7 +342,7 @@ msgid "Nothing found"
 msgstr ""
 
 # @ core
-#: searchform.php:26
+#: searchform.php:21
 msgid "Search"
 msgstr "Søg"
 

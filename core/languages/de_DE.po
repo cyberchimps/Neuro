@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Response 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-03 09:52+0200\n"
+"POT-Creation-Date: 2014-02-04 00:22+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: CoMPa Technology <info@compa.nl>\n"
@@ -336,7 +336,7 @@ msgstr ""
 msgid "Nothing found"
 msgstr ""
 
-#: searchform.php:26
+#: searchform.php:21
 msgid "Search"
 msgstr ""
 
