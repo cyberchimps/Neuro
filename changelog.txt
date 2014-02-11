@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.28 (2-11-14)
+- Updated Translation.
+
 Version 3.0.27 (2-5-14)
 - Fixed multiple thumbnails issue on image attachment page.
 - Fixed image load issue for boxes element.
