@@ -22,43 +22,43 @@
 		<?php if( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'sidebar-right' ) ) : ?>
 
 			<div class="widget-container">
-				<h3 class="widget-title"><?php _e( 'Pages', 'cyberchimps' ); ?></h3>
+				<h3 class="widget-title"><?php _e( 'Pages', 'neuro' ); ?></h3>
 				<ul>
 					<?php wp_list_pages( 'title_li=' ); ?>
 				</ul>
 			</div>
 
 			<div class="widget-container">
-				<h3 class="widget-title"><?php _e( 'Archives', 'cyberchimps' ); ?></h3>
+				<h3 class="widget-title"><?php _e( 'Archives', 'neuro' ); ?></h3>
 				<ul>
 					<?php wp_get_archives( 'type=monthly' ); ?>
 				</ul>
 			</div>
 
 			<div class="widget-container">
-				<h3 class="widget-title"><?php _e( 'Categories', 'cyberchimps' ); ?></h3>
+				<h3 class="widget-title"><?php _e( 'Categories', 'neuro' ); ?></h3>
 				<ul>
 					<?php wp_list_categories( 'show_count=1&title_li=' ); ?>
 				</ul>
 			</div>
 
 			<div class="widget-container">
-				<h3 class="widget-title"><?php _e( 'WordPress', 'cyberchimps' ); ?></h3>
+				<h3 class="widget-title"><?php _e( 'WordPress', 'neuro' ); ?></h3>
 				<ul>
 					<?php wp_register(); ?>
 					<li><?php wp_loginout(); ?></li>
 					<li><a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>" target="_blank"
-					       title="<?php esc_attr_e( 'Powered by WordPress, state-of-the-art semantic personal publishing platform.', 'cyberchimps' ); ?>"> <?php _e( 'WordPress', 'cyberchimps' ); ?></a>
+					       title="<?php esc_attr_e( 'Powered by WordPress, state-of-the-art semantic personal publishing platform.', 'neuro' ); ?>"> <?php _e( 'WordPress', 'neuro' ); ?></a>
 					</li>
 					<?php wp_meta(); ?>
 				</ul>
 			</div>
 
 			<div class="widget-container">
-				<h3 class="widget-title"><?php _e( 'Subscribe', 'cyberchimps' ); ?></h3>
+				<h3 class="widget-title"><?php _e( 'Subscribe', 'neuro' ); ?></h3>
 				<ul>
-					<li><a href="<?php bloginfo( 'rss2_url' ); ?>"><?php _e( 'Entries (RSS)', 'cyberchimps' ); ?></a></li>
-					<li><a href="<?php bloginfo( 'comments_rss2_url' ); ?>"><?php _e( 'Comments (RSS)', 'cyberchimps' ); ?></a></li>
+					<li><a href="<?php bloginfo( 'rss2_url' ); ?>"><?php _e( 'Entries (RSS)', 'neuro' ); ?></a></li>
+					<li><a href="<?php bloginfo( 'comments_rss2_url' ); ?>"><?php _e( 'Comments (RSS)', 'neuro' ); ?></a></li>
 				</ul>
 			</div>
 

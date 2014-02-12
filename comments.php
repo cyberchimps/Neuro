@@ -32,17 +32,17 @@ if( post_password_required() ) {
 	<?php if( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-			printf( _n( 'One thought on %2$s', '%1$s thoughts on %2$s', get_comments_number(), 'cyberchimps' ),
+			printf( _n( 'One thought on %2$s', '%1$s thoughts on %2$s', get_comments_number(), 'neuro' ),
 			        number_format_i18n( get_comments_number() ), '<span>&ldquo;' . get_the_title() . '&rdquo;</span>' );
 			?>
 		</h2>
 
 		<?php if( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 			<nav role="navigation" id="comment-nav-above" class="site-navigation comment-navigation">
-				<h4 class="assistive-text"><?php _e( 'Comment navigation', 'cyberchimps' ); ?></h4>
+				<h4 class="assistive-text"><?php _e( 'Comment navigation', 'neuro' ); ?></h4>
 
-				<div class="nav-previous"><?php previous_comments_link( '&larr; ' . __( 'Older Comments', 'cyberchimps' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'cyberchimps' ) . ' &rarr;' ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( '&larr; ' . __( 'Older Comments', 'neuro' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'neuro' ) . ' &rarr;' ); ?></div>
 			</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -60,10 +60,10 @@ if( post_password_required() ) {
 
 		<?php if( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 			<nav role="navigation" id="comment-nav-below" class="site-navigation comment-navigation">
-				<h4 class="assistive-text"><?php _e( 'Comment navigation', 'cyberchimps' ); ?></h4>
+				<h4 class="assistive-text"><?php _e( 'Comment navigation', 'neuro' ); ?></h4>
 
-				<div class="nav-previous"><?php previous_comments_link( '&larr; ' . __( 'Older Comments', 'cyberchimps' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'cyberchimps' ) . ' &rarr;' ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( '&larr; ' . __( 'Older Comments', 'neuro' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'neuro' ) . ' &rarr;' ); ?></div>
 			</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -73,7 +73,7 @@ if( post_password_required() ) {
 	// If comments are closed and there are comments, let's leave a little note, shall we?
 	if( !comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 		?>
-		<p class="nocomments"><?php _e( 'Comments are closed.', 'cyberchimps' ); ?></p>
+		<p class="nocomments"><?php _e( 'Comments are closed.', 'neuro' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

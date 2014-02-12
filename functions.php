@@ -15,6 +15,11 @@
  * @link     http://www.cyberchimps.com/
  */
 
+// Load text domain.
+function cyberchimps_text_domain() {
+	load_theme_textdomain( 'neuro', get_template_directory() . '/inc/languages' );
+}
+
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 
@@ -43,7 +48,7 @@ if( !function_exists( 'cyberchimps_comment' ) ) :
 			case 'trackback' :
 				?>
 				<li class="post pingback">
-				<p><?php _e( 'Pingback:', 'cyberchimps' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'cyberchimps' ), ' ' ); ?></p>
+				<p><?php _e( 'Pingback:', 'neuro' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'neuro' ), ' ' ); ?></p>
 				<?php
 				break;
 			default :
@@ -53,11 +58,11 @@ if( !function_exists( 'cyberchimps_comment' ) ) :
 						<footer>
 							<div class="comment-author reviewer vcard">
 								<?php echo get_avatar( $comment, 40 ); ?>
-								<?php printf( '%s <span class="says">' . __( 'says:', 'cyberchimps' ) . '</span>', sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+								<?php printf( '%s <span class="says">' . __( 'says:', 'neuro' ) . '</span>', sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 							</div>
 							<!-- .comment-author .vcard -->
 							<?php if( $comment->comment_approved == '0' ) : ?>
-								<em><?php _e( 'Your comment is awaiting moderation.', 'cyberchimps' ); ?></em>
+								<em><?php _e( 'Your comment is awaiting moderation.', 'neuro' ); ?></em>
 								<br/>
 							<?php endif; ?>
 
@@ -66,10 +71,10 @@ if( !function_exists( 'cyberchimps_comment' ) ) :
 									<time pubdate datetime="<?php comment_time( 'c' ); ?>">
 										<?php
 										/* translators: 1: date, 2: time */
-										printf( __( '%1$s at %2$s', 'cyberchimps' ), get_comment_date(), get_comment_time() ); ?>
+										printf( __( '%1$s at %2$s', 'neuro' ), get_comment_date(), get_comment_time() ); ?>
 									</time>
 								</a>
-								<?php edit_comment_link( __( '(Edit)', 'cyberchimps' ), ' ' );
+								<?php edit_comment_link( __( '(Edit)', 'neuro' ), ' ' );
 								?>
 							</div>
 							<!-- .comment-meta .commentmetadata -->
@@ -159,13 +164,13 @@ add_filter( 'cyberchimps_support_forum', 'cyberchimps_options_support_forum' );
 
 // Help Section
 function cyberchimps_options_help_header() {
-	$text = 'CyberChimps';
+	$text = 'neuro';
 
 	return $text;
 }
 
 function cyberchimps_options_help_sub_header() {
-	$text = __( 'CyberChimps Professional Responsive WordPress Theme', 'cyberchimps' );
+	$text = __( 'CyberChimps Professional Responsive WordPress Theme', 'neuro' );
 
 	return $text;
 }
