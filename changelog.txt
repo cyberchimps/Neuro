@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.29 (2-18-14)
+- Slider is made to be start sliding on page load.
+
 Version 3.0.28 (2-11-14)
 - Updated Translation.
 
