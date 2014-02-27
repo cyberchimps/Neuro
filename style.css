@@ -21,6 +21,7 @@ font-family: 'Titillium Web', sans-serif;*/
 body {
 	font-weight: 300;
 	font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif;
+	word-wrap: break-word;
 }
 
 @media screen and (max-width:767px) {
