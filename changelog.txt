@@ -2,6 +2,12 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.31 (3-5-14)
+- Fixed conflict between blog post excerpt option and bbpress user profile page.
+- Set up element options defaults for better wp.org preview.
+- Added filter for background default args.
+- HTML Error fix: Added space before menu>li>attribute.
+
 Version 3.0.30 (2-27-14)
 - Slider fix to start on page load.
 - Updated elements images along with boxes images.
