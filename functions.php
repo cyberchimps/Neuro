@@ -152,7 +152,7 @@ function cyberchimps_options_documentation_url() {
 
 // Support Forum URL
 function cyberchimps_options_support_forum() {
-	$url = 'http://cyberchimps.com/forum/free/neuro-free/';
+	$url = 'http://cyberchimps.com/forum/free/neuro/';
 
 	return $url;
 }
