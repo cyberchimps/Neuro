@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.37 (4-16-14)
+- Changed social font icons to font awesome.
+- Removed unwanted function_exists() conditional wrapper.
+
 Version 3.0.36 (4-9-14)
 -Added upgrade button to the free theme customizer.
 -Fixed Vimeo video responsiveness.
