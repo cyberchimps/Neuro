@@ -2,6 +2,12 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.38 (4-24-14)
+- Added recommendation for clef plugin.
+- Updated translations.
+- Youtube video fixed.
+- Removed space between code and px.
+
 Version 3.0.37 (4-16-14)
 - Changed social font icons to font awesome.
 - Removed unwanted function_exists() conditional wrapper.
