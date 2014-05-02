@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.40 (5-2-14)
+- Fixed byline toggle issue. 
+- Update French translation.
+
 Version 3.0.39 (4-24-14)
 - Uploading again due to technical problem.
 
