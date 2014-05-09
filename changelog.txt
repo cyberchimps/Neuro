@@ -2,6 +2,11 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.42 (5-9-14)
+- Fixed W3C validator error issue with IE compatibility meta tags.
+- Fixed missing image error: removed unused function.
+- Added FooBox as recommended plugin.
+
 Version 3.0.41 (5-2-14)
 - Uploading again due to technical problem.
 
