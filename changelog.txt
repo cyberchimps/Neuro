@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.45 (5-30-14)
+- Fixed casing of CyberChimpsParallax class.
+
 Version 3.0.44 (5-23-14)
 - Updated ugrade text.
 - Removed left sidebar from widget section.
