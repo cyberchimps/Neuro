@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.50 (6-27-14)
+- Core Translation Updated.
+
 Version 3.0.49 (6-20-14)
 - Code reformatting: Changed spaces to tabs.
 
