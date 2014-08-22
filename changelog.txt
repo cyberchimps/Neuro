@@ -2,6 +2,9 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.56 (8-22-14)
+- Updated Translations.
+
 Version 3.0.55 (8-08-14)
 - Fixed conflict of footer widgets with other widgets.
 - Responsive fix for uploaded video.
