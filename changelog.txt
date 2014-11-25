@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.60 (11-25-14)
+- Removed theme activation notice.
+- Changed default links for slider.
+
 Version 3.0.59 (11-16-14)
 - Removed cyberchimps_mlu_init() as it has register_post_type() which is plugin-territory functionality.
 - Added sanitization to customizer options.
