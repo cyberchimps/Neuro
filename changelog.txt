@@ -2,6 +2,10 @@ Neuro Changelog
 
 ****************************
 
+Version 3.0.61 (1-23-15)
+- Fixed conflict between slider free and pro plugin.
+- Added new plugin suggestion.
+
 Version 3.0.60 (11-25-14)
 - Removed theme activation notice.
 - Changed default links for slider.
