@@ -1,6 +1,8 @@
 Neuro Changelog
 
 ****************************
+Version 3.0.63 (5-08-16)
+- Updated as per latest Theme Check guidelines
 
 Version 3.0.62 (16-07-15)
 - Change in theme customizer as per wordpress.org guidelines
