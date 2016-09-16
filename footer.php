@@ -13,7 +13,7 @@
  * @link     http://www.cyberchimps.com/
  */
 
-if( cyberchimps_get_option( 'footer_show_toggle' ) == '1' ) {
+if( get_theme_mod( 'footer_show_toggle' ) == '1' ) {
 
 	do_action( 'cyberchimps_before_footer_widgets' ); ?>
 
