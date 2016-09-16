@@ -278,6 +278,10 @@ header #search #searchform {
 	border-bottom-color: #ffffff;
 }
 
+#sidebar .navbar-search {
+    float: left;
+}
+
 @media (max-width: 979px) {
 	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
 		font-weight: normal;

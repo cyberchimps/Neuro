@@ -14,7 +14,7 @@
  */
 
 // Fetching the searchbar text from the theme options.
-$search_text = esc_attr( cyberchimps_get_option( 'searchbar_text' ) );
+$search_text = esc_attr( get_theme_mod( 'searchbar_text' ) );
 if( !$search_text ) {
 	$search_text = esc_attr( 'Search &hellip;', 'neuro' );
 }
