@@ -42,7 +42,7 @@
 			if( 'post' == get_post_type() && is_single() ) :
 
 				// get the post title toggle option
-				$post_title = get_theme_mod( 'single_post_title' );
+				$post_title = cyberchimps_get_option( 'single_post_title' );
 				if( $post_title == "1" ) : ?>
 					<?php ( get_the_title() ) ? the_title() : the_permalink(); ?>
 				<?php    endif;
@@ -84,7 +84,7 @@
 
 	<?php
 	elseif( is_archive() ): ?>
-		<?php if( get_theme_mod( 'archive_post_excerpts', 0 ) ): ?>
+		<?php if( cyberchimps_get_option( 'archive_post_excerpts', 0 ) ): ?>
 			<div class="entry-summary">
 				<?php cyberchimps_featured_image(); ?>
 				<?php the_excerpt(); ?>
@@ -106,7 +106,7 @@
 
 	<?php
 	elseif( is_home() ) : // blog post pages ?>
-		<?php if( get_theme_mod( 'post_excerpts', 0 ) ): ?>
+		<?php if( cyberchimps_get_option( 'post_excerpts', 0 ) ): ?>
 			<div class="entry-summary">
 				<?php cyberchimps_featured_image(); ?>
 				<?php the_excerpt(); ?>
