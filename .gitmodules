@@ -1,6 +1,6 @@
 [submodule "cyberchimps"]
 	path = cyberchimps
-	url = git@github.com:cyberchimps/core.git
+	url = git@github.com:cyberchimps/corefree.git
 [submodule "elements"]
 	path = elements
 	url = git@github.com:cyberchimps/elementslite.git

@@ -1,6 +1,9 @@
 Neuro Changelog
 
 ****************************
+Version 3.3 (07-26-17)
+- Added visible edit links in the customizer preview
+
 Version 3.2 (04-19-17)
 - Fixed issue with PHP version 7.1
 - Fixed issue with loading google fonts (used protocol relative link)
