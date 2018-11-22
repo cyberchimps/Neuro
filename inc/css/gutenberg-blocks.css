@@ -2,13 +2,6 @@
  * Default styles
  * -----------------------------------------------------------
  */
-/* .editor-writing-flow,
-.editor-styles-wrapper{
-	font-family: "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-	font-size: 14px;
-	line-height: 1.5;
-	color: #444;
-} */
 
 .wp-block-freeform, .wp-block-freeform.block-library-rich-text__tinymce p
 .wp-block-paragraph.editor-rich-text__tinymce.mce-content-body,
@@ -19,6 +12,7 @@
 .wp-block-subhead.editor-rich-text__tinymce,
 .editor-block-list__block p {
 	font-size: 1.1em ;
+	color: inherit;
 }
 
 
@@ -220,8 +214,10 @@ table.mce-item-table tr.odd{
 	font-size: 1.558em;
 }
 
+.wp-block-quote__citation,
 .wp-block-quote__citation.editor-rich-text__tinymce.mce-content-body {
 	font-size: 0.9em;
+	color: inherit;
 }
 
 .wp-block-quote.is-large .wp-block-quote__citation.editor-rich-text__tinymce.mce-content-body,
