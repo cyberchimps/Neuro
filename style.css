@@ -3,8 +3,8 @@ Theme Name: Neuro
 Theme URI: http://www.cyberchimps.com/neuro/
 Author: CyberChimps
 Author URI: http://www.cyberchimps.com/
-Description: Neuro is the ultimate Responsive WordPress theme offering a fun easy to use  Drag & Drop system that adds amazing new functionality to your WordPress website. Featuring responsive touch friendly theme options that work on any device, fully SEO optimized, dynamic sidebar layouts, and per-page dynamic templates. Powered by WordPress, Twitter Bootstrap, HTML5, and CSS3. Neuro has visible edit links in the customizer preview. For Support - <a href="https://cyberchimps.com/forum/free/neuro/" target="_blank"> Support forum</a> (https://cyberchimps.com/forum/free/neuro/).
-Version: 3.3
+Description: Neuro is the ultimate Responsive WordPress theme offering a fun, easy to use  Drag & Drop system that adds amazing new functionality to your WordPress website. Neuro is Gutenberg compatible theme. Featuring responsive touch friendly theme options that work well on any device, this theme is also fully SEO optimized and has dynamic sidebar layouts and per-page dynamic templates. It is powered by WordPress, Twitter Bootstrap, HTML5, and CSS3 Neuro has visible edit links in the customizer preview. For Support - <a href="https://cyberchimps.com/forum/free/neuro/" target="_blank"> Support forum</a> (https://cyberchimps.com/forum/free/neuro/).
+Version: 3.4
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats, theme-options, sticky-post, blog, custom-logo, threaded-comments, footer-widgets
 Text Domain: neuro
 License: GNU General Public License version 3
@@ -31,14 +31,9 @@ body {
 	}
 }
 
-a {
-	color: #666666;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 15px;
 	font-weight: 700;
-	font-family: 'Titillium Web', Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 table .label {
@@ -446,14 +441,6 @@ h2.entry-title {
 	margin-bottom: 10px;
 	font-size: 2.4em;
 	line-height: 1.1em;
-}
-
-h2.entry-title a {
-	color: #333333;
-}
-
-h2.entry-title a:hover {
-	color: #005580;
 }
 
 article.post p, article.page p {
@@ -904,13 +891,12 @@ table#wp-calendar td {
 /********************************************************************************************************************/
 
 /*==================================== SLIDER =====================================================*/
-
-#slider {
+#slider_lite {
+	padding: 30px 0;
 	border: none;
-	margin-bottom: 30px;
 }
 
-#slider .carousel-control {
+#slider_lite.carousel-control {
 	line-height: 30px;
 }
 
@@ -1005,9 +991,10 @@ h2.box-widget-title {
 
 #gallery h2 {
 	margin-top: 0;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 1.6em;
 	line-height: 1em;
+	text-align: center;
 }
 
 #gallery ul.row-fluid li#portfolio_wrap {
@@ -1076,4 +1063,291 @@ h2.box-widget-title {
 	.widget-container {
 		padding: 5px 0;
 	}
+}
+
+
+/*============= Testimonial ==========*/
+.neuro_main_title{
+      margin-top: 80px;
+      text-align: center;
+      font-size: 1.8em;
+  }
+  ul.slides {
+      margin-left: 0;
+  }
+  .flexslider .slides > li {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+ 	.slides.neuro_carousel {
+    max-width: 100%;
+    display: inline-block;
+    padding-top: 20px;
+    width: auto !important;
+}
+ 	#testimonial_section .neuro_short_desc {
+      margin-top: 80px;
+}
+#testimonial_section {
+background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%; }
+#testimonial_section .img-responsive {
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  border: 5px solid #fff; }
+#testimonial_section .flexslider {
+  background: transparent;
+  border: none;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+#testimonial_section .neuro_slider_text_img {
+  color: #fff; }
+  #testimonial_section .neuro_slider_text_img li {
+    width: auto;
+    text-align: center;
+}
+ #testimonial_section .neuro_testimonial_author {
+  font-weight: 600;
+  font-size: 1.125em; }
+#testimonial_section .neuro_testimonial_abt_author {
+  font-weight: 500;
+  margin-bottom: 12%; }
+#testimonial_section .after_testimonial_text {
+  margin: 25px auto;
+  padding: 0;
+  max-width: 84px;
+  border: 0;
+  border-top: solid 2px #cd834a;
+  text-align: center;
+  background: transparent; }
+#testimonial_section #carousel2.flexslider {
+  position: absolute;
+  bottom: -20%; }
+#testimonial_section .flex-active-slide img {
+  border-color: #cd834a; }
+#testimonial_section .flex-active-slide .arrow-top {
+  position: absolute;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #e14c3d;
+  border-left: 10px solid transparent;
+  top: 12px;
+  left: 13%; }
+#testimonial_section .flex-viewport {
+  text-align: center; }
+testimonial_section .flexslider .slides {
+  padding-bottom: 30px; }
+ #testimonial_section{
+    color: #fff;
+    position: relative;
+    font-size: 16px;
+}
+.neuro_main_title{
+    margin-top: 80px;
+    text-align: center;
+}
+.flex-direction-nav,
+.flex-dneuroection-nav{
+    display: none;
+}
+	/* =============================== Contact Section  ========================== */
+.contactus_wrapper{
+    padding: 0 0 3% 0;
+    color: #fff;
+	}
+.contactus_wrapper.span12
+{
+     margin: 0 auto;
+}
+
+#contact_us input[type="text"], #contact_us textarea{
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 12px;
+	}
+.contact_left_sec{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.fa
+{
+    font-size: 30px;
+}
+.contact_right_sec input[type="submit"]
+{
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #cd834a 0%, #9e663d 100%) repeat scroll 0 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-family: lobster,cursive;
+    font-size: 17.5px;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 55px;
+    margin: 2% 32%;
+	}
+.contact_title{
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 1.8em;
+}
+	@media all and (max-width: 767px) {
+    .contact_left_sec
+    {
+        text-align: center;
+    }
+    .contactus_wrapper.span12
+    {
+        padding: 20px 30px;
+    }
+    .contact_addr {
+    padding-bottom: 10px;
+    }
+    .neuro_testimonial_text{
+    padding: 0 20px;
+    }
+}
+/* ========================== Contact details in header  =========================== */
+	.contact_details{
+    font-family: lobster,cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.contact_details:before{
+    font-family: "FontAwesome";
+    content: "\f095";
+}
+#register
+{
+    padding: 12px 0 0 0;
+}
+
+
+.entry-content ol,
+.entry-content ul,
+.entry-summary ol,
+.entry-summary ul{
+	margin-left: 2.9em;
+}
+
+.entry-content ol.wp-block-gallery,
+.entry-content ul.wp-block-gallery,
+.entry-summary ol.wp-block-gallery,
+.entry-summary ul.wp-block-gallery {
+	display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+	margin-left: 0;
+	margin-right: 0;
+}
+	audio, canvas, video {
+    display: inline-block;
+    width: 100%;
+}
+	.wp-block-column p {
+    padding: 0 14px;
+}
+	.wp-block-gallery .blocks-gallery-item figcaption {
+        padding: 40px 0;
+}
+div.wp-block-cover .wp-block-cover-text{
+ 	position: absolute;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.25;
+    margin-bottom: 0;
+    max-width: 610px;
+    padding: 14px;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+div.wp-block-cover.aligncenter {
+	clear: both;
+}
+
+code, pre {
+	font-size: .86em;
+}
+
+h1{
+	font-size: 2.75em;
+	line-height: 1;
+}
+
+h2{
+	font-size: 2.25em;
+	line-height: 1.2;
+}
+
+h3{
+	font-size: 1.75em;
+	line-height: 1.6;
+}
+
+h4{
+	font-size: 1.25em;
+	line-height: 1.14;
+}
+
+h5{
+	font-size: 1em;
+	line-height: 1.43;
+}
+
+h6{
+	font-size: 0.85em;
+	line-height: 1.68;
+}
+
+
+.has-light-gray-background-color{
+	background-color: #f5f5f5;
+}
+.has-light-gray-color{
+	color: #f5f5f5;
+}
+
+.has-gray-background-color{
+	background-color: #777;
+}
+.has-gray-color{
+	color: #777;
+}
+
+.has-black-background-color{
+	background-color: #000000;
+}
+.has-black-color{
+	color: #000000;
+}
+
+.has-blue-background-color{
+	background-color: #0286cf;
+}
+.has-blue-color{
+	color: #0286cf;
+}
+
+.has-legacy-background-color{
+	background-color: #b6b6b6;
+}
+.has-legacy-color{
+	color: #b6b6b6;
+}
+
+.has-red-background-color{
+	background-color: #c80a00;
+}
+.has-red-color{
+	color: #c80a00;
 }
